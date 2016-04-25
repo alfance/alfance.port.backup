@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:700,700italic,500,500italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,300,300italic);
+
+body,html {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight:400;
+}
+html {
+    height:100vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.container .wrapper{
+    overflow-y:hidden;
+    overflow-x: visible;
+    width: 3000px;
+    height:90vh;
+}
+.main-container {
+    width: auto;
+    height:100vh;
+}
+
+.filter {
+    height:5vh;
+    width:100vw;
+    background-color:#ddd;
+    position:fixed;
+    margin:-7px 0px auto auto;
+    padding-left: 30px;
+}
+
+.column {
+    width: 900px;
+    height: inherit;
+    display:inline-block;
+    float: left;
+    background-color:#FFF7F0;
+    margin:5vh 20px auto 0px;
+}
+
+.center-align {
+    text-align: center;
+}

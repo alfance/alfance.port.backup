@@ -1,0 +1,36 @@
+@media screen and(max-height:415px) {
+    .home {
+        margin-top: 0;
+    }
+}
+
+/* if min width is greater than 1020 horizontal (ipad min) */
+@media (min-width: 1020px) and (orientation: landscape){
+    /* project page */
+    .project-page-single {
+        width:600px;
+    }
+    .project-page-img {
+        width:950px;
+    }
+}
+
+/* for mobile display, use bootstrap*/
+@media only screen and (max-width: 640px) and (orientation: vertical) {
+    /* project page */
+    .project-page-single {
+        width:80vw;
+    }
+
+    .pageIntro {
+        width:100vw;
+    }
+}
+
+@media only screen and (max-height: 400px) and (orientation: landscape) {
+    .image-grid-each{
+        height:100vh;
+        width:auto;
+        display: inline-block;
+    }
+}

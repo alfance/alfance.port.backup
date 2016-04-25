@@ -1,0 +1,16 @@
+/*page layout */
+@import 'variables';
+@import 'page-style';
+@import 'text';
+@import 'image-grid';
+
+/* partial */
+@import 'simple-sidebar';
+@import 'modal';
+@import 'page-Intro';
+
+/*pages 8*/
+@import 'project-layout';
+
+/*responsive */
+@import 'responsive';

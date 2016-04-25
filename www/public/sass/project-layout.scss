@@ -1,0 +1,46 @@
+.flex-box{
+    height:90vh;
+    width: inherit;
+    display:flex;
+    align-items: center;
+}
+.project-page-mainlayout {
+    height: auto;
+    display: inline-block;
+    float:left;
+    padding:0px 40px 0px 40px;
+}
+.project-page-single {
+    @extend .project-page-mainlayout;
+    width:auto;
+    min-width:400px;
+    max-width:1400px;
+    h4 {
+        text-transform: uppercase;
+    }
+
+    img {
+        width: 100%;
+        height:auto;
+    }
+}
+
+.project-page-img {
+    @extend .project-page-mainlayout;
+    width:auto;
+    max-width: 90vw;
+    min-width:400px;
+    img {
+        width: 100%;
+        height:auto;
+    }
+    .image-row {
+        img {
+            width:20%;
+            height:auto;
+            display: inline-block;
+            float:left;
+            padding:10px 5px;
+        }
+    }
+}
