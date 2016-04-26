@@ -1,6 +1,6 @@
 var React = require('react');
 import Modal, {closeStyle} from 'simple-react-modal';
-import PageIntro from '../PageIntro';
+import PageIntro from '../partial/pageIntro';
 
 export default class ArtHome extends React.Component{
     constructor(){

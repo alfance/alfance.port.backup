@@ -3,6 +3,7 @@ var ImageActions = require('./Actions/imageactions');
 import {Link} from "react-router";
 
 var Layout = React.createClass({
+
     navigate() {
         // push the page back home
         this.props.history.push();
@@ -30,7 +31,7 @@ var Layout = React.createClass({
                         <Link to="DesignHome" onClick ={this.loadPhoto} activeClassName ="tabActive"><div className="chap-title">Design</div></Link>
                     </li>
                     <li>
-                        <Link to="PhotoHome" activeClassName ="tabActive"><div className="chap-title">Photo</div></Link>
+                        <Link to="PhotoHome" onClick={this.loadPhoto} activeClassName ="tabActive"><div className="chap-title">Photo</div></Link>
                     </li>
                     <li>
                         <Link to="ArtHome" activeClassName ="tabActive"><div className="chap-title">Arts</div></Link>

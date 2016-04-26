@@ -1,18 +1,21 @@
 $(window).on('resize',imageGrid);
-$(window).ready(imageGrid);
+$(window).load(imageGrid);
+
+$('.sidebar-nav').children().click(function() {
+    imageGrid();
+});
 
 function imageGrid() {
     var $vw = $('.wrapper').height();
     var $imageEach = $('.image-grid-each');
     var image = $('.image-grid-each img');
-    // var img_height = image.height();
-    // var img_width = image.width();
-    // var img_diff = img_height - img_width;
-
+    
         // slice every 3 images to make a row.
-        for (var i = 0; i < $imageEach.length; i += 3) {
-            $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
+        if ($vw > 400)  {
+            for (var i = 0; i < $imageEach.length; i += 3) {
+                $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
             }
+        }
         //adjust the margin according to screen size.
         if ($vw < 700) {
             $($imageEach).css('margin','10px 5px');
@@ -72,5 +75,4 @@ $('.chap-title').hide();
 
 $( document ).ready(function() {
 sidebarTog();
-imageGrid();
 });

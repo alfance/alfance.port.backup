@@ -1,9 +1,12 @@
 var React = require('react');
+import HomeSVG from "./HomeSVG";
 
 var Home = React.createClass({
     render: function() {
         return (
-                <h1>Home page</h1>
+            <div>
+                <HomeSVG></HomeSVG>
+            </div>
         )
     }
 });

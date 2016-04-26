@@ -19,5 +19,4 @@ $('.chap-title').hide();
 
 $( document ).ready(function() {
 sidebarTog();
-imageGrid();
 });

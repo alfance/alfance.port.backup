@@ -25,6 +25,25 @@ var ImageStore = Reflux.createStore({
                 this.trigger(this.imagelist);
             }
         });
+    },
+
+    initPhoto: function() {
+        this.fetchListPhoto();
+    },
+
+    fetchListPhoto: function() {
+        $.ajax({
+            url: this.sourceUrl_photo,
+            dataType: 'jsonp',
+            jsonpCallback: 'jsonFlickrFeed',
+            cache: false,
+            context: this,
+            success: function(data) {
+                console.log('fetch complete');
+                this.imagelist = data.items;
+                this.trigger(this.imagelist);
+            }
+        });
     }
 });
 

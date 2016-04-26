@@ -23991,17 +23991,17 @@
 
 	// design works
 	var DesignHome = __webpack_require__(242);
-	var DesignWeb = __webpack_require__(244);
-	var DesignPrint = __webpack_require__(245);
+	var DesignWeb = __webpack_require__(243);
+	var DesignPrint = __webpack_require__(244);
 
 	// artworks
-	var ArtHome = __webpack_require__(246);
+	var ArtHome = __webpack_require__(245);
 
 	//photos
-	var PhotoHome = __webpack_require__(250);
+	var PhotoHome = __webpack_require__(248);
 
 	//contact
-	var Contact = __webpack_require__(251);
+	var Contact = __webpack_require__(249);
 	var Router = __webpack_require__(1);
 	var Route = Router.Route;
 	var IndexRoute = Router.IndexRoute;
@@ -24118,7 +24118,7 @@
 	                        null,
 	                        React.createElement(
 	                            _reactRouter.Link,
-	                            { to: 'PhotoHome', activeClassName: 'tabActive' },
+	                            { to: 'PhotoHome', onClick: this.loadPhoto, activeClassName: 'tabActive' },
 	                            React.createElement(
 	                                'div',
 	                                { className: 'chap-title' },
@@ -25828,18 +25828,25 @@
 /* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
+
+	var _HomeSVG = __webpack_require__(250);
+
+	var _HomeSVG2 = _interopRequireDefault(_HomeSVG);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var React = __webpack_require__(5);
 
+
 	var Home = React.createClass({
-	    displayName: 'Home',
+	    displayName: "Home",
 
 	    render: function render() {
 	        return React.createElement(
-	            'h1',
+	            "div",
 	            null,
-	            'Home page'
+	            React.createElement(_HomeSVG2.default, null)
 	        );
 	    }
 	});
@@ -25888,6 +25895,7 @@
 	    getInitialState: function getInitialState() {
 	        return {};
 	    },
+
 	    render: function render() {
 	        if (this.state.imagestore) {
 	            return React.createElement(
@@ -25950,6 +25958,25 @@
 	    fetchList: function fetchList() {
 	        $.ajax({
 	            url: this.sourceUrl_design,
+	            dataType: 'jsonp',
+	            jsonpCallback: 'jsonFlickrFeed',
+	            cache: false,
+	            context: this,
+	            success: function success(data) {
+	                console.log('fetch complete');
+	                this.imagelist = data.items;
+	                this.trigger(this.imagelist);
+	            }
+	        });
+	    },
+
+	    initPhoto: function initPhoto() {
+	        this.fetchListPhoto();
+	    },
+
+	    fetchListPhoto: function fetchListPhoto() {
+	        $.ajax({
+	            url: this.sourceUrl_photo,
 	            dataType: 'jsonp',
 	            jsonpCallback: 'jsonFlickrFeed',
 	            cache: false,
@@ -28846,7 +28873,6 @@
 	var React = __webpack_require__(5);
 	var ImageGrid = __webpack_require__(231);
 	var ImageActions = __webpack_require__(208);
-	var currentLocation = __webpack_require__(243);
 
 
 	var DesignHome = React.createClass({
@@ -28855,6 +28881,7 @@
 	    render: function render() {
 	        var title = "Graphic Design";
 	        var pageintro = "This page showcases my short-term graphic designs. Most of the projects were completed between tens of minutes to a day. Instead of thoughtful planning and pre analysis, works seen here are more of my artistic expression of the design world.";
+
 	        return React.createElement(
 	            'div',
 	            null,
@@ -28872,25 +28899,6 @@
 
 /***/ },
 /* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(5);
-
-	var currentLocation = React.createClass({
-	    displayName: 'currentLocation',
-
-	    render: function render() {
-	        var currentLocation = this.props.location.pathname;
-	        alert(currentLocation);
-	    }
-	});
-
-	module.exports = currentLocation;
-
-/***/ },
-/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28926,13 +28934,13 @@
 	module.exports = DesignWeb;
 
 /***/ },
-/* 245 */
+/* 244 */
 /***/ function(module, exports) {
 
 	"use strict";
 
 /***/ },
-/* 246 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28944,13 +28952,13 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _simpleReactModal = __webpack_require__(247);
+	var _simpleReactModal = __webpack_require__(246);
 
 	var _simpleReactModal2 = _interopRequireDefault(_simpleReactModal);
 
-	var _PageIntro = __webpack_require__(249);
+	var _pageIntro = __webpack_require__(238);
 
-	var _PageIntro2 = _interopRequireDefault(_PageIntro);
+	var _pageIntro2 = _interopRequireDefault(_pageIntro);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28994,7 +29002,7 @@
 	        'div',
 	        null,
 	        React.createElement(
-	          _PageIntro2.default,
+	          _pageIntro2.default,
 	          { title: title, pageintro: pageintro },
 	          ' '
 	        ),
@@ -29034,7 +29042,7 @@
 	module.exports = ArtHome;
 
 /***/ },
-/* 247 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29059,7 +29067,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _styles = __webpack_require__(248);
+	var _styles = __webpack_require__(247);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -29169,7 +29177,7 @@
 	exports.closeStyle = closeStyle;
 
 /***/ },
-/* 248 */
+/* 247 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29223,10 +29231,10 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 249 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -29235,76 +29243,13 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var PageIntro = function (_React$Component) {
-	    _inherits(PageIntro, _React$Component);
-
-	    function PageIntro() {
-	        _classCallCheck(this, PageIntro);
-
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(PageIntro).apply(this, arguments));
-	    }
-
-	    _createClass(PageIntro, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "div",
-	                { className: "page-Intro" },
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "pageIntro-text" },
-	                    _react2.default.createElement(
-	                        "h2",
-	                        null,
-	                        this.props.title
-	                    ),
-	                    _react2.default.createElement(
-	                        "p",
-	                        null,
-	                        this.props.pageintro
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-
-	    return PageIntro;
-	}(_react2.default.Component);
-
-	exports.default = PageIntro;
-
-/***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _simpleReactModal = __webpack_require__(247);
+	var _simpleReactModal = __webpack_require__(246);
 
 	var _simpleReactModal2 = _interopRequireDefault(_simpleReactModal);
 
-	var _PageIntro = __webpack_require__(249);
+	var _pageIntro = __webpack_require__(238);
 
-	var _PageIntro2 = _interopRequireDefault(_PageIntro);
+	var _pageIntro2 = _interopRequireDefault(_pageIntro);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29315,71 +29260,50 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(5);
+	var ImageGrid = __webpack_require__(231);
 
 	var PhotoHome = function (_React$Component) {
-	  _inherits(PhotoHome, _React$Component);
+	    _inherits(PhotoHome, _React$Component);
 
-	  function PhotoHome() {
-	    _classCallCheck(this, PhotoHome);
+	    function PhotoHome() {
+	        _classCallCheck(this, PhotoHome);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PhotoHome).call(this));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PhotoHome).call(this));
 
-	    _this.state = {};
-	    return _this;
-	  }
-
-	  _createClass(PhotoHome, [{
-	    key: 'show',
-	    value: function show() {
-	      this.setState({ show: true });
+	        _this.state = {};
+	        return _this;
 	    }
-	  }, {
-	    key: 'close',
-	    value: function close() {
-	      this.setState({ show: false });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var title = "Photography";
-	      var pageintro = "This page showcases my short-term graphic designs. Most of the projects were completed between tens of minutes to a day. Instead of thoughtful planning and pre analysis, works seen here are more of my artistic expression of the design world.";
 
-	      return React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	          _PageIntro2.default,
-	          { title: title, pageintro: pageintro },
-	          ' '
-	        ),
-	        React.createElement(
-	          'a',
-	          { onClick: this.show.bind(this) },
-	          'Open Modal'
-	        ),
-	        React.createElement(
-	          _simpleReactModal2.default,
-	          {
-	            className: 'simple-modal-base fade-in-5sec' //this will completely overwrite the default css completely
-	            , closeOnOuterClick: true,
-	            show: this.state.show,
-	            onClose: this.close.bind(this) },
-	          React.createElement(
-	            'a',
-	            { style: _simpleReactModal.closeStyle, onClick: this.close.bind(this) },
-	            'X'
-	          ),
-	          React.createElement(
-	            'div',
-	            null,
-	            'hey'
-	          )
-	        )
-	      );
-	    }
-	  }]);
+	    _createClass(PhotoHome, [{
+	        key: 'show',
+	        value: function show() {
+	            this.setState({ show: true });
+	        }
+	    }, {
+	        key: 'close',
+	        value: function close() {
+	            this.setState({ show: false });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var title = "Photography";
+	            var pageintro = "This page showcases my short-term graphic designs. Most of the projects were completed between tens of minutes to a day. Instead of thoughtful planning and pre analysis, works seen here are more of my artistic expression of the design world.";
 
-	  return PhotoHome;
+	            return React.createElement(
+	                'div',
+	                null,
+	                React.createElement(
+	                    _pageIntro2.default,
+	                    { title: title, pageintro: pageintro },
+	                    ' '
+	                ),
+	                React.createElement(ImageGrid, null)
+	            );
+	        }
+	    }]);
+
+	    return PhotoHome;
 	}(React.Component);
 
 	exports.default = PhotoHome;
@@ -29388,7 +29312,7 @@
 	module.exports = PhotoHome;
 
 /***/ },
-/* 251 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29422,6 +29346,80 @@
 	});
 
 	module.exports = Contact;
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var HomeSVG = function (_React$Component) {
+	    _inherits(HomeSVG, _React$Component);
+
+	    function HomeSVG() {
+	        _classCallCheck(this, HomeSVG);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HomeSVG).apply(this, arguments));
+	    }
+
+	    _createClass(HomeSVG, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "HomeSVG" },
+	                _react2.default.createElement(
+	                    "p",
+	                    null,
+	                    _react2.default.createElement(
+	                        "i",
+	                        null,
+	                        "Hello,"
+	                    ),
+	                    " I am"
+	                ),
+	                _react2.default.createElement(
+	                    "object",
+	                    { id: "namelogo", type: "image/svg+xml", data: "media/UI/logo.svg" },
+	                    "Your browser does not support SVG"
+	                ),
+	                _react2.default.createElement(
+	                    "p",
+	                    null,
+	                    " and I love JKHJKK "
+	                ),
+	                _react2.default.createElement(
+	                    "p",
+	                    { className: "homesmall" },
+	                    " "
+	                )
+	            );
+	        }
+	    }]);
+
+	    return HomeSVG;
+	}(_react2.default.Component);
+
+	exports.default = HomeSVG;
 
 /***/ }
 /******/ ]);

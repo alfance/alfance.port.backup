@@ -1,5 +1,5 @@
 import React from "react";
-import PageIntro from "../pageIntro";
+import PageIntro from "../partial/pageIntro";
 
 var ProjectHome = React.createClass({
 

@@ -1,6 +1,6 @@
 var React = require('react');
 var Layout = require('../components/Layout');
-var Home = require('../components/Home');
+var Home = require('../components/Home/Home');
 
 //Photos APi
 var ImageHome = require('../components/ImageLayout/ImageHome');

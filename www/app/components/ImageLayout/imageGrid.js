@@ -7,9 +7,10 @@ var ImageGrid = React.createClass({
     mixins: [Reflux.connect(ImageStore, 'imagestore')],
     getInitialState: function() {
         return {
-            
+
         };
       },
+      
     render: function() {
         if (this.state.imagestore) {
             return (

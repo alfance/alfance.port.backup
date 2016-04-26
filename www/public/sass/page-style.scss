@@ -11,10 +11,13 @@ html {
     overflow-x: scroll;
 }
 
-.container .wrapper{
-    overflow-y:hidden;
-    overflow-x: visible;
-    width: 3000px;
+.container{
+    width: auto;
+    height:90vh;
+}
+
+.wrapper{
+    width:inherit;
     height:90vh;
 }
 .main-container {

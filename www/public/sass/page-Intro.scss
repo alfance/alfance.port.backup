@@ -2,15 +2,14 @@
     height: inherit;
     width: 35vw;
     display:inline-block;
-    padding:30px;
+    padding:0 100px;
     float:left;
-    
+
     .pageIntro-text{
         height: auto;
         width:auto;
         text-align: center;
-        margin-top: 50%;
-        margin-left: 50%;
-        transform: translate(-50%, -50%);
+        margin-top: 50vh;
+        transform: translate(0%, -50%);
     }
 }
