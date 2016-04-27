@@ -1,17 +1,23 @@
 import React from "react";
+var startTime = 0;
 
 export default class RandomStuff extends React.Component {
     constructor(){
         super();
     }
     render() {
-        setInterval(() => {
-            this.forceUpdate();
-            console.log(this);
-        }, 2000);
+    var randomAd = (this.props.stuff)[Math.round(Math.random() * ((this.props.stuff).length -1) )];
+
+        var interval = setInterval(() =>{
+                this.forceUpdate();
+                startTime ++;
+                if(startTime > 5){
+                       clearInterval(interval);
+                   }
+            }, 2500);
 
         return (
-            <p className="ILove">{this.props.randomAd}</p>
+            <p className="ILove">{randomAd}</p>
         )
     }
 }

@@ -13,11 +13,13 @@ $('.chap-title').hide();
          $(".chap-title").show();
          $(".nav-title-image").show();
          $(".nav-title-image-S").hide();
+         $(".sidebar-wrapper > img").show();
       }
       else if(sidebarLen > 50){
         $(".chap-title").hide();
         $(".nav-title-image").hide();
         $(".nav-title-image-S").show();
+        $(".sidebar-wrapper > img").show();
       }
   });
 }
@@ -26,4 +28,5 @@ $( document ).ready(function() {
 sidebarTog();
 $(".nav-title-image-S").show();
 $(".nav-title-image").hide();
+$(".sidebar-wrapper > img").show();
 });

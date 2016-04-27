@@ -1,21 +1,29 @@
 var React = require('react');
-var ImageGrid = require('../ImageLayout/imagegrid');
+
 import Modal, {closeStyle} from 'simple-react-modal';
 import PageIntro from '../partial/pageIntro';
+import Gallery from '../ImageLayout/Gallery';
+
+import { createStore, applyMiddleware } from 'redux'
+import createSagaMiddleware from 'redux-saga'
+
+import reducer from '../Actions/reducer'
+import {loadImages} from '../stores/loadImagePhoto';
+import {watchForLoadImages} from '../stores/loadImagePhoto';
+// create the saga middleware
+const sagaMiddleware = createSagaMiddleware()
+
+const store = createStore(
+  reducer,
+  applyMiddleware(sagaMiddleware)
+);
+// then run the saga
+sagaMiddleware.run(watchForLoadImages)
+
+import {Provider} from 'react-redux';
+
 
 export default class PhotoHome extends React.Component{
-    constructor(){
-    super()
-    this.state = {}
-  }
-
-  show(){
-    this.setState({show: true})
-  }
-
-  close(){
-    this.setState({show: false})
-  }
 
   render(){
       const title = "Photography"
@@ -24,7 +32,9 @@ export default class PhotoHome extends React.Component{
       return (
               <div>
                   <PageIntro title={title} pageintro={pageintro}> </PageIntro>
-                  <ImageGrid></ImageGrid>
+                  <Provider store={store}>
+                  <Gallery />
+                  </ Provider>
               </div>
       );
   }

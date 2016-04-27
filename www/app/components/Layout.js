@@ -22,7 +22,7 @@ var Layout = React.createClass({
                           <div className="menu-toggle"><img className="nav-title-image" src="media/UI/nav-title.svg"></img> <img className="nav-title-image-S" src="media/UI/nav-title-S.svg"></img></div>
                     </div>
                     <li>
-                        <Link to="Home" activeClassName ="tabActive"><div className="chap-title home"><img src="media/UI/icon-home.svg"></img>Home</div></Link>
+                        <Link to="Home" activeClassName ="tabActive"><div className="chap-title home"><img src="media/UI/icon-home.svg" className="NavIcon"></img>Home</div></Link>
                     </li>
                     <li>
                         <Link to="ProjectHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-project.svg"></img>Projects</div></Link>
@@ -37,7 +37,7 @@ var Layout = React.createClass({
                         <Link to="ArtHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-art.svg"></img>Arts</div></Link>
                     </li>
                      <li>
-                    <button onClick = {this.navigate}>test </button>
+                    /* <button onClick = {this.navigate}>test </button> */
                      </li>
                 </ul>
             </div>

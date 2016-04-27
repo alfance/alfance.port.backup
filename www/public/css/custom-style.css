@@ -241,6 +241,7 @@ h4, h5 {
 .sidebar-wrapper img {
   width: 30px;
   height: auto;
+  fill: #ddd;
 }
 
 .sidebar-line {
@@ -472,7 +473,7 @@ h4, h5 {
 }
 
 .HomeSVG {
-  width: 50vw;
+  width: 40vw;
   height: auto;
   padding: 0px 80px;
   max-height: 90vh;

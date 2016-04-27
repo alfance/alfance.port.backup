@@ -54,6 +54,78 @@ $(function() {
     });
 });
 
+var green = ["#fff", "#98D1D1", "#16A0A1", "#154B4C", "#020101"];
+var red = ["#fff", "#EE3C2F", "#B50D02", "#621A15", "#020101"];
+var yellow = ["#fff", "#E0F53B", "#B2B515", "#727307", "#020101"];
+var black = ["#fff", "#C4C4C4", "#939393", "#565656", "#020101"];
+var blue = ["#fff", "#93C6F5", "#3F65B5", "#0C2973", "#020101"];
+var pink = ["#fff", "#F59A87", "#B55743", "#732423", "#020101"];
+var purple = ["#fff", "#E8A8D2", "#AB4C9B", "#5C2251", "#020101"];
+var orange = ["#fff", "#F0AB4F", "#C53913", "#65170F", "#020101"];
+var yellow2 = ["#fff", "#FFE53C", "#CC9D0E", "#917005", "#020101"];
+var blue2 = ["#fff", "#A7E9D0", "#64B4D1", "#244F98", "#020101"];
+
+// 10 in total now
+
+var siteColor = [];
+
+$(window).load(randomColor);
+
+function randomColor() {
+var pick = Math.floor((Math.random() * 10) + 1);
+console.log(pick);
+
+switch (pick) {
+	case 1:
+        siteColor = green;
+		console.log(siteColor);
+		break;
+	case 2:
+        siteColor = red;
+		console.log(siteColor);
+		break;
+	case 3:
+        siteColor = yellow;
+        console.log(siteColor);
+		break;
+	case 4:
+        siteColor = black;
+        console.log(siteColor);
+		break;
+    case 5:
+        siteColor = blue;
+        console.log(siteColor);
+		break;
+    case 6:
+        siteColor = pink;
+        console.log(siteColor);
+		break;
+    case 7:
+        siteColor = purple;
+        console.log(siteColor);
+        break;
+    case 8:
+        siteColor = orange;
+        console.log(siteColor);
+        break;
+    case 9:
+        siteColor = yellow2;
+        console.log(siteColor);
+        break;
+    case 10:
+        siteColor = blue2;
+        console.log(siteColor);
+        break;
+	default:
+        siteColor = black;
+        console.log(siteColor);
+}
+    $(".st0").css('fill',siteColor[1]);
+    $(".st2").css('fill',siteColor[2]);
+    $(".st1").css('fill',siteColor[3]);
+    $(".st3").css('fill',siteColor[4]);
+}
+
 
 function sidebarTog(){
 $('.chap-title').hide();
@@ -69,11 +141,13 @@ $('.chap-title').hide();
          $(".chap-title").show();
          $(".nav-title-image").show();
          $(".nav-title-image-S").hide();
+         $(".sidebar-wrapper > img").show();
       }
       else if(sidebarLen > 50){
         $(".chap-title").hide();
         $(".nav-title-image").hide();
         $(".nav-title-image-S").show();
+        $(".sidebar-wrapper > img").show();
       }
   });
 }
@@ -82,4 +156,5 @@ $( document ).ready(function() {
 sidebarTog();
 $(".nav-title-image-S").show();
 $(".nav-title-image").hide();
+$(".sidebar-wrapper > img").show();
 });
