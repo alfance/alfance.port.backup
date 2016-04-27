@@ -9,7 +9,6 @@ export default class PageIntro extends React.Component {
         <h2>{this.props.title}</h2>
         <p>{this.props.pageintro}</p>
         </div>
-
         </div>
     );
   }

@@ -1,5 +1,5 @@
 $(window).on('resize',imageGrid);
-$(window).load(imageGrid);
+$('.flex-box').load(imageGrid);
 
 $('.sidebar-nav').children().click(function() {
     imageGrid();
@@ -9,7 +9,7 @@ function imageGrid() {
     var $vw = $('.wrapper').height();
     var $imageEach = $('.image-grid-each');
     var image = $('.image-grid-each img');
-    
+
         // slice every 3 images to make a row.
         if ($vw > 400)  {
             for (var i = 0; i < $imageEach.length; i += 3) {

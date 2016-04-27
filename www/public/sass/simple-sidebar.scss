@@ -34,6 +34,10 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background-color:$white;
+    img {
+        width:30px;
+        height:auto;
+    }
 }
 .sidebar-line{
 width: 40px;
@@ -41,16 +45,27 @@ display: inline;
 position: fixed;
 height: 80vh;
 top: 10vh;
-background-color: red;
 }
+
 .home{
     margin-top:20vh;
+}
+.nav-title-image{
+    width:100px !important;
+    height:auto;
+    margin-left:50%;
+    transform: translate(-50%, 0%);
+}
+.nav-title-image-S{
+    margin-left:10px;
+    display:block;
 }
 .sidebar-wrapper.toggled{
     width: 150px !important; /*the width of the side bar */
     .chap-title {
     padding-right:40px;
     text-align: right;
+
 }
 }
 
@@ -75,6 +90,7 @@ background-color: red;
     padding: 0;
     list-style: none;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .sidebar-nav li {

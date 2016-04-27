@@ -19,26 +19,26 @@ var Layout = React.createClass({
             <div className="sidebar-wrapper">
                 <ul className="sidebar-nav">
                     <div className="sidebar-brand">
-                          <div className="menu-toggle">Kylo Xue</div>
+                          <div className="menu-toggle"><img className="nav-title-image" src="media/UI/nav-title.svg"></img> <img className="nav-title-image-S" src="media/UI/nav-title-S.svg"></img></div>
                     </div>
                     <li>
-                        <Link to="Home" activeClassName ="tabActive"><div className="chap-title home">Home</div></Link>
+                        <Link to="Home" activeClassName ="tabActive"><div className="chap-title home"><img src="media/UI/icon-home.svg"></img>Home</div></Link>
                     </li>
                     <li>
-                        <Link to="ProjectHome" activeClassName ="tabActive"><div className="chap-title">Projects</div></Link>
+                        <Link to="ProjectHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-project.svg"></img>Projects</div></Link>
                     </li>
                     <li>
-                        <Link to="DesignHome" onClick ={this.loadPhoto} activeClassName ="tabActive"><div className="chap-title">Design</div></Link>
+                        <Link to="DesignHome" onClick ={this.loadPhoto} activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-design.svg"></img>Design</div></Link>
                     </li>
                     <li>
-                        <Link to="PhotoHome" onClick={this.loadPhoto} activeClassName ="tabActive"><div className="chap-title">Photo</div></Link>
+                        <Link to="PhotoHome" onClick={this.loadPhoto} activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-photo.svg"></img>Photo</div></Link>
                     </li>
                     <li>
-                        <Link to="ArtHome" activeClassName ="tabActive"><div className="chap-title">Arts</div></Link>
+                        <Link to="ArtHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-art.svg"></img>Arts</div></Link>
                     </li>
-                    <li>
+                     <li>
                     <button onClick = {this.navigate}>test </button>
-                    </li>
+                     </li>
                 </ul>
             </div>
 

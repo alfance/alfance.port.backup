@@ -1,5 +1,5 @@
 $(window).on('resize',imageGrid);
-$(window).load(imageGrid);
+$('.flex-box').load(imageGrid);
 
 $('.sidebar-nav').children().click(function() {
     imageGrid();
@@ -9,7 +9,7 @@ function imageGrid() {
     var $vw = $('.wrapper').height();
     var $imageEach = $('.image-grid-each');
     var image = $('.image-grid-each img');
-    
+
         // slice every 3 images to make a row.
         if ($vw > 400)  {
             for (var i = 0; i < $imageEach.length; i += 3) {
@@ -62,17 +62,24 @@ $('.chap-title').hide();
       $(".wrapper, .sidebar-nav, .sidebar-wrapper, .sidebar-line").toggleClass("toggled");
       var sidebarLen = $('.sidebar-wrapper').width();
       var sidebar = $('.sidebar-wrapper');
+
     //    console.log ($('.sidebar-wrapper').width());
       if(sidebarLen < 50){
         //  $(sidebar).css('border','3px solid red');
          $(".chap-title").show();
+         $(".nav-title-image").show();
+         $(".nav-title-image-S").hide();
       }
-      if(sidebarLen > 50){
+      else if(sidebarLen > 50){
         $(".chap-title").hide();
+        $(".nav-title-image").hide();
+        $(".nav-title-image-S").show();
       }
   });
 }
 
 $( document ).ready(function() {
 sidebarTog();
+$(".nav-title-image-S").show();
+$(".nav-title-image").hide();
 });
