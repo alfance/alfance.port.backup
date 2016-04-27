@@ -2,10 +2,6 @@ var React = require('react');
 var Layout = require('../components/Layout');
 var Home = require('../components/Home/Home');
 
-//Photos APi
-var ImageHome = require('../components/ImageLayout/ImageHome');
-var ImageLayout = require('../components/ImageLayout/ImageLayout');
-
 // projects
 var ProjectHome = require('../components/Projects/ProjectHome');
 var Project = require('../components/Projects/Project');
@@ -52,9 +48,5 @@ module.exports = (
 
         //contact page
         <Route path="Contact" component={Contact} />
-
-        //Image layout
-        <Route path="ImageHome" component={ImageHome} />
-        <Route path="ImageLayout" component={ImageLayout} />
   </Route>
 );

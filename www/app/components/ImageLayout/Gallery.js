@@ -8,7 +8,7 @@ export class Gallery extends Component {
     componentDidMount() {
         this.props.loadImages();
       }
-      
+
   handleThumbClick(selectedImage) {
     this.setState({
       selectedImage
@@ -18,15 +18,17 @@ export class Gallery extends Component {
   render(){
     const {images, selectedImage, selectImage} = this.props;
     return (
-      <div className="flex-box">
+      <div >
         <div>
-          <div>
+        <SkyLight hideOnOverlayClicked ref="simpleDialog">
             <img src={selectedImage} />
-          </div>
+        </SkyLight>
+
         </div>
-        <div>
+        <div className="flex-box">
           {images.map((image, index) => (
-             <div key={index} onClick={() => selectImage(image)} className="image-grid-each">
+             <div key={index} onClick={() => {selectImage(image); this.refs.simpleDialog.show()}} className="image-grid-each">
+                 <p> {image.name} </p>
               <img className="image-grid-image" src={image}/>
             </div>
           ))}

@@ -1,5 +1,4 @@
 var React = require('react');
-var ImageActions = require('./Actions/imageactions');
 import {Link} from "react-router";
 
 var Layout = React.createClass({
@@ -7,10 +6,6 @@ var Layout = React.createClass({
     navigate() {
         // push the page back home
         this.props.history.push();
-    },
-
-    loadPhoto() {
-    ImageActions.fetchList();
     },
 
     render: function() {
@@ -37,7 +32,7 @@ var Layout = React.createClass({
                         <Link to="ArtHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-art.svg"></img>Arts</div></Link>
                     </li>
                      <li>
-                    /* <button onClick = {this.navigate}>test </button> */
+                    {/* <button onClick = {this.navigate}>test </button> */}
                      </li>
                 </ul>
             </div>
