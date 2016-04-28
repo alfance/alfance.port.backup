@@ -33761,13 +33761,9 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            _reactSkylight2.default,
-	            { hideOnOverlayClicked: true, ref: 'simpleDialog' },
-	            _react2.default.createElement('img', { src: selectedImage })
-	          )
+	          _reactSkylight2.default,
+	          { hideOnOverlayClicked: true, ref: 'simpleDialog' },
+	          _react2.default.createElement('img', { className: 'modalPhoto', src: selectedImage })
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -35660,42 +35656,43 @@
 	});
 
 	var styles = {
-	  overlayStyles: {
-	    position: 'fixed',
-	    top: 0,
-	    left: 0,
-	    width: '100%',
-	    height: '100%',
-	    zIndex: 99,
-	    backgroundColor: 'rgba(0,0,0,0.3)'
-	  },
-	  dialogStyles: {
-	    width: '50%',
-	    height: '400px',
-	    position: 'fixed',
-	    top: '50%',
-	    left: '50%',
-	    marginTop: '-200px',
-	    marginLeft: '-25%',
-	    backgroundColor: '#fff',
-	    borderRadius: '2px',
-	    zIndex: 100,
-	    padding: '15px',
-	    boxShadow: '0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)'
-	  },
-	  title: {
-	    marginTop: '0'
-	  },
-	  closeButtonStyle: {
-	    cursor: 'pointer',
-	    position: 'absolute',
-	    fontSize: '1.8em',
-	    right: '10px',
-	    top: '0'
-	  }
-	};
+	    overlayStyles: {
+	      position: 'fixed',
+	      top: 0,
+	      left: 0,
+	      width: '100%',
+	      height: '100%',
+	      zIndex: 1001,
+	      backgroundColor: 'rgba(0,0,0,0.5)'
+	    },
+	    dialogStyles: {
+	      width: 'auto',
+	      height: 'auto',
+	      position: 'fixed',
+	      top: '50%',
+	      left: '50%',
+	      transform: 'translate(-50%, -50%)',
+
+	      backgroundColor: '#fff',
+	      borderRadius: '2px',
+	      zIndex: 9999,
+	      backgroundColor: 'rgba(0,0,0,0.0)'
+	    },
+	    title: {
+	      marginTop: '0'
+	    },
+	    closeButtonStyle: {
+	      cursor: 'pointer',
+	      position: 'absolute',
+	      fontSize: '1.8em',
+	      color:'white',
+	      right: '0px',
+	      top: '-10px'
+	    }
+	  };
 
 	exports.default = styles;
+
 
 /***/ },
 /* 581 */
@@ -37692,7 +37689,7 @@
 	        var server = _ref.server;
 	        var id = _ref.id;
 	        var secret = _ref.secret;
-	        return 'https://farm' + farm + '.staticflickr.com/' + server + '/' + id + '_' + secret + '.jpg';
+	        return 'https://farm' + farm + '.staticflickr.com/' + server + '/' + id + '_' + secret + '_b.jpg';
 	      });
 	    });
 	  });
@@ -37761,7 +37758,7 @@
 	        var server = _ref.server;
 	        var id = _ref.id;
 	        var secret = _ref.secret;
-	        return 'https://farm' + farm + '.staticflickr.com/' + server + '/' + id + '_' + secret + '.jpg';
+	        return 'https://farm' + farm + '.staticflickr.com/' + server + '/' + id + '_' + secret + '_b.jpg';
 	      });
 	    });
 	  });

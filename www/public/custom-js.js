@@ -1,5 +1,5 @@
 $(window).on('resize',imageGrid);
-$('.flex-box').load(imageGrid);
+$(window).load(imageGrid);
 
 $('.sidebar-nav').children().click(function() {
     imageGrid();
@@ -18,10 +18,10 @@ function imageGrid() {
         }
         //adjust the margin according to screen size.
         if ($vw < 700) {
-            $($imageEach).css('margin','10px 5px');
+            $($imageEach).css('margin','7px 7px');
         }
         else if ($vw > 700) {
-            $($imageEach).css('margin','20px 10px');
+            $($imageEach).css('margin','14px 14px');
         }
     }
 

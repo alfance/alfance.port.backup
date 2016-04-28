@@ -5,7 +5,7 @@ export const fetchImageDesign = () => {
   return fetch(API_ENDPOINT).then(function (response) {
     return response.json().then(function (json) {
       return json.photos.photo.map(
-        ({farm, server, id, secret}) => `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`
+        ({farm, server, id, secret}) => `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_b.jpg`
       );
     })
   })
