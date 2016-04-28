@@ -3,10 +3,25 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import  * as GalleryActions from '../Actions/actions.js';
 import SkyLight from 'react-skylight';
+var $ = require('../../../lib/js/jquery');
 
 export class Gallery extends Component {
     componentDidMount() {
         this.props.loadImages();
+        var $vw = $('.wrapper').height();
+        var $imageEach = $('.image-grid-each');
+        var image = $('.image-grid-each img');
+        if ($vw > 400)  {
+            for (var i = 0; i < $imageEach.length; i += 3) {
+                $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
+            }
+        }
+        if ($vw < 700) {
+            $($imageEach).css('margin','7px 7px');
+        }
+        else if ($vw > 700) {
+            $($imageEach).css('margin','14px 14px');
+        }
       }
 
   handleThumbClick(selectedImage) {
@@ -23,7 +38,7 @@ export class Gallery extends Component {
         <SkyLight hideOnOverlayClicked ref="simpleDialog">
 
                 <img className="modalPhoto" src={selectedImage} />
-        
+
         </SkyLight>
 
         <div className="flex-box">
