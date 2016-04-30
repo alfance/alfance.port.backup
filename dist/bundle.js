@@ -34764,7 +34764,6 @@
 	        $imageEach.slice(i, i + 3).wrapAll("<div class='image-grid-slice'></div>");
 	        console.log($vw);
 	      }
-
 	      if ($vw < 700) {
 	        $($imageEach).css('margin', '5px 10px');
 	      } else if ($vw > 700) {
