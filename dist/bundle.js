@@ -34752,8 +34752,8 @@
 	      this.props.loadImages();
 	    }
 	  }, {
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
+	    key: 'componentDidUpdate',
+	    value: function componentDidUpdate() {
 	      var $vw = $('.wrapper').height();
 	      var $imageEach = $('.image-grid-each');
 	      var $myimage = $('.image-grid-each img');
@@ -34770,20 +34770,6 @@
 	      } else if ($vw > 700) {
 	        $($imageEach).css('margin', '10px 20px');
 	      }
-	      $imageEach.each(function () {
-	        if ($imageH > $imageW) {
-	          $(".image-grid-image").css({
-	            'height': "auto",
-	            "width": "100%"
-	          });
-	        }
-	        if ($imageW > $imageH) {
-	          $(".image-grid-image").css({
-	            'width': "auto",
-	            "height": "100%"
-	          });
-	        }
-	      });
 	    }
 	  }, {
 	    key: 'handleThumbClick',

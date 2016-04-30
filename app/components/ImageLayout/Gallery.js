@@ -11,20 +11,17 @@ export class Gallery extends Component {
         this.props.loadImages();
       }
 
-      componentWillMount() {
+      componentDidUpdate() {
           var $vw = $('.wrapper').height();
           var $imageEach = $('.image-grid-each');
           var $myimage = $('.image-grid-each img');
           var $imageW = $(".image-grid-image").width();
           var $imageH = $(".image-grid-image").height();
 
-
-
               for (var i = 0; i < $imageEach.length; i += 3) {
                   $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
                   console.log($vw);
               }
-
 
           if ($vw < 700) {
               $($imageEach).css('margin','5px 10px');
@@ -32,22 +29,7 @@ export class Gallery extends Component {
           else if ($vw > 700) {
               $($imageEach).css('margin','10px 20px');
           }
-          $imageEach.each(function() {
-              if($imageH > $imageW) {
-                  $(".image-grid-image").css({
-                      'height': "auto",
-                      "width": "100%",
-                      });
-                  }
-              if($imageW > $imageH) {
-                      $(".image-grid-image").css({
-                          'width': "auto",
-                          "height": "100%",
-                          });
-                  }
-          });
       }
-
 
   handleThumbClick(selectedImage) {
     this.setState({
@@ -56,6 +38,7 @@ export class Gallery extends Component {
   }
 
   render(){
+
     const {images, selectedImage, selectImage} = this.props;
     return (
       <div >
