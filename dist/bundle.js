@@ -34749,13 +34749,16 @@
 	  _createClass(Gallery, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
+	      this.props.loadImages();
+	    }
+	  }, {
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
 	      var $vw = $('.wrapper').height();
 	      var $imageEach = $('.image-grid-each');
 	      var $myimage = $('.image-grid-each img');
 	      var $imageW = $(".image-grid-image").width();
 	      var $imageH = $(".image-grid-image").height();
-
-	      this.props.loadImages();
 
 	      for (var i = 0; i < $imageEach.length; i += 3) {
 	        $imageEach.slice(i, i + 3).wrapAll("<div class='image-grid-slice'></div>");

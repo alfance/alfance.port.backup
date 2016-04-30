@@ -8,40 +8,44 @@ var $ = require('../../../lib/js/jquery');
 export class Gallery extends Component {
 
     componentDidMount() {
-        var $vw = $('.wrapper').height();
-        var $imageEach = $('.image-grid-each');
-        var $myimage = $('.image-grid-each img');
-        var $imageW = $(".image-grid-image").width();
-        var $imageH = $(".image-grid-image").height();
-
         this.props.loadImages();
+      }
 
-            for (var i = 0; i < $imageEach.length; i += 3) {
-                $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
-                console.log($vw);
-            }
+      componentWillMount() {
+          var $vw = $('.wrapper').height();
+          var $imageEach = $('.image-grid-each');
+          var $myimage = $('.image-grid-each img');
+          var $imageW = $(".image-grid-image").width();
+          var $imageH = $(".image-grid-image").height();
 
 
-        if ($vw < 700) {
-            $($imageEach).css('margin','5px 10px');
-        }
-        else if ($vw > 700) {
-            $($imageEach).css('margin','10px 20px');
-        }
-        $imageEach.each(function() {
-            if($imageH > $imageW) {
-                $(".image-grid-image").css({
-                    'height': "auto",
-                    "width": "100%",
-                    });
-                }
-            if($imageW > $imageH) {
-                    $(".image-grid-image").css({
-                        'width': "auto",
-                        "height": "100%",
-                        });
-                }
-        });
+
+              for (var i = 0; i < $imageEach.length; i += 3) {
+                  $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
+                  console.log($vw);
+              }
+
+
+          if ($vw < 700) {
+              $($imageEach).css('margin','5px 10px');
+          }
+          else if ($vw > 700) {
+              $($imageEach).css('margin','10px 20px');
+          }
+          $imageEach.each(function() {
+              if($imageH > $imageW) {
+                  $(".image-grid-image").css({
+                      'height': "auto",
+                      "width": "100%",
+                      });
+                  }
+              if($imageW > $imageH) {
+                      $(".image-grid-image").css({
+                          'width': "auto",
+                          "height": "100%",
+                          });
+                  }
+          });
       }
 
 
