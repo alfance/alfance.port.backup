@@ -1,7 +1,7 @@
 module.exports = {
-  entry: ['babel-polyfill', './www/app/App.js'],
+  entry: ['babel-polyfill', './app/App.js'],
   output: {
-    filename: "www/dist/bundle.js"
+    filename: "dist/bundle.js"
   },
   module: {
     loaders: [

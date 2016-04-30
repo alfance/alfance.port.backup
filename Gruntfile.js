@@ -14,9 +14,9 @@ module.exports = function(grunt) {
 		    },
             files: [{
                     expand: true,
-                    cwd: 'www/public/sass',
+                    cwd: 'public/sass',
                     src: ['custom-style.scss'],
-                    dest: 'www/public/css',
+                    dest: 'public/css',
                     ext: '.css'
                   }]
 		  }
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         concat: {
            basic_and_extras: {
              files: {
-               'www/public/custom-js.js': ['www/public/js/**/*.js'],
+               'public/custom-js.js': ['public/js/**/*.js'],
              },
            },
          },
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
          cssmin: {
            target: {
              files: {
-              'www/dist/custom-style.css': ['www/public/css/custom-style.css']
+              'www/dist/custom-style.css': ['public/css/custom-style.css']
              }
            }
        },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         uglify: {
             my_target: {
               files: {
-                'www/dist/custom-js.js': ['www/public/custom-js.js']
+                'www/dist/custom-js.js': ['public/custom-js.js']
               }
             }
         },
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 	  	 */
         jshint: {
           // define the files to lint
-          files: ['Gruntfile.js', 'www/public/js/**/*.js'],
+          files: ['Gruntfile.js', 'public/js/**/*.js'],
           // configure JSHint (documented at http://www.jshint.com/docs/)
           options: {
               // more options here if you want to override JSHint defaults
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
 	  	 * Watch
 	  	 */
          watch: {
-           files: ['<%= jshint.files %>','www/public/sass/**/*.scss'],
+           files: ['<%= jshint.files %>','public/sass/**/*.scss'],
            tasks: ['jshint', 'sass','concat','cssmin','uglify']
          }
 

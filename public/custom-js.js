@@ -1,31 +1,29 @@
-$(window).on('resize',imageGrid);
-$(window).load(imageGrid);
+// $(window).on('resize',imageGrid);
+// $(window).load(imageGrid);
+//
+// $('.sidebar-nav').children().click(function() {
+//     imageGrid();
+// });
 
-$('.sidebar-nav').children().click(function() {
-    imageGrid();
-});
-
-function imageGrid() {
-    var $vw = $('.wrapper').height();
-    var $imageEach = $('.image-grid-each');
-    var image = $('.image-grid-each img');
-    
-        // slice every 3 images to make a row.
-        if ($vw > 400)  {
-            for (var i = 0; i < $imageEach.length; i += 3) {
-                $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
-            }
-        }
-        //adjust the margin according to screen size.
-        if ($vw < 700) {
-            $($imageEach).css('margin','7px 7px');
-        }
-        else if ($vw > 700) {
-            $($imageEach).css('margin','14px 14px');
-        }
-    }
-
-
+// function imageGrid() {
+//     var $vw = $('.wrapper').height();
+//     var $imageEach = $('.image-grid-each');
+//     var image = $('.image-grid-each img');
+//
+//         // slice every 3 images to make a row.
+//         if ($vw > 400)  {
+//             for (var i = 0; i < $imageEach.length; i += 3) {
+//                 $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
+//             }
+//         }
+//         //adjust the margin according to screen size.
+//         if ($vw < 700) {
+//             $($imageEach).css('margin','7px 7px');
+//         }
+//         else if ($vw > 700) {
+//             $($imageEach).css('margin','14px 14px');
+//         }
+//     }
     // $('.image-grid-each').each(function(i){
     //     var $object_bottom = $(this).offset().top + $(this).height();
     //     var $object_right = $(this).offset().left + $(this).width();
