@@ -17,12 +17,12 @@ var Project2 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/2/1.png",
+            "./media/img/garden/1.png",
             "",
-            "./media/img/2/DSC_0385-2.jpg",
-            "./media/img/2/DSC_0355-2.jpg",
-            "./media/img/2/DSC_0353-2.jpg",
-            "./media/img/2/DSC_0365-2.jpg",
+            "./media/img/garden/DSC_0385-2.jpg",
+            "./media/img/garden/DSC_0355-2.jpg",
+            "./media/img/garden/DSC_0353-2.jpg",
+            "./media/img/garden/DSC_0365-2.jpg",
         ]
         const Contents = [
 
@@ -42,18 +42,18 @@ var Project2 = React.createClass({
         return (
             <div className ="flex-box">
                 <div className="project-page-single center-align">
-                    <h1> {ProjectName}</h1>
-                    <h4>{Tagline}</h4>
-                     <p>{Contents[0]}</p>
-                     <p>{Contents[1]}</p>
+                    <Project ProjectName={ProjectName} />
+                    {Tagline}
+                    {Contents[0]}
+                    {Contents[1]}
                      <img src ={Images[0]}/>
 
              </div>
              <div className="project-page-single">
-                     <h4>{Titles[0]}</h4>
-                     <p>{Contents[2]}</p>
-                     <h4>{Titles[1]}</h4>
-                     <p>{Contents[3]}</p>
+                    {Titles[0]}
+                    {Contents[2]}
+                    {Titles[1]}
+                    {Contents[3]}
                      <b> The components of the project include: </b>
                      <p></p>
                      <p><b>Software</b> - digital interface that display the status of the plants </p>

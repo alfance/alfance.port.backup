@@ -1,10 +1,13 @@
 var React = require('react');
+var Router = require('react-router');
+var Route = Router.Route;
+var IndexRoute = Router.IndexRoute;
+
 var Layout = require('../components/Layout');
 var Home = require('../components/Home/Home');
 
 // projects
 var ProjectHome = require('../components/Projects/ProjectHome');
-var Project = require('../components/Projects/Project');
 
 var Project1 = require('../components/Projects/Project1');
 var Project2 = require('../components/Projects/Project2');
@@ -17,8 +20,6 @@ var Project8 = require('../components/Projects/Project8');
 
 // design works
 var DesignHome = require('../components/Design/DesignHome');
-var DesignWeb = require('../components/Design/DesignWeb');
-var DesignPrint = require('../components/Design/DesignPrint');
 
 // artworks
 var ArtHome = require('../components/Art/ArtHome');
@@ -28,9 +29,6 @@ var PhotoHome = require('../components/Photo/PhotoHome');
 
 //contact
 var Contact = require('../components/Contact');
-var Router = require('react-router');
-var Route = Router.Route;
-var IndexRoute = Router.IndexRoute;
 
 module.exports = (
     // main page, render the navigation
@@ -41,7 +39,6 @@ module.exports = (
 
         // Design page.
           <Route path="DesignHome" component={DesignHome} />
-          <Route path="DesignWeb" component={DesignWeb} />
 
       // art page.
         <Route path="ArtHome" component={ArtHome} />
@@ -52,7 +49,6 @@ module.exports = (
 
     // project page.
       <Route path="ProjectHome" component={ProjectHome} />
-      <Route path="Project/:ProjectID" component={Project} />
       <Route path="Project1" component={Project1} />
       <Route path="Project2" component={Project2} />
       <Route path="Project3" component={Project3} />

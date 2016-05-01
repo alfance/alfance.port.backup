@@ -39,7 +39,7 @@ module.exports = function(grunt) {
          cssmin: {
            target: {
              files: {
-              'www/dist/custom-style.css': ['public/css/custom-style.css']
+              'dist/custom-style.css': ['public/css/custom-style.css']
              }
            }
        },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         uglify: {
             my_target: {
               files: {
-                'www/dist/custom-js.js': ['public/custom-js.js']
+                'dist/custom-js.js': ['public/custom-js.js']
               }
             }
         },

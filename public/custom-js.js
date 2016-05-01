@@ -1,3 +1,4 @@
+// backup files for the iamge grid
 // $(window).on('resize',imageGrid);
 // $(window).load(imageGrid);
 //
@@ -64,59 +65,46 @@ var yellow2 = ["#fff", "#FFE53C", "#CC9D0E", "#917005", "#020101"];
 var blue2 = ["#fff", "#A7E9D0", "#64B4D1", "#244F98", "#020101"];
 
 // 10 in total now
-
 var siteColor = [];
 
 $(window).load(randomColor);
 
 function randomColor() {
 var pick = Math.floor((Math.random() * 10) + 1);
-console.log(pick);
 
 switch (pick) {
 	case 1:
         siteColor = green;
-		console.log(siteColor);
 		break;
 	case 2:
         siteColor = red;
-		console.log(siteColor);
 		break;
 	case 3:
         siteColor = yellow;
-        console.log(siteColor);
 		break;
 	case 4:
         siteColor = black;
-        console.log(siteColor);
 		break;
     case 5:
         siteColor = blue;
-        console.log(siteColor);
 		break;
     case 6:
         siteColor = pink;
-        console.log(siteColor);
 		break;
     case 7:
         siteColor = purple;
-        console.log(siteColor);
         break;
     case 8:
         siteColor = orange;
-        console.log(siteColor);
         break;
     case 9:
         siteColor = yellow2;
-        console.log(siteColor);
         break;
     case 10:
         siteColor = blue2;
-        console.log(siteColor);
         break;
 	default:
         siteColor = black;
-        console.log(siteColor);
 }
     $(".st0").css('fill',siteColor[1]);
     $(".st2").css('fill',siteColor[2]);

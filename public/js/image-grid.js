@@ -1,3 +1,4 @@
+// backup files for the iamge grid
 // $(window).on('resize',imageGrid);
 // $(window).load(imageGrid);
 //

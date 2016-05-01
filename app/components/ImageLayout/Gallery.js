@@ -17,18 +17,32 @@ export class Gallery extends Component {
           var $myimage = $('.image-grid-each img');
           var $imageW = $(".image-grid-image").width();
           var $imageH = $(".image-grid-image").height();
+            var all = document.querySelectorAll('.image-grid-image'); for (var i = 0; i < all.length; ++i)
+            { all.item(i).addEventListener('click', function(e) { setTimeout(function(){
+                window.scrollTo(e.target.parentNode.offsetLeft - (window.innerWidth - e.target.offsetWidth) / 2, 0); }, 400);
+             }); }
 
-              for (var i = 0; i < $imageEach.length; i += 3) {
+                      for (var i = 0; i < $imageEach.length; i += 3) {
                   $imageEach.slice(i, i+3).wrapAll("<div class='image-grid-slice'></div>");
-                  console.log($vw);
+                  if($imageH > $imageW){
+                      $($myimage).css({
+                          "width":"100%",
+                          "height":"auto",
+                      });
+                  }
+                  else if($imageW > $imageH){
+                      $($myimage).css({
+                          "width":"auto",
+                          "height":"100%",
+                      });
+                  }
               }
           if ($vw < 700) {
-              $($imageEach).css('margin','5px 10px');
+              $($imageEach).css('margin','10px 5px');
           }
           else if ($vw > 700) {
-              $($imageEach).css('margin','10px 20px');
+              $($imageEach).css('margin','20px 11px');
           }
-
       }
 
   handleThumbClick(selectedImage) {

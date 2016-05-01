@@ -16,10 +16,11 @@ var Project1 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/1/1.JPG",
+            "./media/img/cycnav/1.png",
             "",
             "",
         ]
+
         const adText =[
             "1 dd",
             "2 dd",
@@ -50,19 +51,19 @@ var Project1 = React.createClass({
         return (
             <div className ="flex-box">
                 <div className="project-page-single center-align">
-                    <h1> {ProjectName}</h1>
-                     <p>{Contents[0]}</p>
-                     <p>{Contents[1]}</p>
-                     <p>{Contents[2]}</p>
-                     <img src ={Images[0]}/>
+                    <Project ProjectName={ProjectName} />
+                    {Contents[0]}
+                    {Contents[1]}
+                    {Contents[2]}
+                    <img src ={Images[0]} />
 
                  </div>
                  <div className="project-page-single">
-                         <h4>{Titles[0]}</h4>
-                         <p>{Contents[3]}</p>
-                         <h4>{Titles[1]}</h4>
-                         <p>{Contents[4]}</p>
-                         <p>{Contents[5]}</p>
+                    {Titles[0]}
+                    {Contents[3]}
+                    {Titles[1]}
+                    {Contents[4]}
+                    {Contents[5]}
 
                  </div>
                   <div className="project-page-img">

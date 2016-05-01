@@ -31704,12 +31704,15 @@
 	'use strict';
 
 	var React = __webpack_require__(302);
+	var Router = __webpack_require__(299);
+	var Route = Router.Route;
+	var IndexRoute = Router.IndexRoute;
+
 	var Layout = __webpack_require__(504);
 	var Home = __webpack_require__(508);
 
 	// projects
 	var ProjectHome = __webpack_require__(515);
-	var Project = __webpack_require__(517);
 
 	var Project1 = __webpack_require__(518);
 	var Project2 = __webpack_require__(519);
@@ -31722,8 +31725,6 @@
 
 	// design works
 	var DesignHome = __webpack_require__(526);
-	var DesignWeb = __webpack_require__(578);
-	var DesignPrint = __webpack_require__(579);
 
 	// artworks
 	var ArtHome = __webpack_require__(580);
@@ -31733,9 +31734,6 @@
 
 	//contact
 	var Contact = __webpack_require__(582);
-	var Router = __webpack_require__(299);
-	var Route = Router.Route;
-	var IndexRoute = Router.IndexRoute;
 
 	module.exports =
 	// main page, render the navigation
@@ -31747,7 +31745,6 @@
 	    React.createElement(Route, { path: 'Home', component: Home }),
 	    '// Design page.',
 	    React.createElement(Route, { path: 'DesignHome', component: DesignHome }),
-	    React.createElement(Route, { path: 'DesignWeb', component: DesignWeb }),
 	    '// art page.',
 	    React.createElement(Route, { path: 'ArtHome', component: ArtHome }),
 	    React.createElement(Route, { path: 'PhotoHome', component: PhotoHome }),
@@ -31755,7 +31752,6 @@
 	    React.createElement(Route, { path: 'Contact', component: Contact }),
 	    '// project page.',
 	    React.createElement(Route, { path: 'ProjectHome', component: ProjectHome }),
-	    React.createElement(Route, { path: 'Project/:ProjectID', component: Project }),
 	    React.createElement(Route, { path: 'Project1', component: Project1 }),
 	    React.createElement(Route, { path: 'Project2', component: Project2 }),
 	    React.createElement(Route, { path: 'Project3', component: Project3 }),
@@ -33162,32 +33158,73 @@
 
 	'use strict';
 
-	var React = __webpack_require__(302);
-
-	var Project = React.createClass({
-	    displayName: 'Project',
-	    render: function render() {
-	        var name = this.props.name;
-	        var info = this.props.info;
-
-	        return React.createElement(
-	            'div',
-	            null,
-	            React.createElement(
-	                'h4',
-	                null,
-	                name
-	            ),
-	            React.createElement(
-	                'p',
-	                null,
-	                info
-	            )
-	        );
-	    }
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
 	});
 
-	module.exports = Project;
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(302);
+	var $ = __webpack_require__(558);
+
+	var Project = function (_React$Component) {
+	    _inherits(Project, _React$Component);
+
+	    function Project() {
+	        _classCallCheck(this, Project);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Project).apply(this, arguments));
+	    }
+
+	    _createClass(Project, [{
+	        key: 'componentDidUpdate',
+	        value: function componentDidUpdate() {
+	            alert("test");
+	            var $boxWidth = $('.project-page-single').width();
+	            var $boxHeight = $('.project-page-single').height();
+	            var $windowHeight = $(window).height();
+	            console.log("window height: " + $windowHeight);
+	            console.log("box height: " + $boxHeight);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var name = this.props.name;
+	            var info = this.props.info;
+	            var image = this.props.image;
+
+	            return React.createElement(
+	                'div',
+	                null,
+	                React.createElement(
+	                    'h1',
+	                    null,
+	                    this.props.ProjectName
+	                ),
+	                React.createElement(
+	                    'h4',
+	                    null,
+	                    name
+	                ),
+	                React.createElement(
+	                    'p',
+	                    null,
+	                    info
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Project;
+	}(React.Component);
+
+	exports.default = Project;
 
 /***/ },
 /* 518 */
@@ -33214,7 +33251,8 @@
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/1/1.JPG", "", ""];
+	        var Images = ["./media/img/cycnav/1.png", "", ""];
+
 	        var adText = ["1 dd", "2 dd", "3 dd", "4 dd", "5 dd"];
 	        var Contents = ["“All About Biking” is for the urban cyclist, it’s an up to date and interactive bikers map of the city that allows cyclists to see where current construction, potholes and obstructions are taking place.", "Users contribute to the map by updating the status of bike specific road conditions and road blocks they see.", "The app will give all the necessary features you need as an urban cyclist: list detours,  nearby bike services, bike parking and more.",
 
@@ -33232,57 +33270,20 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single center-align" },
-	                React.createElement(
-	                    "h1",
-	                    null,
-	                    " ",
-	                    ProjectName
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[1]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[2]
-	                ),
+	                React.createElement(_Project2.default, { ProjectName: ProjectName }),
+	                Contents[0],
+	                Contents[1],
+	                Contents[2],
 	                React.createElement("img", { src: Images[0] })
 	            ),
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single" },
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[3]
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[1]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[4]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[5]
-	                )
+	                Titles[0],
+	                Contents[3],
+	                Titles[1],
+	                Contents[4],
+	                Contents[5]
 	            ),
 	            React.createElement("div", { className: "project-page-img" })
 	        );
@@ -33316,7 +33317,7 @@
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/2/1.png", "", "./media/img/2/DSC_0385-2.jpg", "./media/img/2/DSC_0355-2.jpg", "./media/img/2/DSC_0353-2.jpg", "./media/img/2/DSC_0365-2.jpg"];
+	        var Images = ["./media/img/garden/1.png", "", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg"];
 	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
 	        //problem
 	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
@@ -33331,52 +33332,19 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single center-align" },
-	                React.createElement(
-	                    "h1",
-	                    null,
-	                    " ",
-	                    ProjectName
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Tagline
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[1]
-	                ),
+	                React.createElement(_Project2.default, { ProjectName: ProjectName }),
+	                Tagline,
+	                Contents[0],
+	                Contents[1],
 	                React.createElement("img", { src: Images[0] })
 	            ),
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single" },
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[2]
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[1]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[3]
-	                ),
+	                Titles[0],
+	                Contents[2],
+	                Titles[1],
+	                Contents[3],
 	                React.createElement(
 	                    "b",
 	                    null,
@@ -34703,7 +34671,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 	exports.Gallery = undefined;
 
@@ -34738,92 +34706,109 @@
 	var $ = __webpack_require__(558);
 
 	var Gallery = exports.Gallery = function (_Component) {
-	  _inherits(Gallery, _Component);
+	    _inherits(Gallery, _Component);
 
-	  function Gallery() {
-	    _classCallCheck(this, Gallery);
+	    function Gallery() {
+	        _classCallCheck(this, Gallery);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Gallery).apply(this, arguments));
-	  }
-
-	  _createClass(Gallery, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      this.props.loadImages();
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Gallery).apply(this, arguments));
 	    }
-	  }, {
-	    key: 'componentDidUpdate',
-	    value: function componentDidUpdate() {
-	      var $vw = $('.wrapper').height();
-	      var $imageEach = $('.image-grid-each');
-	      var $myimage = $('.image-grid-each img');
-	      var $imageW = $(".image-grid-image").width();
-	      var $imageH = $(".image-grid-image").height();
 
-	      for (var i = 0; i < $imageEach.length; i += 3) {
-	        $imageEach.slice(i, i + 3).wrapAll("<div class='image-grid-slice'></div>");
-	        console.log($vw);
-	      }
-	      if ($vw < 700) {
-	        $($imageEach).css('margin', '5px 10px');
-	      } else if ($vw > 700) {
-	        $($imageEach).css('margin', '10px 20px');
-	      }
-	    }
-	  }, {
-	    key: 'handleThumbClick',
-	    value: function handleThumbClick(selectedImage) {
-	      this.setState({
-	        selectedImage: selectedImage
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this2 = this;
+	    _createClass(Gallery, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            this.props.loadImages();
+	        }
+	    }, {
+	        key: 'componentDidUpdate',
+	        value: function componentDidUpdate() {
+	            var $vw = $('.wrapper').height();
+	            var $imageEach = $('.image-grid-each');
+	            var $myimage = $('.image-grid-each img');
+	            var $imageW = $(".image-grid-image").width();
+	            var $imageH = $(".image-grid-image").height();
+	            var all = document.querySelectorAll('.image-grid-image');for (var i = 0; i < all.length; ++i) {
+	                all.item(i).addEventListener('click', function (e) {
+	                    setTimeout(function () {
+	                        window.scrollTo(e.target.parentNode.offsetLeft - (window.innerWidth - e.target.offsetWidth) / 2, 0);
+	                    }, 400);
+	                });
+	            }
 
-	      var _props = this.props;
-	      var images = _props.images;
-	      var selectedImage = _props.selectedImage;
-	      var selectImage = _props.selectImage;
+	            for (var i = 0; i < $imageEach.length; i += 3) {
+	                $imageEach.slice(i, i + 3).wrapAll("<div class='image-grid-slice'></div>");
+	                if ($imageH > $imageW) {
+	                    $($myimage).css({
+	                        "width": "100%",
+	                        "height": "auto"
+	                    });
+	                } else if ($imageW > $imageH) {
+	                    $($myimage).css({
+	                        "width": "auto",
+	                        "height": "100%"
+	                    });
+	                }
+	            }
+	            if ($vw < 700) {
+	                $($imageEach).css('margin', '10px 5px');
+	            } else if ($vw > 700) {
+	                $($imageEach).css('margin', '20px 11px');
+	            }
+	        }
+	    }, {
+	        key: 'handleThumbClick',
+	        value: function handleThumbClick(selectedImage) {
+	            this.setState({
+	                selectedImage: selectedImage
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
 
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          _reactSkylight2.default,
-	          { hideOnOverlayClicked: true, ref: 'simpleDialog' },
-	          _react2.default.createElement('img', { className: 'modalPhoto', src: selectedImage })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'flex-box' },
-	          images.map(function (image, index) {
+	            var _props = this.props;
+	            var images = _props.images;
+	            var selectedImage = _props.selectedImage;
+	            var selectImage = _props.selectImage;
+
 	            return _react2.default.createElement(
-	              'div',
-	              { key: index, onClick: function onClick() {
-	                  selectImage(image);_this2.refs.simpleDialog.show();
-	                }, className: 'image-grid-each' },
-	              _react2.default.createElement('img', { className: 'image-grid-image', src: image })
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    _reactSkylight2.default,
+	                    { hideOnOverlayClicked: true, ref: 'simpleDialog' },
+	                    _react2.default.createElement('img', { className: 'modalPhoto', src: selectedImage })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'flex-box' },
+	                    images.map(function (image, index) {
+	                        return _react2.default.createElement(
+	                            'div',
+	                            { key: index, onClick: function onClick() {
+	                                    selectImage(image);_this2.refs.simpleDialog.show();
+	                                }, className: 'image-grid-each' },
+	                            _react2.default.createElement('img', { className: 'image-grid-image', src: image })
+	                        );
+	                    })
+	                )
 	            );
-	          })
-	        )
-	      );
-	    }
-	  }]);
+	        }
+	    }]);
 
-	  return Gallery;
+	    return Gallery;
 	}(_react.Component);
 
 	function mapStateToProps(state) {
-	  return {
-	    images: state.images,
-	    selectedImage: state.selectedImage
-	  };
+	    return {
+	        images: state.images,
+	        selectedImage: state.selectedImage
+	    };
 	}
 
 	function mapActionCreatorsToProps(dispatch) {
-	  return (0, _redux.bindActionCreators)(GalleryActions, dispatch);
+	    return (0, _redux.bindActionCreators)(GalleryActions, dispatch);
 	}
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapActionCreatorsToProps)(Gallery);
@@ -41188,48 +41173,8 @@
 	}
 
 /***/ },
-/* 578 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(302);
-
-	var DesignWeb = React.createClass({
-	    displayName: 'DesignWeb',
-
-	    render: function render() {
-	        return React.createElement(
-	            'div',
-	            null,
-	            React.createElement(
-	                'h3',
-	                null,
-	                'Problems'
-	            ),
-	            React.createElement(
-	                'p',
-	                null,
-	                this.props.section
-	            ),
-	            React.createElement(
-	                'h3',
-	                null,
-	                'Solutions'
-	            )
-	        );
-	    }
-	});
-
-	module.exports = DesignWeb;
-
-/***/ },
-/* 579 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-/***/ },
+/* 578 */,
+/* 579 */,
 /* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
