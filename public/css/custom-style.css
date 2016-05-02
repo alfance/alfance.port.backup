@@ -78,12 +78,13 @@ body, html {
 
 html {
   height: 100vh;
+  width: auto;
   overflow-y: hidden;
   overflow-x: scroll;
 }
 
 .container {
-  width: auto;
+  width: inherit;
   height: 90vh;
 }
 
@@ -408,12 +409,12 @@ h4, h5 {
 /*pages */
 .flex-box {
   height: 90vh;
-  width: inherit;
+  width: auto;
   display: flex;
   align-items: center;
 }
 
-.project-page-mainlayout, .project-page-single, .project-page-img {
+.project-page-mainlayout, .project-page-single, .project-page-img, .ImgStyle1, .ImgStyle2 {
   height: auto;
   display: inline-block;
   float: left;
@@ -433,21 +434,58 @@ h4, h5 {
   height: auto;
 }
 
-.project-page-img {
+.project-page-img, .ImgStyle1, .ImgStyle2 {
+  height: 90vh;
   width: auto;
+  min-width: 50vw;
   max-width: 90vw;
-  min-width: 400px;
+  overflow-y: hidden;
 }
-.project-page-img img {
+.project-page-img p, .ImgStyle1 p, .ImgStyle2 p {
+  margin-bottom: 7px;
+}
+.project-page-img img, .ImgStyle1 img, .ImgStyle2 img {
   width: 100%;
+}
+
+.ImgStyle1 {
+  height: 90vh;
+}
+.ImgStyle1 .image-up {
+  max-height: 70%;
+  height: auto;
+  width: inherit;
+}
+.ImgStyle1 .image-up img {
+  height: 100%;
+  width: 100%;
+}
+.ImgStyle1 .image-up p {
+  margin-bottom: 7px;
+}
+.ImgStyle1 .image-row {
+  min-height: 30%;
   height: auto;
 }
-.project-page-img .image-row img {
-  width: 20%;
+.ImgStyle1 .image-row img {
+  width: auto;
   height: auto;
+  max-height: 100%;
   display: inline-block;
   float: left;
-  padding: 10px 5px;
+  padding: 0px 10px 0px 0px;
+}
+.ImgStyle1 .image-row p {
+  margin-bottom: 7px;
+}
+
+.ImgStyle2 .image-row {
+  height: 50%;
+  max-height: 45vh;
+}
+.ImgStyle2 .image-row img {
+  height: 90%;
+  max-height: 90%;
 }
 
 .HomeSVG {
@@ -546,7 +584,7 @@ h4, h5 {
     width: 600px;
   }
 
-  .project-page-img {
+  .project-page-img, .ImgStyle1, .ImgStyle2 {
     width: 950px;
   }
 }

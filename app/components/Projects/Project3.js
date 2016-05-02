@@ -3,8 +3,8 @@ import Project from "./Project";
 
 var Project3 = React.createClass({
     render() {
-        const ProjectName = "Vgarden";
-        const Tagline ="Home IOT Vertical Garden";
+        const ProjectName = "GameOn";
+        const Tagline ="Re-Invent Sports";
 
         const Titles = [
             "Problem",
@@ -17,22 +17,23 @@ var Project3 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/2/1.png",
-            "",
-            "./media/img/2/DSC_0385-2.jpg",
-            "./media/img/2/DSC_0355-2.jpg",
-            "./media/img/2/DSC_0353-2.jpg",
-            "./media/img/2/DSC_0365-2.jpg",
+            "./media/img/gameon/1.png",
+            "./media/img/gameon/apple-touch-startup-image01.png",
+            "./media/img/gameon/ar-202.png",
+            "./media/img/gameon/ar-303.png",
+            "./media/img/gameon/game_mockup_mine07.png",
+            "./media/img/gameon/game_mockup-0714.png",
+            "./media/img/gameon/game_mockup-0916.png",
         ]
         const Contents = [
 
-            "As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ",
+            "GAMEON provides a new way for stadium goers to experience the game, engages those at the stadium and incites the stay home fans to come to the stadium.",
 
-            "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+            "Real Time Sports Fan Engagement - GameOn is an immersive companion app for hard-core fans and pleasure goers alike.",
             //problem
-            "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
+            "Stadium fans loose out on the experience that stay home fans have Fans needs more than halftime shows to engage themselves at the venue and come backn In person experience does not match fans’ consumption habits",
             //solution
-            "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ",
+            "PWC research suggests that CAGR for the sports market to go from $56.9 billion to $70.7 billion just in North America. In this 8% of it is expected to be in sponsorship and gate revenues. The aim is to not only Lapsed Season Holders but also groups and Corporate tickets. Many sports fans we talked about are very interested in such a Technology and were our inspiration behind this. ",
 
             "Hi-Fidelity Mockup",
 
@@ -54,24 +55,21 @@ var Project3 = React.createClass({
                      <p>{Contents[2]}</p>
                      <h4>{Titles[1]}</h4>
                      <p>{Contents[3]}</p>
-                     <b> The components of the project include: </b>
-                     <p></p>
-                     <p><b>Software</b> - digital interface that display the status of the plants </p>
-                      <p><b>Hardware</b> - individual units each contain one plant & corresponding water system. </p>
-                     <ul>
-                         <li>Arduino Uno & Leonardo & Ethernet Shield</li>
-                         <li>Moisture, Temperature, Humidity and Air Quality sensors</li>
-                         <li>110V Aquarium Pump & Relays</li>
-                         <li>Plastic and Permisive pipes</li>
-                         <li>other Electronic Accessories</li>
-                     </ul>
+
              </div>
-              <div className="project-page-img">
-                  <img src ={Images[2]}/>
-                    <div className ="image-row">
-                      <img src ={Images[3]}/><img src ={Images[4]}/><img src ={Images[5]}/>
-                     </div>
+             <div className="ImgStyle2">
+                 <p>High Fidelity Mobile Mockup</p>
+                 <div className="image-row">
+                     <img src ={Images[1]} />
+                     <img src ={Images[2]} />
+                     <img src ={Images[3]} />
                  </div>
+                 <div className="image-row">
+                     <img src ={Images[4]} />
+                     <img src ={Images[5]} />
+                     <img src ={Images[6]} />
+                 </div>
+             </div>
             </div>
         )
     }

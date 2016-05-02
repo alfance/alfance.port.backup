@@ -7,12 +7,13 @@ body,html {
 }
 html {
     height:100vh;
+    width:auto;
     overflow-y: hidden;
     overflow-x: scroll;
 }
 
 .container{
-    width: auto;
+    width: inherit;
     height:90vh;
 }
 

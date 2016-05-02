@@ -1,5 +1,5 @@
 const API_KEY = '92a606d89212b2153e1b219dfa19c078';
-const API_ENDPOINT = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4dfd40dace6a4713fff10be7ffe950ec&user_id=85570696%40N02&tags=graphic%2Cdesign&per_page=130&format=json&nojsoncallback=1`;
+const API_ENDPOINT = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=92a606d89212b2153e1b219dfa19c078&user_id=85570696%40N02&tags=graphic%2Cdesign&per_page=130&format=json&nojsoncallback=1`;
 
 
 export const fetchImageDesign = () => {

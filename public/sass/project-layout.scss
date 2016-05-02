@@ -1,6 +1,6 @@
 .flex-box{
     height:90vh;
-    width: inherit;
+    width: auto;
     display:flex;
     align-items: center;
 }
@@ -24,23 +24,65 @@
         height:auto;
     }
 }
-
+// ****************** image box layout **************** //
 .project-page-img {
     @extend .project-page-mainlayout;
+    height:90vh;
     width:auto;
-    max-width: 90vw;
-    min-width:400px;
+    min-width:50vw;
+    max-width:90vw;
+    overflow-y:hidden;
+    p{
+        margin-bottom: 7px;
+    }
     img {
         width: 100%;
-        height:auto;
+    }
+}
+
+// 1 up : multiple below
+.ImgStyle1 {
+    height:90vh;
+    @extend .project-page-img;
+    .image-up {
+        max-height: 70%;
+        height: auto;
+        width: inherit;
+
+        img {
+            height: 100%;
+            width: 100%;
+
+        }
+        p{
+            margin-bottom: 7px;
+        }
     }
     .image-row {
+        min-height:30%;
+        height:auto;
         img {
-            width:20%;
+            width:auto;
             height:auto;
+            max-height:100%;
             display: inline-block;
             float:left;
-            padding:10px 5px;
+            padding:0px 10px 0px 0px;
+        }
+        p{
+            margin-bottom: 7px;
+        }
+    }
+}
+
+.ImgStyle2{
+    @extend .project-page-img;
+    .image-row{
+        height:50%;
+        max-height: 45vh;
+        img {
+            height:90%;
+            max-height:90%;
         }
     }
 }

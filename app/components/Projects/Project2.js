@@ -18,7 +18,7 @@ var Project2 = React.createClass({
 
         const Images =[
             "./media/img/garden/1.png",
-            "",
+            "./media/img/garden/interface-1.png",
             "./media/img/garden/DSC_0385-2.jpg",
             "./media/img/garden/DSC_0355-2.jpg",
             "./media/img/garden/DSC_0353-2.jpg",
@@ -44,11 +44,11 @@ var Project2 = React.createClass({
                 <div className="project-page-single center-align">
                     <Project ProjectName={ProjectName} />
                     {Tagline}
-                    {Contents[0]}
+                    <i>{Contents[0]}</i>
                     {Contents[1]}
                      <img src ={Images[0]}/>
-
              </div>
+
              <div className="project-page-single">
                     {Titles[0]}
                     {Contents[2]}
@@ -66,13 +66,24 @@ var Project2 = React.createClass({
                          <li>other Electronic Accessories</li>
                      </ul>
              </div>
-              <div className="project-page-img">
-                  <img src ={Images[2]}/>
-                    <div className ="image-row">
+
+              <div className="ImgStyle1">
+                  <div className="image-up">
+                      <p>Units emsembled</p>
+                      <img src ={Images[2]}/>
+                 </div>
+                 <div className ="image-row">
+                        <p>Individual Units </p>
                       <img src ={Images[3]}/><img src ={Images[4]}/><img src ={Images[5]}/>
                      </div>
                  </div>
+
+                <div className = "project-page-img">
+                    <p>The digital Interface </p>
+                    <img src = {Images[1]} />
+                </div>
             </div>
+            
         )
     }
 });

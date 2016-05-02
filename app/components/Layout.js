@@ -23,7 +23,7 @@ var Layout = React.createClass({
                         <Link to="Home" activeClassName ="tabActive"><div className="chap-title home">Home</div></Link>
                     </li>
                     <li>
-                        <Link to="ProjectHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-project.svg" className="NavIcon"></img>Projects</div></Link>
+                        <Link to="Home" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-project.svg" className="NavIcon"></img>Projects</div></Link>
                     </li>
                     <li>
                         <Link to="DesignHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-design.svg" className="NavIcon"></img>Design</div></Link>

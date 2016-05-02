@@ -17,8 +17,24 @@ var Project1 = React.createClass({
 
         const Images =[
             "./media/img/cycnav/1.png",
-            "",
-            "",
+            "./media/img/cycnav/01.png",
+            "./media/img/cycnav/02.png",
+            "./media/img/cycnav/03.png",
+            "./media/img/cycnav/04.png",
+            "./media/img/cycnav/05.png",
+            "./media/img/cycnav/06.png",
+            "./media/img/cycnav/07.png",
+            "./media/img/cycnav/08.png",
+            "./media/img/cycnav/09.png",
+            "./media/img/cycnav/11.png",
+            "./media/img/cycnav/12.png",
+            "./media/img/cycnav/13.png",
+            "./media/img/cycnav/14.png",
+            "./media/img/cycnav/DSC_0033.png",
+            "./media/img/cycnav/1.jpg",
+            "./media/img/cycnav/DSC_0025.jpg",
+            "./media/img/cycnav/group14-paper-wireframe.png",
+
         ]
 
         const adText =[
@@ -66,9 +82,36 @@ var Project1 = React.createClass({
                     {Contents[5]}
 
                  </div>
-                  <div className="project-page-img">
-
+                  <div className="ImgStyle2">
+                      <p>Mobile Interface</p>
+                      <div className="image-row">
+                          <p>login Pages</p>
+                          <img src ={Images[1]} />
+                          <img src ={Images[2]} />
+                          <img src ={Images[3]} />
+                      </div>
+                      <div className="image-row">
+                          <p>Route Navigateion</p>
+                          <img src ={Images[4]} />
+                          <img src ={Images[8]} />
+                          <img src ={Images[9]} />
+                      </div>
                   </div>
+
+                  <div className="ImgStyle1">
+                      <div className="image-up">
+                          <p>Digital Interface</p>
+                          <img src ={Images[14]}/>
+                     </div>
+                     <div className ="image-row">
+                          <img src ={Images[15]}/><img src ={Images[16]}/>
+                    </div>
+                    </div>
+
+                <div className = "project-page-img">
+                    <p>WireFrame</p>
+                    <img src = {Images[17]} />
+                </div>
             </div>
         )
     }
