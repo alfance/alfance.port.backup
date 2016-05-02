@@ -41293,7 +41293,7 @@
 	    key: 'render',
 	    value: function render() {
 	      var title = "Arts";
-	      var pageintro = "This page showcases my short-term graphic designs. Most of the projects were completed between tens of minutes to a day. Instead of thoughtful planning and pre analysis, works seen here are more of my artistic expression of the design world.";
+	      var pageintro = "Under Constrcution. Currently working on the Deviant Art API";
 
 	      return React.createElement(
 	        'div',
@@ -41407,7 +41407,7 @@
 	        key: 'render',
 	        value: function render() {
 	            var title = "Photography";
-	            var pageintro = "This page showcases my short-term graphic designs. Most of the projects were completed between tens of minutes to a day. Instead of thoughtful planning and pre analysis, works seen here are more of my artistic expression of the design world.";
+	            var pageintro = "Landscapes, Animals, Natures and Concrete. This page showcases part of my enthusiasm for photography";
 
 	            return React.createElement(
 	                'div',
