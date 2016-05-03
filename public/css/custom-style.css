@@ -138,6 +138,12 @@ table td {
   padding: 0px 5px;
 }
 
+.project-video {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
 p, li, table {
   font-family: 'Lato', Arial, sans-serif;
   font-size: 0.9em;

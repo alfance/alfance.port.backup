@@ -17,6 +17,7 @@
     "react-simple-modal": "^1.1.5",
     "react-skylight": "^0.3.0",
     "react-svg": "^1.1.0",
+    "react-video": "^1.5.3",
     "redux": "^3.5.1",
     "redux-saga": "^0.10.0",
     "reflux": "~0.2.7",
