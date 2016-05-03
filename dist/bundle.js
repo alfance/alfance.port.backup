@@ -31717,23 +31717,23 @@
 	var Project1 = __webpack_require__(517);
 	var Project2 = __webpack_require__(522);
 	var Project3 = __webpack_require__(523);
-	var Project4 = __webpack_require__(524);
-	var Project5 = __webpack_require__(525);
-	var Project6 = __webpack_require__(526);
-	var Project7 = __webpack_require__(527);
-	var Project8 = __webpack_require__(528);
+	var Project4 = __webpack_require__(528);
+	var Project5 = __webpack_require__(529);
+	var Project6 = __webpack_require__(530);
+	var Project7 = __webpack_require__(531);
+	var Project8 = __webpack_require__(532);
 
 	// design works
-	var DesignHome = __webpack_require__(529);
+	var DesignHome = __webpack_require__(533);
 
 	// artworks
-	var ArtHome = __webpack_require__(578);
+	var ArtHome = __webpack_require__(582);
 
 	//photos
-	var PhotoHome = __webpack_require__(579);
+	var PhotoHome = __webpack_require__(583);
 
 	//contact
-	var Contact = __webpack_require__(580);
+	var Contact = __webpack_require__(584);
 
 	module.exports =
 	// main page, render the navigation
@@ -33173,19 +33173,25 @@
 	        var ProjectName = "Cycnav";
 	        var Tagline = "Home IOT Vertical Garden";
 
-	        var Titles = ["Problem", "Solution", "Objective", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "High Level Concept", "Choosing Route", "Contributing", "Development Process", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/cycnav/1.png", "./media/img/cycnav/01.png", "./media/img/cycnav/02.png", "./media/img/cycnav/03.png", "./media/img/cycnav/04.png", "./media/img/cycnav/05.png", "./media/img/cycnav/06.png", "./media/img/cycnav/07.png", "./media/img/cycnav/08.png", "./media/img/cycnav/09.png", "./media/img/cycnav/11.png", "./media/img/cycnav/12.png", "./media/img/cycnav/13.png", "./media/img/cycnav/14.png", "./media/img/cycnav/DSC_0033.png", "./media/img/cycnav/1.jpg", "./media/img/cycnav/DSC_0025.jpg", "./media/img/cycnav/group14-paper-wireframe.png"];
+	        var Images = ["./media/img/cycnav/1.png", "./media/img/cycnav/01.png", "./media/img/cycnav/02.png", "./media/img/cycnav/03.png", "./media/img/cycnav/04.png", "./media/img/cycnav/05.png", "./media/img/cycnav/06.png", "./media/img/cycnav/07.png", "./media/img/cycnav/08.png", "./media/img/cycnav/09.png", "./media/img/cycnav/11.png", "./media/img/cycnav/12.png", "./media/img/cycnav/13.png", "./media/img/cycnav/14.png", "./media/img/cycnav/DSC_0033.png", "./media/img/cycnav/1.jpg", "./media/img/cycnav/DSC_0025.jpg", "./media/img/cycnav/mobilescreen.png", "./media/img/cycnav/group14-paper-wireframe.png", "./media/img/cycnav/1.jpg", "./media/img/cycnav/DSC_0025.jpg", "./media/img/cycnav/mobilescreen.png", "./media/img/cycnav/Prototypes3.png", "./media/img/cycnav/Prototypes4.png", "./media/img/cycnav/Prototypes5.png", "./media/img/cycnav/Prototypes6.png", "./media/img/cycnav/storyboard.png"];
 
 	        var adText = ["1 dd", "2 dd", "3 dd", "4 dd", "5 dd"];
 	        var Contents = ["“All About Biking” is for the urban cyclist, it’s an up to date and interactive bikers map of the city that allows cyclists to see where current construction, potholes and obstructions are taking place.", "Users contribute to the map by updating the status of bike specific road conditions and road blocks they see.", "The app will give all the necessary features you need as an urban cyclist: list detours,  nearby bike services, bike parking and more.",
 
 	        //problem
-	        "The biggest pain that every cyclist has experienced, especially the urban cyclist, is various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous. Currently there have been apps that help cyclists navigate through the road, but they do not offer alternate route options. most importantly, cyclists needed to be constantly updated while they are biking. the iphone apps pose safety concerns if the cyclists check them frequently on the road. ",
+	        "The biggest pain that every cyclist has experienced, especially the urban cyclist, is various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous. Currently there have been apps that help cyclists navigate through the road, but they do not offer alternate route options. most importantly, cyclists needed to be constantly updated while they are biking.",
 	        //solution
-	        "bike light connected to blue tooth, crowdsourced app is overlayed on top of google maps. The app can either be used through a smartphone, computer or ipad for maximum accessibility.", "Every safe cyclist needs a bike light at night, we thought that attaching the functions of our product to a technology our consumer already uses would be the simplest and easiest way to integrate the product into their everyday lives.", "Hi-Fidelity Mockup", "Future Development"].map(function (info, i) {
+	        "bike light connected to blue tooth, crowdsourced app is overlayed on top of google maps. The app can either be used through a smartphone, computer or ipad for maximum accessibility.", "Every safe cyclist needs a bike light at night, we thought that attaching the functions of our product to a technology our consumer already uses would be the simplest and easiest way to integrate the product into their everyday lives.",
+
+	        //Prototypes
+	        "Whenever you login to Cycnav, it is automatically synced with the Physical Interface. After you entered your destination, the app calculates the best route for you and grabs realtime data of the road conditions. You can then choose between the shortest route and the recommended route", "Cycnav bike light can easily be attached and detached from any bike, giving greater accessibility to consumers. Cyclists do not have to purchase a new bike or replace sections of their bike. They can easily place the Cycnav physical interface into their bag or bring it inside when it is not in use.",
+
+	        //engaging user contribution
+	        "Users can contribute to the Cycnav community by adding road blocks discovered by them. "].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -33200,7 +33206,27 @@
 	                Contents[0],
 	                Contents[1],
 	                Contents[2],
-	                React.createElement("img", { src: Images[0] })
+	                React.createElement("img", { src: Images[0] }),
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Collaborators: "
+	                    ),
+	                    "Marisa Hoicka, Aditi Bhatia, Kylo Xue"
+	                ),
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Technologies: "
+	                    ),
+	                    "Adobe PS, AI, AE, Rhinoceros, Balsamiq, MakerBot"
+	                )
 	            ),
 	            React.createElement(
 	                "div",
@@ -33209,53 +33235,46 @@
 	                Contents[3],
 	                Titles[1],
 	                Contents[4],
-	                Contents[5]
-	            ),
-	            React.createElement(
-	                "div",
-	                { className: "ImgStyle2" },
+	                Contents[5],
 	                React.createElement(
-	                    "p",
-	                    null,
-	                    "Mobile Interface"
-	                ),
-	                React.createElement(
-	                    "div",
-	                    { className: "image-row" },
-	                    React.createElement(
-	                        "p",
-	                        null,
-	                        "login Pages"
-	                    ),
-	                    React.createElement("img", { src: Images[1] }),
-	                    React.createElement("img", { src: Images[2] }),
-	                    React.createElement("img", { src: Images[3] })
-	                ),
-	                React.createElement(
-	                    "div",
-	                    { className: "image-row" },
-	                    React.createElement(
-	                        "p",
-	                        null,
-	                        "Route Navigateion"
-	                    ),
-	                    React.createElement("img", { src: Images[4] }),
-	                    React.createElement("img", { src: Images[8] }),
-	                    React.createElement("img", { src: Images[9] })
+	                    "a",
+	                    { href: "https://www.youtube.com/watch?v=zar9Efp7DGM", target: "_blank" },
+	                    "Concept Video"
 	                )
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "ImgStyle1" },
+	                { className: "project-page-img" },
+	                Titles[2],
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "Mobile Interface - Cycnav App"
+	                ),
+	                Contents[6],
+	                React.createElement("br", null),
+	                React.createElement(
+	                    "div",
+	                    { className: "image-row" },
+	                    React.createElement("img", { src: Images[2] }),
+	                    React.createElement("img", { src: Images[3] }),
+	                    React.createElement("img", { src: Images[4] })
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
 	                React.createElement(
 	                    "div",
 	                    { className: "image-up" },
 	                    React.createElement(
-	                        "p",
+	                        "b",
 	                        null,
-	                        "Digital Interface"
+	                        "Physical Interface - Bike Light"
 	                    ),
-	                    React.createElement("img", { src: Images[14] })
+	                    React.createElement("p", null),
+	                    React.createElement("img", { src: Images[14] }),
+	                    Contents[7]
 	                ),
 	                React.createElement(
 	                    "div",
@@ -33268,11 +33287,167 @@
 	                "div",
 	                { className: "project-page-img" },
 	                React.createElement(
-	                    "p",
+	                    "b",
 	                    null,
-	                    "WireFrame"
+	                    "IOT and APP Connection"
 	                ),
-	                React.createElement("img", { src: Images[17] })
+	                React.createElement("p", null),
+	                React.createElement("img", { className: "addborder", src: Images[17] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[3],
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[8] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[9] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[10] })
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Choose the route you would like to take."
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Click on the various road block icons to see what is going on at the place."
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "It tracks your travel distance in real time and recommend the best route from your current location."
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[4],
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "User Engagement to the Cycnav Community"
+	                ),
+	                Contents[8],
+	                React.createElement("br", null),
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "You can check your hitory, favourites and user contributions."
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Upload your own findings either though the app or by press the button on your bike light."
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Choose from different obstacle types, take a photo and leave your notes. "
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[11] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[12] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[13] })
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-single" },
+	                Titles[5],
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "Paper WireFrame"
+	                ),
+	                React.createElement("p", null),
+	                React.createElement("img", { src: Images[18] }),
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "Digital WireFrame"
+	                ),
+	                React.createElement(
+	                    "div",
+	                    { className: "image-row" },
+	                    React.createElement("img", { src: Images[22] }),
+	                    React.createElement("img", { src: Images[23] }),
+	                    React.createElement("img", { src: Images[24] }),
+	                    React.createElement("img", { src: Images[25] })
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-single" },
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "StoryBoard"
+	                ),
+	                React.createElement("p", null),
+	                React.createElement("img", { src: Images[26] }),
+	                React.createElement(
+	                    "a",
+	                    { href: "media/img/cycnav/storyboard-device.pdf", target: "_blank" },
+	                    " ",
+	                    React.createElement(
+	                        "p",
+	                        null,
+	                        "See the full Storyboard"
+	                    )
+	                )
 	            )
 	        );
 	    }
@@ -33318,7 +33493,6 @@
 	            var $img = $('.project-page-img img');
 	            var $imgBoxImg = $('.project-page-img');
 	            var $imgRow = $('.image-row');
-
 	            $($imgRow).each(function () {
 	                var $rowWidth = $(this).width(),
 	                    $imgIn = $(this).find('img'),
@@ -35924,28 +36098,32 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "ImgStyle1" },
+	                { className: "project-page-img" },
 	                React.createElement(
 	                    "div",
-	                    { className: "image-up" },
+	                    { className: "ImgStyle1" },
 	                    React.createElement(
-	                        "p",
-	                        null,
-	                        "Units emsembled"
+	                        "div",
+	                        { className: "image-up" },
+	                        React.createElement(
+	                            "p",
+	                            null,
+	                            "Units emsembled"
+	                        ),
+	                        React.createElement("img", { src: Images[2] })
 	                    ),
-	                    React.createElement("img", { src: Images[2] })
-	                ),
-	                React.createElement(
-	                    "div",
-	                    { className: "image-row" },
 	                    React.createElement(
-	                        "p",
-	                        null,
-	                        "Individual Units "
-	                    ),
-	                    React.createElement("img", { src: Images[3] }),
-	                    React.createElement("img", { src: Images[4] }),
-	                    React.createElement("img", { src: Images[5] })
+	                        "div",
+	                        { className: "image-row" },
+	                        React.createElement(
+	                            "p",
+	                            null,
+	                            "Individual Units "
+	                        ),
+	                        React.createElement("img", { src: Images[3] }),
+	                        React.createElement("img", { src: Images[4] }),
+	                        React.createElement("img", { src: Images[5] })
+	                    )
 	                )
 	            ),
 	            React.createElement(
@@ -35985,7 +36163,7 @@
 	        var ProjectName = "GameOn";
 	        var Tagline = "Re-Invent Sports";
 
-	        var Titles = ["Problem", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Market", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
@@ -36004,56 +36182,43 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single center-align" },
+	                React.createElement(_Project2.default, { ProjectName: ProjectName }),
+	                Tagline,
+	                Contents[0],
+	                Contents[1],
+	                React.createElement("img", { src: Images[0] }),
 	                React.createElement(
-	                    "h1",
+	                    "p",
 	                    null,
-	                    " ",
-	                    ProjectName
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Tagline
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Collaborators: "
+	                    ),
+	                    "Danning Luu, Shamraiz Gul, Fernando Toro, Naomi Cowan Kylo Xue"
 	                ),
 	                React.createElement(
 	                    "p",
 	                    null,
-	                    Contents[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[1]
-	                ),
-	                React.createElement("img", { src: Images[0] })
-	            ),
-	            React.createElement(
-	                "div",
-	                { className: "project-page-single" },
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[2]
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[1]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[3]
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Technologies: "
+	                    ),
+	                    "Adobe PS, AI, AE, Balsamiq, Invision"
 	                )
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "ImgStyle2" },
+	                { className: "project-page-single" },
+	                Titles[0],
+	                Contents[2],
+	                Titles[1],
+	                Contents[3]
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
 	                React.createElement(
 	                    "p",
 	                    null,
@@ -36081,7 +36246,11 @@
 	module.exports = Project3;
 
 /***/ },
-/* 524 */
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36241,7 +36410,7 @@
 	module.exports = Project4;
 
 /***/ },
-/* 525 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36401,7 +36570,7 @@
 	module.exports = Project5;
 
 /***/ },
-/* 526 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36561,7 +36730,7 @@
 	module.exports = Project6;
 
 /***/ },
-/* 527 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36721,7 +36890,7 @@
 	module.exports = Project7;
 
 /***/ },
-/* 528 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36881,7 +37050,7 @@
 	module.exports = Project8;
 
 /***/ },
-/* 529 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36893,7 +37062,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _simpleReactModal = __webpack_require__(530);
+	var _simpleReactModal = __webpack_require__(534);
 
 	var _simpleReactModal2 = _interopRequireDefault(_simpleReactModal);
 
@@ -36901,23 +37070,23 @@
 
 	var _pageIntro2 = _interopRequireDefault(_pageIntro);
 
-	var _Gallery = __webpack_require__(532);
+	var _Gallery = __webpack_require__(536);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _redux = __webpack_require__(540);
+	var _redux = __webpack_require__(544);
 
-	var _reduxSaga = __webpack_require__(561);
+	var _reduxSaga = __webpack_require__(565);
 
 	var _reduxSaga2 = _interopRequireDefault(_reduxSaga);
 
-	var _loadImagePhoto = __webpack_require__(573);
+	var _loadImagePhoto = __webpack_require__(577);
 
-	var _reducer = __webpack_require__(577);
+	var _reducer = __webpack_require__(581);
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 
-	var _reactRedux = __webpack_require__(533);
+	var _reactRedux = __webpack_require__(537);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36977,7 +37146,7 @@
 	module.exports = DesignHome;
 
 /***/ },
-/* 530 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37002,7 +37171,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _styles = __webpack_require__(531);
+	var _styles = __webpack_require__(535);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -37112,7 +37281,7 @@
 	exports.closeStyle = closeStyle;
 
 /***/ },
-/* 531 */
+/* 535 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37166,7 +37335,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 532 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37182,15 +37351,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactRedux = __webpack_require__(533);
+	var _reactRedux = __webpack_require__(537);
 
-	var _redux = __webpack_require__(540);
+	var _redux = __webpack_require__(544);
 
-	var _actions = __webpack_require__(558);
+	var _actions = __webpack_require__(562);
 
 	var GalleryActions = _interopRequireWildcard(_actions);
 
-	var _reactSkylight = __webpack_require__(559);
+	var _reactSkylight = __webpack_require__(563);
 
 	var _reactSkylight2 = _interopRequireDefault(_reactSkylight);
 
@@ -37315,7 +37484,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapActionCreatorsToProps)(Gallery);
 
 /***/ },
-/* 533 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37323,11 +37492,11 @@
 	exports.__esModule = true;
 	exports.connect = exports.Provider = undefined;
 
-	var _Provider = __webpack_require__(534);
+	var _Provider = __webpack_require__(538);
 
 	var _Provider2 = _interopRequireDefault(_Provider);
 
-	var _connect = __webpack_require__(537);
+	var _connect = __webpack_require__(541);
 
 	var _connect2 = _interopRequireDefault(_connect);
 
@@ -37337,7 +37506,7 @@
 	exports.connect = _connect2["default"];
 
 /***/ },
-/* 534 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -37347,11 +37516,11 @@
 
 	var _react = __webpack_require__(302);
 
-	var _storeShape = __webpack_require__(535);
+	var _storeShape = __webpack_require__(539);
 
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 
-	var _warning = __webpack_require__(536);
+	var _warning = __webpack_require__(540);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -37421,7 +37590,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(294)))
 
 /***/ },
-/* 535 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37437,7 +37606,7 @@
 	});
 
 /***/ },
-/* 536 */
+/* 540 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37466,7 +37635,7 @@
 	}
 
 /***/ },
-/* 537 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -37478,27 +37647,27 @@
 
 	var _react = __webpack_require__(302);
 
-	var _storeShape = __webpack_require__(535);
+	var _storeShape = __webpack_require__(539);
 
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 
-	var _shallowEqual = __webpack_require__(538);
+	var _shallowEqual = __webpack_require__(542);
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _wrapActionCreators = __webpack_require__(539);
+	var _wrapActionCreators = __webpack_require__(543);
 
 	var _wrapActionCreators2 = _interopRequireDefault(_wrapActionCreators);
 
-	var _warning = __webpack_require__(536);
+	var _warning = __webpack_require__(540);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _isPlainObject = __webpack_require__(553);
+	var _isPlainObject = __webpack_require__(557);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _hoistNonReactStatics = __webpack_require__(557);
+	var _hoistNonReactStatics = __webpack_require__(561);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -37865,7 +38034,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(294)))
 
 /***/ },
-/* 538 */
+/* 542 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -37896,7 +38065,7 @@
 	}
 
 /***/ },
-/* 539 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37904,7 +38073,7 @@
 	exports.__esModule = true;
 	exports["default"] = wrapActionCreators;
 
-	var _redux = __webpack_require__(540);
+	var _redux = __webpack_require__(544);
 
 	function wrapActionCreators(actionCreators) {
 	  return function (dispatch) {
@@ -37913,7 +38082,7 @@
 	}
 
 /***/ },
-/* 540 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -37921,27 +38090,27 @@
 	exports.__esModule = true;
 	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 
-	var _createStore = __webpack_require__(541);
+	var _createStore = __webpack_require__(545);
 
 	var _createStore2 = _interopRequireDefault(_createStore);
 
-	var _combineReducers = __webpack_require__(548);
+	var _combineReducers = __webpack_require__(552);
 
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-	var _bindActionCreators = __webpack_require__(550);
+	var _bindActionCreators = __webpack_require__(554);
 
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 
-	var _applyMiddleware = __webpack_require__(551);
+	var _applyMiddleware = __webpack_require__(555);
 
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
-	var _compose = __webpack_require__(552);
+	var _compose = __webpack_require__(556);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
-	var _warning = __webpack_require__(549);
+	var _warning = __webpack_require__(553);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -37965,7 +38134,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(294)))
 
 /***/ },
-/* 541 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37974,11 +38143,11 @@
 	exports.ActionTypes = undefined;
 	exports["default"] = createStore;
 
-	var _isPlainObject = __webpack_require__(542);
+	var _isPlainObject = __webpack_require__(546);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _symbolObservable = __webpack_require__(546);
+	var _symbolObservable = __webpack_require__(550);
 
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -38232,12 +38401,12 @@
 	}
 
 /***/ },
-/* 542 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getPrototype = __webpack_require__(543),
-	    isHostObject = __webpack_require__(544),
-	    isObjectLike = __webpack_require__(545);
+	var getPrototype = __webpack_require__(547),
+	    isHostObject = __webpack_require__(548),
+	    isObjectLike = __webpack_require__(549);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -38308,7 +38477,7 @@
 
 
 /***/ },
-/* 543 */
+/* 547 */
 /***/ function(module, exports) {
 
 	/* Built-in method references for those with the same name as other `lodash` methods. */
@@ -38329,7 +38498,7 @@
 
 
 /***/ },
-/* 544 */
+/* 548 */
 /***/ function(module, exports) {
 
 	/**
@@ -38355,7 +38524,7 @@
 
 
 /***/ },
-/* 545 */
+/* 549 */
 /***/ function(module, exports) {
 
 	/**
@@ -38390,18 +38559,18 @@
 
 
 /***/ },
-/* 546 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/* global window */
 	'use strict';
 
-	module.exports = __webpack_require__(547)(global || window || this);
+	module.exports = __webpack_require__(551)(global || window || this);
 
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 547 */
+/* 551 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38430,7 +38599,7 @@
 
 
 /***/ },
-/* 548 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -38438,13 +38607,13 @@
 	exports.__esModule = true;
 	exports["default"] = combineReducers;
 
-	var _createStore = __webpack_require__(541);
+	var _createStore = __webpack_require__(545);
 
-	var _isPlainObject = __webpack_require__(542);
+	var _isPlainObject = __webpack_require__(546);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _warning = __webpack_require__(549);
+	var _warning = __webpack_require__(553);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -38563,7 +38732,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(294)))
 
 /***/ },
-/* 549 */
+/* 553 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38592,7 +38761,7 @@
 	}
 
 /***/ },
-/* 550 */
+/* 554 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38648,7 +38817,7 @@
 	}
 
 /***/ },
-/* 551 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38659,7 +38828,7 @@
 
 	exports["default"] = applyMiddleware;
 
-	var _compose = __webpack_require__(552);
+	var _compose = __webpack_require__(556);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
@@ -38711,7 +38880,7 @@
 	}
 
 /***/ },
-/* 552 */
+/* 556 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -38756,12 +38925,12 @@
 	}
 
 /***/ },
-/* 553 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getPrototype = __webpack_require__(554),
-	    isHostObject = __webpack_require__(555),
-	    isObjectLike = __webpack_require__(556);
+	var getPrototype = __webpack_require__(558),
+	    isHostObject = __webpack_require__(559),
+	    isObjectLike = __webpack_require__(560);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -38832,7 +39001,7 @@
 
 
 /***/ },
-/* 554 */
+/* 558 */
 /***/ function(module, exports) {
 
 	/* Built-in method references for those with the same name as other `lodash` methods. */
@@ -38853,7 +39022,7 @@
 
 
 /***/ },
-/* 555 */
+/* 559 */
 /***/ function(module, exports) {
 
 	/**
@@ -38879,7 +39048,7 @@
 
 
 /***/ },
-/* 556 */
+/* 560 */
 /***/ function(module, exports) {
 
 	/**
@@ -38914,7 +39083,7 @@
 
 
 /***/ },
-/* 557 */
+/* 561 */
 /***/ function(module, exports) {
 
 	/**
@@ -38960,7 +39129,7 @@
 
 
 /***/ },
-/* 558 */
+/* 562 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38987,7 +39156,7 @@
 	}
 
 /***/ },
-/* 559 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39002,7 +39171,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _styles = __webpack_require__(560);
+	var _styles = __webpack_require__(564);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -39155,7 +39324,7 @@
 	exports.default = SkyLight;
 
 /***/ },
-/* 560 */
+/* 564 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39204,7 +39373,7 @@
 
 
 /***/ },
-/* 561 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39214,7 +39383,7 @@
 	});
 	exports.utils = exports.effects = exports.delay = exports.takeLatest = exports.takeEvery = exports.buffers = exports.channel = exports.eventChannel = exports.END = exports.CANCEL = exports.runSaga = undefined;
 
-	var _runSaga = __webpack_require__(562);
+	var _runSaga = __webpack_require__(566);
 
 	Object.defineProperty(exports, 'runSaga', {
 	  enumerable: true,
@@ -39223,7 +39392,7 @@
 	  }
 	});
 
-	var _proc = __webpack_require__(564);
+	var _proc = __webpack_require__(568);
 
 	Object.defineProperty(exports, 'CANCEL', {
 	  enumerable: true,
@@ -39232,7 +39401,7 @@
 	  }
 	});
 
-	var _channel = __webpack_require__(567);
+	var _channel = __webpack_require__(571);
 
 	Object.defineProperty(exports, 'END', {
 	  enumerable: true,
@@ -39253,7 +39422,7 @@
 	  }
 	});
 
-	var _buffers = __webpack_require__(568);
+	var _buffers = __webpack_require__(572);
 
 	Object.defineProperty(exports, 'buffers', {
 	  enumerable: true,
@@ -39262,7 +39431,7 @@
 	  }
 	});
 
-	var _sagaHelpers = __webpack_require__(569);
+	var _sagaHelpers = __webpack_require__(573);
 
 	Object.defineProperty(exports, 'takeEvery', {
 	  enumerable: true,
@@ -39277,7 +39446,7 @@
 	  }
 	});
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
 	Object.defineProperty(exports, 'delay', {
 	  enumerable: true,
@@ -39286,15 +39455,15 @@
 	  }
 	});
 
-	var _middleware = __webpack_require__(570);
+	var _middleware = __webpack_require__(574);
 
 	var _middleware2 = _interopRequireDefault(_middleware);
 
-	var _effects = __webpack_require__(571);
+	var _effects = __webpack_require__(575);
 
 	var effects = _interopRequireWildcard(_effects);
 
-	var _utils2 = __webpack_require__(572);
+	var _utils2 = __webpack_require__(576);
 
 	var utils = _interopRequireWildcard(_utils2);
 
@@ -39307,7 +39476,7 @@
 	exports.utils = utils;
 
 /***/ },
-/* 562 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39317,9 +39486,9 @@
 	});
 	exports.runSaga = runSaga;
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
-	var _proc = __webpack_require__(564);
+	var _proc = __webpack_require__(568);
 
 	var _proc2 = _interopRequireDefault(_proc);
 
@@ -39337,7 +39506,7 @@
 	}
 
 /***/ },
-/* 563 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -39525,7 +39694,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(294)))
 
 /***/ },
-/* 564 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39536,17 +39705,17 @@
 	exports.Never = exports.CANCEL = exports.NOT_ITERATOR_ERROR = undefined;
 	exports.default = proc;
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
-	var _asap = __webpack_require__(565);
+	var _asap = __webpack_require__(569);
 
 	var _asap2 = _interopRequireDefault(_asap);
 
-	var _io = __webpack_require__(566);
+	var _io = __webpack_require__(570);
 
-	var _channel = __webpack_require__(567);
+	var _channel = __webpack_require__(571);
 
-	var _buffers = __webpack_require__(568);
+	var _buffers = __webpack_require__(572);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40177,7 +40346,7 @@
 	}
 
 /***/ },
-/* 565 */
+/* 569 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40211,7 +40380,7 @@
 	};
 
 /***/ },
-/* 566 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40238,7 +40407,7 @@
 	exports.actionChannel = actionChannel;
 	exports.cancelled = cancelled;
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -40450,7 +40619,7 @@
 	};
 
 /***/ },
-/* 567 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40463,9 +40632,9 @@
 	exports.channel = channel;
 	exports.eventChannel = eventChannel;
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
-	var _buffers = __webpack_require__(568);
+	var _buffers = __webpack_require__(572);
 
 	var END = exports.END = { type: '@@redux-saga/CHANNEL_END' };
 
@@ -40593,7 +40762,7 @@
 	}
 
 /***/ },
-/* 568 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40603,7 +40772,7 @@
 	});
 	exports.buffers = exports.BUFFER_OVERFLOW = undefined;
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
 	var BUFFER_OVERFLOW = exports.BUFFER_OVERFLOW = 'Channel\'s Buffer overflow!';
 
@@ -40661,7 +40830,7 @@
 	};
 
 /***/ },
-/* 569 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40675,11 +40844,11 @@
 	exports.takeEvery = takeEvery;
 	exports.takeLatest = takeLatest;
 
-	var _channel = __webpack_require__(567);
+	var _channel = __webpack_require__(571);
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
-	var _io = __webpack_require__(566);
+	var _io = __webpack_require__(570);
 
 	var done = { done: true, value: undefined };
 	var qEnd = {};
@@ -40777,7 +40946,7 @@
 	}
 
 /***/ },
-/* 570 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40787,13 +40956,13 @@
 	});
 	exports.default = sagaMiddlewareFactory;
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
-	var _proc = __webpack_require__(564);
+	var _proc = __webpack_require__(568);
 
 	var _proc2 = _interopRequireDefault(_proc);
 
-	var _channel = __webpack_require__(567);
+	var _channel = __webpack_require__(571);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40844,7 +41013,7 @@
 	}
 
 /***/ },
-/* 571 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40853,7 +41022,7 @@
 	  value: true
 	});
 
-	var _io = __webpack_require__(566);
+	var _io = __webpack_require__(570);
 
 	Object.defineProperty(exports, 'take', {
 	  enumerable: true,
@@ -40941,7 +41110,7 @@
 	});
 
 /***/ },
-/* 572 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40950,7 +41119,7 @@
 	  value: true
 	});
 
-	var _utils = __webpack_require__(563);
+	var _utils = __webpack_require__(567);
 
 	Object.defineProperty(exports, 'TASK', {
 	  enumerable: true,
@@ -40989,7 +41158,7 @@
 	  }
 	});
 
-	var _io = __webpack_require__(566);
+	var _io = __webpack_require__(570);
 
 	Object.defineProperty(exports, 'asEffect', {
 	  enumerable: true,
@@ -40999,7 +41168,7 @@
 	});
 
 /***/ },
-/* 573 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41012,11 +41181,11 @@
 	exports.loadImageDesign = loadImageDesign;
 	exports.watchForLoadDesign = watchForLoadDesign;
 
-	var _srcPhoto = __webpack_require__(574);
+	var _srcPhoto = __webpack_require__(578);
 
-	var _srcDesign = __webpack_require__(575);
+	var _srcDesign = __webpack_require__(579);
 
-	var _effects = __webpack_require__(576);
+	var _effects = __webpack_require__(580);
 
 	var _marked = [loadImages, watchForLoadImages, loadImageDesign, watchForLoadDesign].map(regeneratorRuntime.mark);
 
@@ -41145,7 +41314,7 @@
 	}
 
 /***/ },
-/* 574 */
+/* 578 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41171,7 +41340,7 @@
 	};
 
 /***/ },
-/* 575 */
+/* 579 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41197,13 +41366,13 @@
 	};
 
 /***/ },
-/* 576 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(571)
+	module.exports = __webpack_require__(575)
 
 /***/ },
-/* 577 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41237,7 +41406,7 @@
 	}
 
 /***/ },
-/* 578 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41249,7 +41418,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _simpleReactModal = __webpack_require__(530);
+	var _simpleReactModal = __webpack_require__(534);
 
 	var _simpleReactModal2 = _interopRequireDefault(_simpleReactModal);
 
@@ -41339,7 +41508,7 @@
 	module.exports = ArtHome;
 
 /***/ },
-/* 579 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41351,7 +41520,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _simpleReactModal = __webpack_require__(530);
+	var _simpleReactModal = __webpack_require__(534);
 
 	var _simpleReactModal2 = _interopRequireDefault(_simpleReactModal);
 
@@ -41359,23 +41528,23 @@
 
 	var _pageIntro2 = _interopRequireDefault(_pageIntro);
 
-	var _Gallery = __webpack_require__(532);
+	var _Gallery = __webpack_require__(536);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _redux = __webpack_require__(540);
+	var _redux = __webpack_require__(544);
 
-	var _reduxSaga = __webpack_require__(561);
+	var _reduxSaga = __webpack_require__(565);
 
 	var _reduxSaga2 = _interopRequireDefault(_reduxSaga);
 
-	var _reducer = __webpack_require__(577);
+	var _reducer = __webpack_require__(581);
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 
-	var _loadImagePhoto = __webpack_require__(573);
+	var _loadImagePhoto = __webpack_require__(577);
 
-	var _reactRedux = __webpack_require__(533);
+	var _reactRedux = __webpack_require__(537);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41435,7 +41604,7 @@
 	module.exports = PhotoHome;
 
 /***/ },
-/* 580 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

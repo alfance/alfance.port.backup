@@ -67,7 +67,8 @@ var Project2 = React.createClass({
                      </ul>
              </div>
 
-              <div className="ImgStyle1">
+              <div className="project-page-img">
+                  <div className="ImgStyle1">
                   <div className="image-up">
                       <p>Units emsembled</p>
                       <img src ={Images[2]}/>
@@ -77,13 +78,14 @@ var Project2 = React.createClass({
                       <img src ={Images[3]}/><img src ={Images[4]}/><img src ={Images[5]}/>
                      </div>
                  </div>
+                 </div>
 
                 <div className = "project-page-img">
                     <p>The digital Interface </p>
                     <img src = {Images[1]} />
                 </div>
             </div>
-            
+
         )
     }
 });

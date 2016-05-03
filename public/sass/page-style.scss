@@ -52,3 +52,16 @@ html {
     float:left;
     padding-right:10px;
 }
+img {
+    max-height:90vh;
+    max-width: 95vw;
+}
+.addborder {
+    border:1px solid #ddd;
+}
+
+table {
+    td {
+        padding: 0px 5px;
+    }
+}

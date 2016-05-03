@@ -8,7 +8,7 @@ var Project3 = React.createClass({
 
         const Titles = [
             "Problem",
-            "Solution",
+            "Market",
             "Digital Interface",
             "Physical Interface",
             "WireFrame",
@@ -43,21 +43,22 @@ var Project3 = React.createClass({
         return (
             <div className ="flex-box">
                 <div className="project-page-single center-align">
-                    <h1> {ProjectName}</h1>
-                    <h4>{Tagline}</h4>
-                     <p>{Contents[0]}</p>
-                     <p>{Contents[1]}</p>
+                    <Project ProjectName={ProjectName} />
+                    {Tagline}
+                     {Contents[0]}
+                     {Contents[1]}
                      <img src ={Images[0]}/>
-
+                     <p><b>Collaborators: </b>Danning Luu, Shamraiz Gul, Fernando Toro, Naomi Cowan Kylo Xue</p>
+                     <p><b>Technologies: </b>Adobe PS, AI, AE, Balsamiq, Invision</p>
              </div>
              <div className="project-page-single">
-                     <h4>{Titles[0]}</h4>
-                     <p>{Contents[2]}</p>
-                     <h4>{Titles[1]}</h4>
-                     <p>{Contents[3]}</p>
-
+                    {Titles[0]}
+                    {Contents[2]}
+                     {Titles[1]}
+                    {Contents[3]}
              </div>
-             <div className="ImgStyle2">
+
+             <div className="project-page-img">
                  <p>High Fidelity Mobile Mockup</p>
                  <div className="image-row">
                      <img src ={Images[1]} />
@@ -70,6 +71,7 @@ var Project3 = React.createClass({
                      <img src ={Images[6]} />
                  </div>
              </div>
+
             </div>
         )
     }

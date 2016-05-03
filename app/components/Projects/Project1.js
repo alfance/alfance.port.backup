@@ -9,8 +9,10 @@ var Project1 = React.createClass({
         const Titles = [
             "Problem",
             "Solution",
-            "Objective",
-            "WireFrame",
+            "High Level Concept",
+            "Choosing Route",
+            "Contributing",
+            "Development Process",
             "Hi-Fidelity Mockup",
             "Future Development",
         ].map((name, i)=> <Project key={i} name={name}/> );
@@ -26,6 +28,7 @@ var Project1 = React.createClass({
             "./media/img/cycnav/07.png",
             "./media/img/cycnav/08.png",
             "./media/img/cycnav/09.png",
+
             "./media/img/cycnav/11.png",
             "./media/img/cycnav/12.png",
             "./media/img/cycnav/13.png",
@@ -33,8 +36,17 @@ var Project1 = React.createClass({
             "./media/img/cycnav/DSC_0033.png",
             "./media/img/cycnav/1.jpg",
             "./media/img/cycnav/DSC_0025.jpg",
+            "./media/img/cycnav/mobilescreen.png",
             "./media/img/cycnav/group14-paper-wireframe.png",
+            "./media/img/cycnav/1.jpg",
 
+            "./media/img/cycnav/DSC_0025.jpg",
+            "./media/img/cycnav/mobilescreen.png",
+            "./media/img/cycnav/Prototypes3.png",
+            "./media/img/cycnav/Prototypes4.png",
+            "./media/img/cycnav/Prototypes5.png",
+            "./media/img/cycnav/Prototypes6.png",
+            "./media/img/cycnav/storyboard.png",
         ]
 
         const adText =[
@@ -51,16 +63,19 @@ var Project1 = React.createClass({
             "The app will give all the necessary features you need as an urban cyclist: list detours,  nearby bike services, bike parking and more.",
 
             //problem
-            "The biggest pain that every cyclist has experienced, especially the urban cyclist, is various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous. Currently there have been apps that help cyclists navigate through the road, but they do not offer alternate route options. most importantly, cyclists needed to be constantly updated while they are biking. the iphone apps pose safety concerns if the cyclists check them frequently on the road. ",
+            "The biggest pain that every cyclist has experienced, especially the urban cyclist, is various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous. Currently there have been apps that help cyclists navigate through the road, but they do not offer alternate route options. most importantly, cyclists needed to be constantly updated while they are biking.",
             //solution
             "bike light connected to blue tooth, crowdsourced app is overlayed on top of google maps. The app can either be used through a smartphone, computer or ipad for maximum accessibility.",
 
             "Every safe cyclist needs a bike light at night, we thought that attaching the functions of our product to a technology our consumer already uses would be the simplest and easiest way to integrate the product into their everyday lives.",
 
+            //Prototypes
+            "Whenever you login to Cycnav, it is automatically synced with the Physical Interface. After you entered your destination, the app calculates the best route for you and grabs realtime data of the road conditions. You can then choose between the shortest route and the recommended route",
 
-            "Hi-Fidelity Mockup",
+            "Cycnav bike light can easily be attached and detached from any bike, giving greater accessibility to consumers. Cyclists do not have to purchase a new bike or replace sections of their bike. They can easily place the Cycnav physical interface into their bag or bring it inside when it is not in use.",
 
-            "Future Development",
+            //engaging user contribution
+            "Users can contribute to the Cycnav community by adding road blocks discovered by them. ",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         const randomAd = adText[Math.round(Math.random() * (adText.length -1) )];
@@ -72,6 +87,8 @@ var Project1 = React.createClass({
                     {Contents[1]}
                     {Contents[2]}
                     <img src ={Images[0]} />
+                    <p><b>Collaborators: </b>Marisa Hoicka, Aditi Bhatia, Kylo Xue</p>
+                    <p><b>Technologies: </b>Adobe PS, AI, AE, Rhinoceros, Balsamiq, MakerBot</p>
 
                  </div>
                  <div className="project-page-single">
@@ -80,28 +97,27 @@ var Project1 = React.createClass({
                     {Titles[1]}
                     {Contents[4]}
                     {Contents[5]}
+                    <a  href="https://www.youtube.com/watch?v=zar9Efp7DGM" target="_blank">Concept Video</a>
 
                  </div>
-                  <div className="ImgStyle2">
-                      <p>Mobile Interface</p>
+                  <div className="project-page-img">
+                      {Titles[2]}
+                      <b>Mobile Interface - Cycnav App</b>
+                      {Contents[6]}
+                      <br></br>
                       <div className="image-row">
-                          <p>login Pages</p>
-                          <img src ={Images[1]} />
                           <img src ={Images[2]} />
                           <img src ={Images[3]} />
-                      </div>
-                      <div className="image-row">
-                          <p>Route Navigateion</p>
                           <img src ={Images[4]} />
-                          <img src ={Images[8]} />
-                          <img src ={Images[9]} />
                       </div>
                   </div>
 
-                  <div className="ImgStyle1">
+                  <div className="project-page-img">
                       <div className="image-up">
-                          <p>Digital Interface</p>
+                          <b>Physical Interface - Bike Light</b>
+                          <p></p>
                           <img src ={Images[14]}/>
+                          {Contents[7]}
                      </div>
                      <div className ="image-row">
                           <img src ={Images[15]}/><img src ={Images[16]}/>
@@ -109,8 +125,63 @@ var Project1 = React.createClass({
                     </div>
 
                 <div className = "project-page-img">
-                    <p>WireFrame</p>
-                    <img src = {Images[17]} />
+                    <b>IOT and APP Connection</b>
+                    <p></p>
+                    <img className= "addborder" src = {Images[17]} />
+                </div>
+
+                <div className = "project-page-img">
+                    {Titles[3]}
+                    <table><tbody>
+                        <tr>
+                        <td><img src = {Images[8]} /></td>
+                        <td><img src = {Images[9]} /></td>
+                        <td><img src = {Images[10]} /></td>
+                        </tr>
+                        <tr>
+                            <td>Choose the route you would like to take.</td>
+                            <td>Click on the various road block icons to see what is going on at the place.</td>
+                            <td>It tracks your travel distance in real time and recommend the best route from your current location.</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+
+                <div className="project-page-img">
+                    {Titles[4]}
+                    <b>User Engagement to the Cycnav Community</b>
+                    {Contents[8]}
+                    <br></br>
+                    <table><tbody>
+                        <tr>
+                            <td>You can check your hitory, favourites and user contributions.</td>
+                            <td>Upload your own findings either though the app or by press the button on your bike light.</td>
+                            <td>Choose from different obstacle types, take a photo and leave your notes. </td>
+                        </tr>
+                        <tr>
+                        <td><img src = {Images[11]} /></td>
+                        <td><img src = {Images[12]} /></td>
+                        <td><img src = {Images[13]} /></td>
+                        </tr>
+                    </tbody></table>
+                </div>
+
+                <div className="project-page-single">
+                    {Titles[5]}
+                    <b>Paper WireFrame</b><p></p>
+                    <img src ={Images[18]} />
+                    <b>Digital WireFrame</b>
+                    <div className="image-row">
+                        <img src = {Images[22]} />
+                        <img src = {Images[23]} />
+                        <img src = {Images[24]} />
+                        <img src = {Images[25]} />
+                    </div>
+                </div>
+
+                <div className="project-page-single">
+                    <b>StoryBoard</b><p></p>
+                    <img src ={Images[26]} />
+                    <a href="media/img/cycnav/storyboard-device.pdf" target="_blank"> <p>See the full Storyboard</p></a>
                 </div>
             </div>
         )

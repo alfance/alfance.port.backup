@@ -11,7 +11,6 @@ export default class Project extends React.Component {
         var $img = $('.project-page-img img');
         var $imgBoxImg = $('.project-page-img');
         var $imgRow = $('.image-row');
-
         $($imgRow).each(function() {
             var $rowWidth = $(this).width(),
                  $imgIn = $(this).find('img'),
