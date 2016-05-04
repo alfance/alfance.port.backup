@@ -32895,86 +32895,108 @@
 	                return _react2.default.createElement(_HomeProjectShow2.default, { keys: i, info: info });
 	            });
 
-	            var images = ["./media/img/cycnav/1.png", "./media/img/garden/1.png", "./media/img/gameon/1.Png", "./media/img/demhub/1.Png", "./media/img/hacktalk/1.Png", "./media/img/dme/1.Png", "./media/img/logo/1.Png", "./media/img/shopsys/1.Png"];
+	            var images = ["./media/img/Home/all-01.png", "./media/img/Home/all-02.png", "./media/img/Home/all-03.png", "./media/img/Home/all-04.png", "./media/img/Home/all-05.png", "./media/img/Home/all-06.png", "./media/img/Home/all-07.png", "./media/img/Home/all-08.png"];
 
 	            return _react2.default.createElement(
 	                "div",
 	                { className: "flex-box" },
 	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project1" },
+	                    "span",
+	                    null,
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[0] })
+	                        _reactRouter.Link,
+	                        { to: "Project1" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[0] })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: "Project2" },
+	                        " ",
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[1] })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: "Project3" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[2] })
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project2" },
-	                    " ",
+	                    "span",
+	                    null,
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[1] })
+	                        _reactRouter.Link,
+	                        { to: "Project4" },
+	                        " ",
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[3] })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: "Project5" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[4] })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: "Project6" },
+	                        " ",
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[5] })
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project3" },
+	                    "span",
+	                    null,
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[2] })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project4" },
-	                    " ",
+	                        _reactRouter.Link,
+	                        { to: "Project7" },
+	                        " ",
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[6] })
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[3] })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project5" },
+	                        _reactRouter.Link,
+	                        { to: "Project8" },
+	                        " ",
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[7] })
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[4] })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project6" },
-	                    " ",
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[5] })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project7" },
-	                    " ",
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[6] })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "Project8" },
-	                    " ",
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "image-grid-each" },
-	                        _react2.default.createElement("img", { className: "image-grid-image", src: images[7] })
+	                        _reactRouter.Link,
+	                        { to: "Project8" },
+	                        " ",
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "image-grid-each" },
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[9] })
+	                        )
 	                    )
 	                )
 	            );

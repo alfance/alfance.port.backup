@@ -27,18 +27,19 @@ export default class HomeProject extends React.Component {
             ].map((info, i)=> <HomeProjectShow keys={i} info={info}/> );
 
             const images =[
-                "./media/img/cycnav/1.png",
-                "./media/img/garden/1.png",
-                "./media/img/gameon/1.Png",
-                "./media/img/demhub/1.Png",
-                "./media/img/hacktalk/1.Png",
-                "./media/img/dme/1.Png",
-                "./media/img/logo/1.Png",
-                "./media/img/shopsys/1.Png",
+                "./media/img/Home/all-01.png",
+                "./media/img/Home/all-02.png",
+                "./media/img/Home/all-03.png",
+                "./media/img/Home/all-04.png",
+                "./media/img/Home/all-05.png",
+                "./media/img/Home/all-06.png",
+                "./media/img/Home/all-07.png",
+                "./media/img/Home/all-08.png",
             ]
 
         return (
             <div className="flex-box">
+            <span>
             <Link to="Project1"><div className="image-grid-each">
                  <img className="image-grid-image" src={images[0]}/>
                </div></Link>
@@ -48,7 +49,8 @@ export default class HomeProject extends React.Component {
           <Link to="Project3"><div className="image-grid-each">
                <img className="image-grid-image" src={images[2]}/>
              </div></Link>
-
+         </span>
+         <span>
          <Link to="Project4"> <div className="image-grid-each">
               <img className="image-grid-image" src={images[3]}/>
                 </div></Link>
@@ -58,13 +60,18 @@ export default class HomeProject extends React.Component {
            <Link to="Project6"> <div className="image-grid-each">
                 <img className="image-grid-image" src={images[5]}/>
               </div></Link>
-         
+          </span>
+          <span>
           <Link to="Project7"> <div className="image-grid-each">
                <img className="image-grid-image" src={images[6]}/>
              </div></Link>
          <Link to="Project8"> <div className="image-grid-each">
               <img className="image-grid-image" src={images[7]}/>
         </div></Link>
+        <Link to="Project8"> <div className="image-grid-each">
+             <img className="image-grid-image" src={images[9]}/>
+       </div></Link>
+        </span>
             </div>
         )
     }
