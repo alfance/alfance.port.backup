@@ -48941,7 +48941,7 @@
 	        //problem
 	        "Presently, there are too few resources that effectively address the issues around networking, collaboration, and information sharing in the disaster and emergency management industry.",
 	        //solution
-	        "DEMHUB is creating a expansive professional network that acts as a centralized access point for all digital resources in the DEM industry while providing tools for users that enhance performance and exposure for emergency management specialists and researchers.", "DEMHUB makes it easy for disaster and emergency management professionals to find information that keeps them informed while offering them the opportunity to share their knowledge and experience.", "The newsfeed page is the major component of DEMHUB. It keeps the users updated worldwide. The box layout maximize the amount of information that can be feed into one page while not overwhelming the eyes.", "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.", "The field of Disaster and Emergency management has various sectors. "].map(function (info, i) {
+	        "DEMHUB is creating a expansive professional network that acts as a centralized access point for all digital resources in the DEM industry while providing tools for users that enhance performance and exposure for emergency management specialists and researchers.", "DEMHUB makes it easy for disaster and emergency management professionals to find information that keeps them informed while offering them the opportunity to share their knowledge and experience.", "The newsfeed page is the major component of DEMHUB. It keeps the users updated worldwide. The box layout maximize the amount of information that can be feed into one page while not overwhelming the eyes.", "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.", "The field of Disaster and Emergency management has various sectors. Each of the sectors is not enclusive. One challenge we face is to create an intuitive platform for people to navigate between the sectors. The colour code system is used throughout the site, creating a visual sensory cue for people to quickly grasp the type of the contents."].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -49009,6 +49009,7 @@
 	                "div",
 	                { className: "project-page-single" },
 	                Titles[5],
+	                Contents[6],
 	                React.createElement(
 	                    "table",
 	                    { className: "addborder center-align custom-table" },

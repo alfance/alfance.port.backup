@@ -48,7 +48,7 @@ var Project4 = React.createClass({
 
             "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.",
 
-            "The field of Disaster and Emergency management has various sectors. ",
+            "The field of Disaster and Emergency management has various sectors. Each of the sectors is not enclusive. One challenge we face is to create an intuitive platform for people to navigate between the sectors. The colour code system is used throughout the site, creating a visual sensory cue for people to quickly grasp the type of the contents.",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (
@@ -74,6 +74,7 @@ var Project4 = React.createClass({
 
              <div className="project-page-single">
                      {Titles[5]}
+                     {Contents[6]}
                      <table className="addborder center-align custom-table"><tbody>
                          <tr><td><b>Icon</b></td> <td><b>Division</b></td> <td><b>Colour</b></td></tr>
                         <tr><td><img src ={Images[9]} /></td> <td>health & Epidermics</td> <td>#0A8D56</td></tr>
