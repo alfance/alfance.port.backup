@@ -17,20 +17,33 @@ var Project3 = React.createClass({
             "Problem",
             "Market",
             "Inclusive Experience",
-            "Digital Interface",
-            "WireFrame",
-            "Hi-Fidelity Mockup",
-            "Future Development",
+            "Replays",
+            "Interactivity",
+            "Logo",
+            "Game",
+            "Flow Chart",
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
             "./media/img/gameon/1.png",
             "./media/img/gameon/mockup.png",
-            "./media/img/gameon/ar-202.png",
-            "./media/img/gameon/ar-303.png",
-            "./media/img/gameon/game_mockup_mine07.png",
-            "./media/img/gameon/game_mockup-0714.png",
-            "./media/img/gameon/game_mockup-0916.png",
+            "./media/img/gameon/ar-1-p02.png",
+            "./media/img/gameon/ar-2-p03.png",
+            "./media/img/gameon/ar-3-p04.png",
+            "./media/img/gameon/ar-4-p05.png",
+            "./media/img/gameon/ar-5-p06.png",
+            "./media/img/gameon/gameon-home.png",
+            "./media/img/gameon/IMG_2305.jpg",
+            "./media/img/gameon/logo.png",
+            "./media/img/gameon/logofinal.png",
+
+            "./media/img/gameon/logosketch.png",
+            "./media/img/gameon/replay1.png",
+            "./media/img/gameon/replay2.png",
+            "./media/img/gameon/replay3.png",
+            "./media/img/gameon/strategy_board-05.png",
+            "./media/img/gameon/game.png",
+            "./media/img/gameon/flowchart.png",
         ]
         const Contents = [
 
@@ -42,9 +55,11 @@ var Project3 = React.createClass({
             //solution
             "PWC research suggests that CAGR for the sports market to go from $56.9 billion to $70.7 billion just in North America. In this 8% of it is expected to be in sponsorship and gate revenues. The aim is to not only Lapsed Season Holders but also groups and Corporate tickets. Many sports fans we talked about are very interested in such a Technology and were our inspiration behind this. ",
 
-            "GameOn allows the onsite sports fans to engage with their team and game, giving them an unique experence and sense of unity. It encourages more fans to come in person to cheer up with their teams",
+            "GameOn allows the onsite sports fans to engage with their team and game, giving them an unique experence and sense of unity. It encourages more fans to come in person for the experience they cannot have by watching TV at home.",
 
-            "Future Development",
+            "The concept for the logo is to be playful and game-like. We all agree on taking inspiration from strategy board and play button to represent the nature of the app. Many of our ideas were seen in the early design.",
+
+            "Game feature",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (
@@ -76,19 +91,74 @@ var Project3 = React.createClass({
                  <img src ={Images[1]} /><p><br></br></p>
              </div>
 
-             <div className="project-page-img">
-                 <p>High Fidelity Mobile Mockup</p>
-                 <div className="image-row">
-                     <img src ={Images[1]} />
-                     <img src ={Images[2]} />
-                     <img src ={Images[3]} />
+             <div className="project-page-single">
+              <div className="image-up">
+                 <img src = {Images[7]} />
                  </div>
-                 <div className="image-row">
-                     <img src ={Images[4]} />
-                     <img src ={Images[5]} />
-                     <img src ={Images[6]} />
-                 </div>
+                 <p>GameOn offers 4 main features. </p>
+                 <ul>
+                     <li>replays you can choose from all the camera angles</li>
+                     <li>Most popular and fan choose high lights</li>
+                     <li>Fan engagement games to boost the spirit</li>
+                     <li>Realtime AR strategy board</li>
+                 </ul>
              </div>
+
+             <div className="project-page-img">
+                 {Titles[3]}
+                 <table><tbody>
+                     <tr>
+                         <td>My favourite replays</td>
+                         <td>Most recent replays</td>
+                         <td>Most popular replays</td>
+                     </tr>
+                     <tr>
+                         <td><img src = {Images[12]} /></td>
+                         <td><img src = {Images[13]} /></td>
+                         <td><img src = {Images[14]} /></td>
+                     </tr>
+                 </tbody></table>
+             </div>
+
+             <div className="project-page-img">
+                {Titles[4]}
+                 <table><tbody>
+                     <tr>
+                         <td><img src = {Images[3]} /></td>
+                         <td>Watch the replay video</td>
+                     </tr>
+                     <tr>
+                         <td><img src = {Images[4]} /></td>
+                         <td>Tap on the player to checkout his/her status and information</td>
+                     </tr>
+                     <tr>
+                         <td><img src = {Images[15]} /></td>
+                         <td>AR strategy board let you become the coach</td>
+                     </tr>
+                 </tbody></table>
+             </div>
+
+             <div className="project-page-img" >
+                 {Titles[6]}
+                  <img src ={Images[16]} />
+                 {Contents[6]}
+             </div>
+
+              <div className="project-page-img">
+              {Titles[5]}
+              <div className="image-row">
+                  <img src ={Images[8]} />
+                  <img src ={Images[9]} />
+                  <img src ={Images[10]} />
+              </div>
+               {Contents[5]}
+                    <img src ={Images[11]} />
+              </div>
+
+              <div className="project-page-img" >
+                  {Titles[7]}
+                   <img src ={Images[17]} />
+              </div>
 
             </div>
         )

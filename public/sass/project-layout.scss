@@ -33,6 +33,10 @@
     min-width:500px;
     max-width:90vw;
     overflow:hidden;
+    b {
+        margin-bottom: 10px;
+    }
+    
     p{
         margin-bottom: 7px;
     }
@@ -70,16 +74,3 @@
             margin-bottom: 7px;
         }
     }
-
-//50 : 50
-.ImgStyle2{
-    @extend .project-page-img;
-    .image-row2{
-        height:50%;
-        max-height: 45vh;
-        img {
-            height:100%;
-            width:auto;
-        }
-    }
-}

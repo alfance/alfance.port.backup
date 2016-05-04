@@ -39,7 +39,7 @@ export default class HomeProject extends React.Component {
 
         return (
             <div className="flex-box">
-                <Link to="Project1"><div className="image-grid-each">
+            <Link to="Project1"><div className="image-grid-each">
                  <img className="image-grid-image" src={images[0]}/>
                </div></Link>
            <Link to="Project2"> <div className="image-grid-each">
@@ -48,6 +48,7 @@ export default class HomeProject extends React.Component {
           <Link to="Project3"><div className="image-grid-each">
                <img className="image-grid-image" src={images[2]}/>
              </div></Link>
+
          <Link to="Project4"> <div className="image-grid-each">
               <img className="image-grid-image" src={images[3]}/>
                 </div></Link>
@@ -57,6 +58,7 @@ export default class HomeProject extends React.Component {
            <Link to="Project6"> <div className="image-grid-each">
                 <img className="image-grid-image" src={images[5]}/>
               </div></Link>
+         
           <Link to="Project7"> <div className="image-grid-each">
                <img className="image-grid-image" src={images[6]}/>
              </div></Link>

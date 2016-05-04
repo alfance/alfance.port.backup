@@ -158,9 +158,9 @@ var Project1 = React.createClass({
                             <td>Choose from different obstacle types, take a photo and leave your notes. </td>
                         </tr>
                         <tr>
-                        <td><img src = {Images[11]} /></td>
-                        <td><img src = {Images[12]} /></td>
-                        <td><img src = {Images[13]} /></td>
+                            <td><img src = {Images[11]} /></td>
+                            <td><img src = {Images[12]} /></td>
+                            <td><img src = {Images[13]} /></td>
                         </tr>
                     </tbody></table>
                 </div>
