@@ -36004,16 +36004,16 @@
 	        var ProjectName = "Vgarden";
 	        var Tagline = "Home IOT Vertical Garden";
 
-	        var Titles = ["Problem", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "Digital Interface", "Physical Interface", "Design Process", "Modeling", "Electronics"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg"];
+	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg", "./media/img/garden/howworks.gif", "./media/img/garden/individual_plant.png", "./media/img/garden/one_unit_breakdown.png", "./media/img/garden/One_unit_connection_topbottom.png", "./media/img/garden/IMG_3100.jpg", "./media/img/garden/Copy of IMG_3099.jpg"];
 	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
 	        //problem
 	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
 	        //solution
-	        "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ", "Hi-Fidelity Mockup", "Future Development"].map(function (info, i) {
+	        "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ", "The above figure shows how the physical component is connected automatically to the app when a new plant unit is been introduced to the family. Data is then synchronized. Whenever the customer introduced a new plant or member to the “family”, the transmitter will send the basic information to the app, thus updated in the interface. ", "The digital interface is simple and minimal. it has two main pages: one that displays the garden's overall condition; and another one display each plant individual status.", "Future Development"].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -36130,11 +36130,97 @@
 	                "div",
 	                { className: "project-page-img" },
 	                React.createElement(
-	                    "p",
+	                    "b",
 	                    null,
 	                    "The digital Interface "
 	                ),
+	                Contents[5],
 	                React.createElement("img", { src: Images[1] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "How it Works"
+	                ),
+	                React.createElement("img", { src: Images[6] }),
+	                Contents[4]
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[4],
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[7] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "One Unit and Multi-units connection desing."
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[8] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Each unit is divided into two parts. The top part contains the plant and the bottom halp holds the electronics."
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[9] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Bottom design for each unit."
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[5],
+	                Contents[4],
+	                React.createElement("img", { src: Images[6] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[6],
+	                React.createElement(
+	                    "div",
+	                    { className: "image-row" },
+	                    React.createElement("img", { src: Images[10] }),
+	                    React.createElement("img", { src: Images[11] })
+	                ),
+	                Contents[4]
 	            )
 	        );
 	    }
