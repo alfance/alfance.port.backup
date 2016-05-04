@@ -36008,12 +36008,12 @@
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg", "./media/img/garden/howworks.gif", "./media/img/garden/individual_plant.png", "./media/img/garden/one_unit_breakdown.png", "./media/img/garden/One_unit_connection_topbottom.png", "./media/img/garden/IMG_3100.jpg", "./media/img/garden/Copy of IMG_3099.jpg"];
+	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg", "./media/img/garden/howworks.gif", "./media/img/garden/individual_plant.png", "./media/img/garden/one_unit_breakdown.png", "./media/img/garden/One_unit_connection_topbottom.png", "./media/img/garden/IMG_3100.jpg", "./media/img/garden/Copy of IMG_3099.jpg", "./media/img/garden/IMG_3098.jpg", "./media/img/garden/IMG_3111.jpg", "./media/img/garden/A360 Viewer.png", "./media/img/garden/IMG_2929.png"];
 	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
 	        //problem
 	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
 	        //solution
-	        "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ", "The above figure shows how the physical component is connected automatically to the app when a new plant unit is been introduced to the family. Data is then synchronized. Whenever the customer introduced a new plant or member to the “family”, the transmitter will send the basic information to the app, thus updated in the interface. ", "The digital interface is simple and minimal. it has two main pages: one that displays the garden's overall condition; and another one display each plant individual status.", "Future Development"].map(function (info, i) {
+	        "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ", "For ever garden, there is a central unit where power source and internet modules are stored. When additinal unit connects to the central unit, Data is transfered. Whenever the customer introduced a new plant or member to the “family”, the transmitter will send the basic information to the app, thus updated in the interface. ", "The digital interface is simple and minimal. it has two main pages: one that displays the garden's overall condition; and another one display each plant individual status.", "Part of the project components were 3D printed. For example, the water tube connectors. The bottom part container is laser cutted, and the top part container is made of foam board covered with water-proof spray."].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -36145,6 +36145,7 @@
 	                    null,
 	                    "How it Works"
 	                ),
+	                React.createElement("p", null),
 	                React.createElement("img", { src: Images[6] }),
 	                Contents[4]
 	            ),
@@ -36207,8 +36208,9 @@
 	                "div",
 	                { className: "project-page-img" },
 	                Titles[5],
-	                Contents[4],
-	                React.createElement("img", { src: Images[6] })
+	                React.createElement("img", { src: Images[14] }),
+	                Contents[6],
+	                React.createElement("img", { src: Images[15] })
 	            ),
 	            React.createElement(
 	                "div",
@@ -36220,7 +36222,13 @@
 	                    React.createElement("img", { src: Images[10] }),
 	                    React.createElement("img", { src: Images[11] })
 	                ),
-	                Contents[4]
+	                Contents[4],
+	                React.createElement(
+	                    "div",
+	                    { className: "image-row" },
+	                    React.createElement("img", { src: Images[12] }),
+	                    React.createElement("img", { src: Images[13] })
+	                )
 	            )
 	        );
 	    }
@@ -36268,7 +36276,7 @@
 	        //problem
 	        "Stadium fans loose out on the experience that stay home fans have. Fans needs more than halftime shows to engage themselves at the venue and come back. In person experience does not match fans’ consumption habits",
 	        //solution
-	        "PWC research suggests that CAGR for the sports market to go from $56.9 billion to $70.7 billion just in North America. In this 8% of it is expected to be in sponsorship and gate revenues. The aim is to not only Lapsed Season Holders but also groups and Corporate tickets. Many sports fans we talked about are very interested in such a Technology and were our inspiration behind this. ", "GameOn allows the onsite sports fans to engage with their team and game, giving them an unique experence and sense of unity. It encourages more fans to come in person for the experience they cannot have by watching TV at home.", "The concept for the logo is to be playful and game-like. We all agree on taking inspiration from strategy board and play button to represent the nature of the app. Many of our ideas were seen in the early design.", "Game feature"].map(function (info, i) {
+	        "PWC research suggests that CAGR for the sports market to go from $56.9 billion to $70.7 billion just in North America. In this 8% of it is expected to be in sponsorship and gate revenues. The aim is to not only Lapsed Season Holders but also groups and Corporate tickets. Many sports fans we talked about are very interested in such a Technology and were our inspiration behind this. ", "GameOn allows the onsite sports fans to engage with their team and game, giving them an unique experence and sense of unity. It encourages more fans to come in person for the experience they cannot have by watching TV at home.", "The concept for the logo is to be playful and game-like. We all agree on taking inspiration from strategy board and play button to represent the nature of the app. Many of our ideas were seen in the early design.", "Fans can support their teams by competing in the 'Fan vs Fan' social game. By uploading a photo showing the team they are rooting, GameOn will count the number of supporters for each team and upload their photos to the social media site. The team with the most photos wins"].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -48921,19 +48929,19 @@
 	var Project4 = React.createClass({
 	    displayName: "Project4",
 	    render: function render() {
-	        var ProjectName = "Vgarden";
-	        var Tagline = "Home IOT Vertical Garden";
+	        var ProjectName = "DEMHUB";
+	        var Tagline = "The Disaster and Emergency Management Network";
 
-	        var Titles = ["Problem", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "Main Page", "Newsfeeds", "Connection", "Colour code", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/2/1.png", "", "./media/img/2/DSC_0385-2.jpg", "./media/img/2/DSC_0355-2.jpg", "./media/img/2/DSC_0353-2.jpg", "./media/img/2/DSC_0365-2.jpg"];
-	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+	        var Images = ["./media/img/demhub/1.png", "./media/img/demhub/DEMHUB-main.png", "./media/img/demhub/newsfeed-01.png", "./media/img/demhub/newsfeedcs6-05.png", "./media/img/demhub/DSC_0353-2.jpg", "./media/img/demhub/DSC_0365-2.jpg", "./media/img/demhub/connections-02.png", "./media/img/demhub/connections-03.png", "./media/img/demhub/connections-01.png", "./media/img/demhub/icon-dem1.svg", "./media/img/demhub/icon-dem2.svg", "./media/img/demhub/icon-dem3.svg", "./media/img/demhub/icon-dem4.svg", "./media/img/demhub/icon-dem5.svg", "./media/img/demhub/icon-dem6.svg"];
+	        var Contents = ["DEMHUB is the vertical professional network for the disaster and emergency management industry that provides tools for daily use such as newsfeeds, discussion boards, and search features along with premium tools that allow global collaboration directed at mitigating and planning for disaster response. ",
 	        //problem
-	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
+	        "Presently, there are too few resources that effectively address the issues around networking, collaboration, and information sharing in the disaster and emergency management industry.",
 	        //solution
-	        "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ", "Hi-Fidelity Mockup", "Future Development"].map(function (info, i) {
+	        "DEMHUB is creating a expansive professional network that acts as a centralized access point for all digital resources in the DEM industry while providing tools for users that enhance performance and exposure for emergency management specialists and researchers.", "DEMHUB makes it easy for disaster and emergency management professionals to find information that keeps them informed while offering them the opportunity to share their knowledge and experience.", "The newsfeed page is the major component of DEMHUB. It keeps the users updated worldwide. The box layout maximize the amount of information that can be feed into one page while not overwhelming the eyes.", "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.", "The field of Disaster and Emergency management has various sectors. "].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -48943,118 +48951,318 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single center-align" },
+	                ProjectName,
+	                Tagline,
+	                Contents[0],
+	                React.createElement("img", { src: Images[0] }),
 	                React.createElement(
-	                    "h1",
+	                    "p",
 	                    null,
-	                    " ",
-	                    ProjectName
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Tagline
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Job Role:"
+	                    ),
+	                    " UI/UX Designer, Assistant Front-end development "
 	                ),
 	                React.createElement(
 	                    "p",
 	                    null,
-	                    Contents[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[1]
-	                ),
-	                React.createElement("img", { src: Images[0] })
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Hardware:"
+	                    ),
+	                    " Adobe PS, AI, Balsamiq, Invision, Laravel, Vigrant "
+	                )
 	            ),
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single" },
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[2]
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[1]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[3]
-	                ),
-	                React.createElement(
-	                    "b",
-	                    null,
-	                    " The components of the project include: "
-	                ),
-	                React.createElement("p", null),
+	                Titles[0],
 	                React.createElement(
 	                    "p",
 	                    null,
 	                    React.createElement(
-	                        "b",
+	                        "i",
 	                        null,
-	                        "Software"
-	                    ),
-	                    " - digital interface that display the status of the plants "
+	                        "“There is a dire need for a framework to enable collaborative information gathering and validation...to ensure measurable risk factors and outcomes.”"
+	                    )
 	                ),
 	                React.createElement(
 	                    "p",
 	                    null,
-	                    React.createElement(
-	                        "b",
-	                        null,
-	                        "Hardware"
-	                    ),
-	                    " - individual units each contain one plant & corresponding water system. "
+	                    "       - 2014 Public Safety Canada"
 	                ),
+	                Contents[1],
+	                Titles[1],
+	                Contents[2],
 	                React.createElement(
-	                    "ul",
-	                    null,
+	                    "a",
+	                    { href: "http://demhub.net/", target: "_blank" },
+	                    "Visit the Site"
+	                ),
+	                " ",
+	                React.createElement("p", null)
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-single" },
+	                Titles[5],
+	                React.createElement(
+	                    "table",
+	                    { className: "addborder center-align custom-table" },
 	                    React.createElement(
-	                        "li",
+	                        "tbody",
 	                        null,
-	                        "Arduino Uno & Leonardo & Ethernet Shield"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "Moisture, Temperature, Humidity and Air Quality sensors"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "110V Aquarium Pump & Relays"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "Plastic and Permisive pipes"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "other Electronic Accessories"
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    "Icon"
+	                                )
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    "Division"
+	                                )
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    "Colour"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[9] })
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "health & Epidermics"
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "#0A8D56"
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[10] })
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Science & Environmental"
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "#2173A2"
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[11] })
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "EM Practitioner & Response"
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "#DB9528"
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[12] })
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Civil & Cyber Security"
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "#838788"
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[13] })
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Business Continuity"
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "#933132"
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[14] })
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "NGO & Humanitarian"
+	                            ),
+	                            " ",
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "#774393"
+	                            )
+	                        )
 	                    )
 	                )
 	            ),
 	            React.createElement(
 	                "div",
 	                { className: "project-page-img" },
-	                React.createElement("img", { src: Images[2] }),
+	                Titles[2],
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "td",
+	                            null,
+	                            React.createElement("img", { src: Images[1] })
+	                        ),
+	                        React.createElement(
+	                            "td",
+	                            { className: "td-sizing" },
+	                            Contents[3]
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[3],
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    "Division Page"
+	                                )
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    "Main Newsfeeds"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[2] }),
+	                                " "
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                { className: "addborder td-padding" },
+	                                React.createElement("img", { src: Images[3] }),
+	                                Contents[4]
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[4],
+	                Contents[5],
+	                React.createElement("br", null),
 	                React.createElement(
 	                    "div",
 	                    { className: "image-row" },
-	                    React.createElement("img", { src: Images[3] }),
-	                    React.createElement("img", { src: Images[4] }),
-	                    React.createElement("img", { src: Images[5] })
+	                    React.createElement("img", { src: Images[6] }),
+	                    React.createElement("img", { src: Images[7] }),
+	                    React.createElement("img", { src: Images[8] })
 	                )
 	            )
 	        );

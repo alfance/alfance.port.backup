@@ -3,75 +3,127 @@ import Project from "./Project";
 
 var Project4 = React.createClass({
     render() {
-        const ProjectName = "Vgarden";
-        const Tagline ="Home IOT Vertical Garden";
+        const ProjectName = "DEMHUB";
+        const Tagline ="The Disaster and Emergency Management Network";
 
         const Titles = [
             "Problem",
             "Solution",
-            "Digital Interface",
-            "Physical Interface",
-            "WireFrame",
-            "Hi-Fidelity Mockup",
+            "Main Page",
+            "Newsfeeds",
+            "Connection",
+            "Colour code",
             "Future Development",
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/2/1.png",
-            "",
-            "./media/img/2/DSC_0385-2.jpg",
-            "./media/img/2/DSC_0355-2.jpg",
-            "./media/img/2/DSC_0353-2.jpg",
-            "./media/img/2/DSC_0365-2.jpg",
+            "./media/img/demhub/1.png",
+            "./media/img/demhub/DEMHUB-main.png",
+            "./media/img/demhub/newsfeed-01.png",
+            "./media/img/demhub/newsfeedcs6-05.png",
+            "./media/img/demhub/DSC_0353-2.jpg",
+            "./media/img/demhub/DSC_0365-2.jpg",
+            "./media/img/demhub/connections-02.png",
+            "./media/img/demhub/connections-03.png",
+            "./media/img/demhub/connections-01.png",
+            "./media/img/demhub/icon-dem1.svg",
+            "./media/img/demhub/icon-dem2.svg",
+
+            "./media/img/demhub/icon-dem3.svg",
+            "./media/img/demhub/icon-dem4.svg",
+            "./media/img/demhub/icon-dem5.svg",
+            "./media/img/demhub/icon-dem6.svg",
         ]
         const Contents = [
 
-            "As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ",
-
-            "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+            "DEMHUB is the vertical professional network for the disaster and emergency management industry that provides tools for daily use such as newsfeeds, discussion boards, and search features along with premium tools that allow global collaboration directed at mitigating and planning for disaster response. ",
             //problem
-            "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
+            "Presently, there are too few resources that effectively address the issues around networking, collaboration, and information sharing in the disaster and emergency management industry.",
             //solution
-            "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ",
+            "DEMHUB is creating a expansive professional network that acts as a centralized access point for all digital resources in the DEM industry while providing tools for users that enhance performance and exposure for emergency management specialists and researchers.",
 
-            "Hi-Fidelity Mockup",
+            "DEMHUB makes it easy for disaster and emergency management professionals to find information that keeps them informed while offering them the opportunity to share their knowledge and experience.",
 
-            "Future Development",
+            "The newsfeed page is the major component of DEMHUB. It keeps the users updated worldwide. The box layout maximize the amount of information that can be feed into one page while not overwhelming the eyes.",
+
+            "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.",
+
+            "The field of Disaster and Emergency management has various sectors. ",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (
             <div className ="flex-box">
                 <div className="project-page-single center-align">
-                    <h1> {ProjectName}</h1>
-                    <h4>{Tagline}</h4>
-                     <p>{Contents[0]}</p>
-                     <p>{Contents[1]}</p>
+                     {ProjectName}
+                    {Tagline}
+                    {Contents[0]}
                      <img src ={Images[0]}/>
+                     <p><b>Job Role:</b> UI/UX Designer, Assistant Front-end development </p>
+                     <p><b>Hardware:</b> Adobe PS, AI, Balsamiq, Invision, Laravel, Vigrant </p>
+             </div>
 
-             </div>
              <div className="project-page-single">
-                     <h4>{Titles[0]}</h4>
-                     <p>{Contents[2]}</p>
-                     <h4>{Titles[1]}</h4>
-                     <p>{Contents[3]}</p>
-                     <b> The components of the project include: </b>
-                     <p></p>
-                     <p><b>Software</b> - digital interface that display the status of the plants </p>
-                      <p><b>Hardware</b> - individual units each contain one plant & corresponding water system. </p>
-                     <ul>
-                         <li>Arduino Uno & Leonardo & Ethernet Shield</li>
-                         <li>Moisture, Temperature, Humidity and Air Quality sensors</li>
-                         <li>110V Aquarium Pump & Relays</li>
-                         <li>Plastic and Permisive pipes</li>
-                         <li>other Electronic Accessories</li>
-                     </ul>
+                    {Titles[0]}
+                  <p><i>“There is a dire need for a framework to enable collaborative information gathering and validation...to ensure measurable risk factors and outcomes.”</i></p>
+                    <p>       - 2014 Public Safety Canada</p>
+                     {Contents[1]}
+                     {Titles[1]}
+                    {Contents[2]}
+                    <a href="http://demhub.net/" target="_blank">Visit the Site</a> <p></p>
              </div>
+
+             <div className="project-page-single">
+                     {Titles[5]}
+                     <table className="addborder center-align custom-table"><tbody>
+                         <tr><td><b>Icon</b></td> <td><b>Division</b></td> <td><b>Colour</b></td></tr>
+                        <tr><td><img src ={Images[9]} /></td> <td>health & Epidermics</td> <td>#0A8D56</td></tr>
+                        <tr><td><img src ={Images[10]} /></td> <td>Science & Environmental</td> <td>#2173A2</td></tr>
+                        <tr><td><img src ={Images[11]} /></td> <td>EM Practitioner & Response</td> <td>#DB9528</td></tr>
+                        <tr><td><img src ={Images[12]} /></td> <td>Civil & Cyber Security</td> <td>#838788</td></tr>
+                        <tr><td><img src ={Images[13]} /></td> <td>Business Continuity</td> <td>#933132</td></tr>
+                        <tr><td><img src ={Images[14]} /></td> <td>NGO & Humanitarian</td> <td>#774393</td></tr>
+                     </tbody></table>
+             </div>
+
               <div className="project-page-img">
-                  <img src ={Images[2]}/>
-                    <div className ="image-row">
-                      <img src ={Images[3]}/><img src ={Images[4]}/><img src ={Images[5]}/>
-                     </div>
+                  {Titles[2]}
+                      <table><tbody>
+                          <td>
+                          <img src = {Images[1]} />
+                          </td>
+                          <td className="td-sizing">
+                        {Contents[3]}
+                        </td>
+                      </tbody></table>
                  </div>
+
+                 <div className="project-page-img">
+                     {Titles[3]}
+                         <table><tbody>
+                             <tr>
+                             <td><b>Division Page</b></td>
+                             <td><b>Main Newsfeeds</b></td>
+                             </tr>
+                             <tr>
+                            <td><img src = {Images[2]} /> </td>
+                             <td className="addborder td-padding">
+                                <img src = {Images[3]} />
+                                {Contents[4]}
+                             </td>
+                             </tr>
+                         </tbody></table>
+                    </div>
+
+                    <div className="project-page-img">
+                        {Titles[4]}
+                        {Contents[5]}
+                        <br></br>
+                        <div className="image-row">
+                            <img src ={Images[6]} />
+                            <img src ={Images[7]} />
+                            <img src ={Images[8]} />
+                        </div>
+                    </div>
             </div>
         )
     }

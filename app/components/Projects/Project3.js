@@ -59,7 +59,7 @@ var Project3 = React.createClass({
 
             "The concept for the logo is to be playful and game-like. We all agree on taking inspiration from strategy board and play button to represent the nature of the app. Many of our ideas were seen in the early design.",
 
-            "Game feature",
+            "Fans can support their teams by competing in the 'Fan vs Fan' social game. By uploading a photo showing the team they are rooting, GameOn will count the number of supporters for each team and upload their photos to the social media site. The team with the most photos wins",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (

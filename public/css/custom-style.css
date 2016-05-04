@@ -513,6 +513,19 @@ h4, h5 {
   margin-bottom: 7px;
 }
 
+/* table properties */
+.td-padding {
+  padding: 0 20px;
+}
+
+.td-sizing {
+  width: 40%;
+}
+
+.custom-table {
+  padding: 20px;
+}
+
 .HomeSVG {
   width: 40vw;
   height: auto;

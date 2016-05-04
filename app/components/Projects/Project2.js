@@ -28,7 +28,12 @@ var Project2 = React.createClass({
             "./media/img/garden/one_unit_breakdown.png",
             "./media/img/garden/One_unit_connection_topbottom.png",
             "./media/img/garden/IMG_3100.jpg",
+
             "./media/img/garden/Copy of IMG_3099.jpg",
+            "./media/img/garden/IMG_3098.jpg",
+            "./media/img/garden/IMG_3111.jpg",
+            "./media/img/garden/A360 Viewer.png",
+            "./media/img/garden/IMG_2929.png",
         ]
         const Contents = [
 
@@ -40,11 +45,11 @@ var Project2 = React.createClass({
             //solution
             "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ",
 
-            "The above figure shows how the physical component is connected automatically to the app when a new plant unit is been introduced to the family. Data is then synchronized. Whenever the customer introduced a new plant or member to the “family”, the transmitter will send the basic information to the app, thus updated in the interface. ",
+            "For ever garden, there is a central unit where power source and internet modules are stored. When additinal unit connects to the central unit, Data is transfered. Whenever the customer introduced a new plant or member to the “family”, the transmitter will send the basic information to the app, thus updated in the interface. ",
 
             "The digital interface is simple and minimal. it has two main pages: one that displays the garden's overall condition; and another one display each plant individual status.",
 
-            "Future Development",
+            "Part of the project components were 3D printed. For example, the water tube connectors. The bottom part container is laser cutted, and the top part container is made of foam board covered with water-proof spray.",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (
@@ -95,7 +100,7 @@ var Project2 = React.createClass({
                 </div>
 
                 <div className = "project-page-img">
-                    <b>How it Works</b>
+                    <b>How it Works</b><p></p>
                     <img src = {Images[6]} />
                     {Contents [4]}
                 </div>
@@ -120,8 +125,9 @@ var Project2 = React.createClass({
 
                 <div className = "project-page-img">
                     {Titles[5]}
-                    {Contents [4]}
-                    <img src = {Images[6]} />
+                    <img src = {Images[14]} />
+                    {Contents [6]}
+                    <img src = {Images[15]} />
                 </div>
 
                 <div className = "project-page-img">
@@ -131,6 +137,10 @@ var Project2 = React.createClass({
                         <img src = {Images[11]} />
                     </div>
                     {Contents [4]}
+                    <div className="image-row">
+                        <img src = {Images[12]} />
+                        <img src = {Images[13]} />
+                    </div>
                 </div>
             </div>
 
