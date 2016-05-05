@@ -3,11 +3,11 @@ import Project from "./Project";
 
 var Project8 = React.createClass({
     render() {
-        const ProjectName = "Vgarden";
-        const Tagline ="Home IOT Vertical Garden";
+        const ProjectName = "Shopsys Menu Design";
+        const Tagline ="";
 
         const Titles = [
-            "Problem",
+            "Logo",
             "Solution",
             "Digital Interface",
             "Physical Interface",
@@ -17,18 +17,18 @@ var Project8 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/2/1.png",
-            "",
-            "./media/img/2/DSC_0385-2.jpg",
-            "./media/img/2/DSC_0355-2.jpg",
-            "./media/img/2/DSC_0353-2.jpg",
-            "./media/img/2/DSC_0365-2.jpg",
+            "./media/img/shopsys/2.png",
+            "./media/img/shopsys/001.png",
+            "./media/img/shopsys/02.png",
+            "./media/img/shopsys/01.png",
+            "./media/img/shopsys/03.png",
+            "./media/img/shopsys/04.png",
         ]
         const Contents = [
 
-            "As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ",
+            "Shopsys is a restaurant chain that serves deli sandwiches across Toronto. Started as a ice cream parlour in the 1920s, Shopsys' main dishes including hot dogs, pastrami, Corned beef, salami etc. ",
 
-            "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+            "Considering its homie style, I approach this project with such a ",
             //problem
             "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
             //solution
@@ -42,37 +42,37 @@ var Project8 = React.createClass({
         return (
             <div className ="flex-box">
                 <div className="project-page-single center-align">
-                    <h1> {ProjectName}</h1>
-                    <h4>{Tagline}</h4>
-                     <p>{Contents[0]}</p>
-                     <p>{Contents[1]}</p>
+                    <Project ProjectName={ProjectName} />
+                    {Tagline}
+                    {Contents[0]}
+                     {Contents[1]}
                      <img src ={Images[0]}/>
 
              </div>
-             <div className="project-page-single">
-                     <h4>{Titles[0]}</h4>
-                     <p>{Contents[2]}</p>
-                     <h4>{Titles[1]}</h4>
-                     <p>{Contents[3]}</p>
-                     <b> The components of the project include: </b>
-                     <p></p>
-                     <p><b>Software</b> - digital interface that display the status of the plants </p>
-                      <p><b>Hardware</b> - individual units each contain one plant & corresponding water system. </p>
-                     <ul>
-                         <li>Arduino Uno & Leonardo & Ethernet Shield</li>
-                         <li>Moisture, Temperature, Humidity and Air Quality sensors</li>
-                         <li>110V Aquarium Pump & Relays</li>
-                         <li>Plastic and Permisive pipes</li>
-                         <li>other Electronic Accessories</li>
-                     </ul>
+
+             <div className="project-page-img">
+                 <img src ={Images[1]}/>
              </div>
-              <div className="project-page-img">
-                  <img src ={Images[2]}/>
-                    <div className ="image-row">
-                      <img src ={Images[3]}/><img src ={Images[4]}/><img src ={Images[5]}/>
-                     </div>
-                 </div>
-            </div>
+
+              <div className="project-page-img box-size-80">
+                  <img src ={Images[1]}/>
+              </div>
+
+            <div className="project-page-img box-size-80">
+                <img src ={Images[2]}/>
+             </div>
+
+             <div className="project-page-img box-size-80">
+                 <img src ={Images[3]}/>
+             </div>
+
+             <div className="project-page-img box-size-80">
+                 <img src ={Images[4]}/>
+             </div>
+             <div className="project-page-img">
+                 <img src ={Images[5]}/>
+             </div>
+          </div>
         )
     }
 });

@@ -33511,10 +33511,12 @@
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
 	            var $box = $('.project-page-single');
+	            var $imgBox = $('.project-page-img');
+
 	            var $windowHeight = $(window).height();
 	            var $img = $('.project-page-img img');
-	            var $imgBoxImg = $('.project-page-img');
 	            var $imgRow = $('.image-row');
+
 	            $($imgRow).each(function () {
 	                var $rowWidth = $(this).width(),
 	                    $imgIn = $(this).find('img'),
@@ -33528,9 +33530,25 @@
 
 	            $($box).each(function () {
 	                var $boxHeight = $(this).height();
-	                if ($boxHeight > $windowHeight) {
+	                if ($box.innerHeight > $box.scrollHeight) {
+	                    console.log($box.height());
 	                    $(this).css({
 	                        "min-width": "550px"
+	                    });
+	                }
+	            });
+
+	            $($imgBox).each(function () {
+	                var $imgIn = $(this).find('img');
+	                var $boxHeight = $(this).height();
+
+	                if ($boxHeight > $windowHeight) {
+	                    var $difference = boxHeight - $windowHeight;
+	                    var $imgHeight = $imgIn.height();
+	                    var $finalHeight = $imgHeight - $difference;
+
+	                    $(this).find('img').css({
+	                        "min-width": $finalHeight + "px"
 	                    });
 	                }
 	            });
@@ -36526,7 +36544,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img box-size-80" },
 	                Titles[7],
 	                React.createElement("img", { src: Images[17] })
 	            )
@@ -48954,11 +48972,11 @@
 	        var ProjectName = "DEMHUB";
 	        var Tagline = "The Disaster and Emergency Management Network";
 
-	        var Titles = ["Problem", "Solution", "Main Page", "Newsfeeds", "Connection", "Colour code", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "Main Page", "Newsfeeds", "Connection", "Colour code", "Events by Geolocation", "User Dashboard", "WireFrame"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/demhub/1.png", "./media/img/demhub/DEMHUB-main.png", "./media/img/demhub/newsfeed-01.png", "./media/img/demhub/newsfeedcs6-05.png", "./media/img/demhub/DSC_0353-2.jpg", "./media/img/demhub/DSC_0365-2.jpg", "./media/img/demhub/connections-02.png", "./media/img/demhub/connections-03.png", "./media/img/demhub/connections-01.png", "./media/img/demhub/icon-dem1.svg", "./media/img/demhub/icon-dem2.svg", "./media/img/demhub/icon-dem3.svg", "./media/img/demhub/icon-dem4.svg", "./media/img/demhub/icon-dem5.svg", "./media/img/demhub/icon-dem6.svg"];
+	        var Images = ["./media/img/demhub/1.png", "./media/img/demhub/DEMHUB-main.png", "./media/img/demhub/newsfeed-01.png", "./media/img/demhub/newsfeedcs6-05.png", "./media/img/demhub/DSC_0353-2.jpg", "./media/img/demhub/DSC_0365-2.jpg", "./media/img/demhub/connections-02.png", "./media/img/demhub/connections-03.png", "./media/img/demhub/connections-01.png", "./media/img/demhub/icon-dem1.svg", "./media/img/demhub/icon-dem2.svg", "./media/img/demhub/icon-dem3.svg", "./media/img/demhub/icon-dem4.svg", "./media/img/demhub/icon-dem5.svg", "./media/img/demhub/icon-dem6.svg", "./media/img/demhub/mainpagecs6-02.png", "./media/img/demhub/user-dashboard-01.png", "./media/img/demhub/user-dashboard-02.png", "./media/img/demhub/user-dashboard-03.png", "./media/img/demhub/IMG_3213.png", "./media/img/demhub/IMG_3215.png"];
 	        var Contents = ["DEMHUB is the vertical professional network for the disaster and emergency management industry that provides tools for daily use such as newsfeeds, discussion boards, and search features along with premium tools that allow global collaboration directed at mitigating and planning for disaster response. ",
 	        //problem
 	        "Presently, there are too few resources that effectively address the issues around networking, collaboration, and information sharing in the disaster and emergency management industry.",
@@ -49050,7 +49068,6 @@
 	                                    "Icon"
 	                                )
 	                            ),
-	                            " ",
 	                            React.createElement(
 	                                "td",
 	                                null,
@@ -49060,7 +49077,6 @@
 	                                    "Division"
 	                                )
 	                            ),
-	                            " ",
 	                            React.createElement(
 	                                "td",
 	                                null,
@@ -49211,14 +49227,18 @@
 	                        "tbody",
 	                        null,
 	                        React.createElement(
-	                            "td",
+	                            "tr",
 	                            null,
-	                            React.createElement("img", { src: Images[1] })
-	                        ),
-	                        React.createElement(
-	                            "td",
-	                            { className: "td-sizing" },
-	                            Contents[3]
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[1] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                { className: "td-sizing" },
+	                                Contents[3]
+	                            )
 	                        )
 	                    )
 	                )
@@ -49286,6 +49306,88 @@
 	                    React.createElement("img", { src: Images[6] }),
 	                    React.createElement("img", { src: Images[7] }),
 	                    React.createElement("img", { src: Images[8] })
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[6],
+	                Contents[7],
+	                React.createElement("br", null),
+	                React.createElement("img", { src: Images[15] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[7],
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[16] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Home Dashboard has basic user info, connection activities and recent publications"
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[17] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Message system lets the user to communicate, share and reply. "
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[18] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Statistics display current and old user activity inforgraphics and analysis."
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[7],
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tr",
+	                        null,
+	                        React.createElement("img", { src: Images[19] })
+	                    ),
+	                    React.createElement(
+	                        "tr",
+	                        null,
+	                        React.createElement("img", { src: Images[20] })
+	                    )
 	                )
 	            )
 	        );
@@ -49792,15 +49894,15 @@
 	var Project8 = React.createClass({
 	    displayName: "Project8",
 	    render: function render() {
-	        var ProjectName = "Vgarden";
-	        var Tagline = "Home IOT Vertical Garden";
+	        var ProjectName = "Shopsys Menu Design";
+	        var Tagline = "";
 
-	        var Titles = ["Problem", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
+	        var Titles = ["Logo", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/2/1.png", "", "./media/img/2/DSC_0385-2.jpg", "./media/img/2/DSC_0355-2.jpg", "./media/img/2/DSC_0353-2.jpg", "./media/img/2/DSC_0365-2.jpg"];
-	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+	        var Images = ["./media/img/shopsys/2.png", "./media/img/shopsys/001.png", "./media/img/shopsys/02.png", "./media/img/shopsys/01.png", "./media/img/shopsys/03.png", "./media/img/shopsys/04.png"];
+	        var Contents = ["Shopsys is a restaurant chain that serves deli sandwiches across Toronto. Started as a ice cream parlour in the 1920s, Shopsys' main dishes including hot dogs, pastrami, Corned beef, salami etc. ", "Considering its homie style, I approach this project with such a ",
 	        //problem
 	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
 	        //solution
@@ -49814,119 +49916,41 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single center-align" },
-	                React.createElement(
-	                    "h1",
-	                    null,
-	                    " ",
-	                    ProjectName
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Tagline
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[1]
-	                ),
+	                React.createElement(_Project2.default, { ProjectName: ProjectName }),
+	                Tagline,
+	                Contents[0],
+	                Contents[1],
 	                React.createElement("img", { src: Images[0] })
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-single" },
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[2]
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[1]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[3]
-	                ),
-	                React.createElement(
-	                    "b",
-	                    null,
-	                    " The components of the project include: "
-	                ),
-	                React.createElement("p", null),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    React.createElement(
-	                        "b",
-	                        null,
-	                        "Software"
-	                    ),
-	                    " - digital interface that display the status of the plants "
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    React.createElement(
-	                        "b",
-	                        null,
-	                        "Hardware"
-	                    ),
-	                    " - individual units each contain one plant & corresponding water system. "
-	                ),
-	                React.createElement(
-	                    "ul",
-	                    null,
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "Arduino Uno & Leonardo & Ethernet Shield"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "Moisture, Temperature, Humidity and Air Quality sensors"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "110V Aquarium Pump & Relays"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "Plastic and Permisive pipes"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "other Electronic Accessories"
-	                    )
-	                )
+	                { className: "project-page-img" },
+	                React.createElement("img", { src: Images[1] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-80" },
+	                React.createElement("img", { src: Images[1] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-80" },
+	                React.createElement("img", { src: Images[2] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-80" },
+	                React.createElement("img", { src: Images[3] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-80" },
+	                React.createElement("img", { src: Images[4] })
 	            ),
 	            React.createElement(
 	                "div",
 	                { className: "project-page-img" },
-	                React.createElement("img", { src: Images[2] }),
-	                React.createElement(
-	                    "div",
-	                    { className: "image-row" },
-	                    React.createElement("img", { src: Images[3] }),
-	                    React.createElement("img", { src: Images[4] }),
-	                    React.createElement("img", { src: Images[5] })
-	                )
+	                React.createElement("img", { src: Images[5] })
 	            )
 	        );
 	    }

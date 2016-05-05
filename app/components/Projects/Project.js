@@ -7,10 +7,12 @@ export default class Project extends React.Component {
     }
     componentDidMount() {
         var $box = $('.project-page-single');
+        var $imgBox = $('.project-page-img');
+
         var $windowHeight = $(window).height();
         var $img = $('.project-page-img img');
-        var $imgBoxImg = $('.project-page-img');
         var $imgRow = $('.image-row');
+
         $($imgRow).each(function() {
             var $rowWidth = $(this).width(),
                  $imgIn = $(this).find('img'),
@@ -20,14 +22,29 @@ export default class Project extends React.Component {
                      "height":"auto",
                      "width": $imgWidth + "px",
                  });
-
         });
 
         $($box).each(function() {
             var $boxHeight = $(this).height();
-            if($boxHeight > $windowHeight){
+            if($box.innerHeight > $box.scrollHeight){
+             console.log(($box).height());
                 $(this).css({
                     "min-width":"550px",
+                });
+            }
+        });
+
+        $($imgBox).each(function() {
+            var $imgIn = $(this).find('img');
+            var $boxHeight = $(this).height();
+
+            if($boxHeight > $windowHeight){
+                var $difference = boxHeight - $windowHeight;
+                var $imgHeight = $imgIn.height();
+                var $finalHeight = $imgHeight - $difference
+
+                $(this).find('img').css({
+                    "min-width": $finalHeight + "px",
                 });
             }
         });

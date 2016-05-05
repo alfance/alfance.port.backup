@@ -13,7 +13,9 @@ var Project4 = React.createClass({
             "Newsfeeds",
             "Connection",
             "Colour code",
-            "Future Development",
+            "Events by Geolocation",
+            "User Dashboard",
+            "WireFrame",
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
@@ -33,6 +35,12 @@ var Project4 = React.createClass({
             "./media/img/demhub/icon-dem4.svg",
             "./media/img/demhub/icon-dem5.svg",
             "./media/img/demhub/icon-dem6.svg",
+            "./media/img/demhub/mainpagecs6-02.png",
+            "./media/img/demhub/user-dashboard-01.png",
+            "./media/img/demhub/user-dashboard-02.png",
+            "./media/img/demhub/user-dashboard-03.png",
+            "./media/img/demhub/IMG_3213.png",
+            "./media/img/demhub/IMG_3215.png",
         ]
         const Contents = [
 
@@ -76,7 +84,9 @@ var Project4 = React.createClass({
                      {Titles[5]}
                      {Contents[6]}
                      <table className="addborder center-align custom-table"><tbody>
-                         <tr><td><b>Icon</b></td> <td><b>Division</b></td> <td><b>Colour</b></td></tr>
+                         <tr><td><b>Icon</b></td>
+                             <td><b>Division</b></td>
+                             <td><b>Colour</b></td></tr>
                         <tr><td><img src ={Images[9]} /></td> <td>health & Epidermics</td> <td>#0A8D56</td></tr>
                         <tr><td><img src ={Images[10]} /></td> <td>Science & Environmental</td> <td>#2173A2</td></tr>
                         <tr><td><img src ={Images[11]} /></td> <td>EM Practitioner & Response</td> <td>#DB9528</td></tr>
@@ -89,12 +99,14 @@ var Project4 = React.createClass({
               <div className="project-page-img">
                   {Titles[2]}
                       <table><tbody>
+                          <tr>
                           <td>
                           <img src = {Images[1]} />
                           </td>
                           <td className="td-sizing">
                         {Contents[3]}
                         </td>
+                    </tr>
                       </tbody></table>
                  </div>
 
@@ -124,6 +136,43 @@ var Project4 = React.createClass({
                             <img src ={Images[7]} />
                             <img src ={Images[8]} />
                         </div>
+                    </div>
+
+                    <div className="project-page-img">
+                        {Titles[6]}
+                        {Contents[7]}
+                        <br></br>
+                        <img src ={Images[15]} />
+                    </div>
+
+                    <div className="project-page-img">
+                       {Titles[7]}
+                        <table><tbody>
+                            <tr>
+                                <td><img src = {Images[16]} /></td>
+                                <td>Home Dashboard has basic user info, connection activities and recent publications</td>
+                            </tr>
+                            <tr>
+                                <td><img src = {Images[17]} /></td>
+                                <td>Message system lets the user to communicate, share and reply. </td>
+                            </tr>
+                            <tr>
+                                <td><img src = {Images[18]} /></td>
+                                <td>Statistics display current and old user activity inforgraphics and analysis.</td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+
+                    <div className="project-page-img">
+                        {Titles[7]}
+                        <table>
+                        <tr>
+                        <img src ={Images[19]} />
+                        </tr>
+                    <tr>
+                        <img src ={Images[20]} />
+                        </tr>
+                        </table>
                     </div>
             </div>
         )

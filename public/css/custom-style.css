@@ -460,6 +460,7 @@ h4, h5 {
 .project-page-mainlayout, .project-page-single, .project-page-img {
   min-width: 460px;
   height: auto;
+  width: auto;
   display: inline-block;
   float: left;
   padding: 0px 40px 0px 40px;
@@ -481,8 +482,7 @@ h4, h5 {
 .project-page-img {
   max-height: 90vh;
   width: auto;
-  min-width: 500px;
-  max-width: 90vw;
+  height: auto;
   overflow: hidden;
 }
 .project-page-img b {
@@ -538,6 +538,23 @@ h4, h5 {
 
 .custom-table {
   padding: 20px;
+  table-layout: auto;
+}
+
+.box-size-80 {
+  min-width: 80vw;
+}
+
+.box-size-60 {
+  min-width: 60vw;
+}
+
+.box-size-40 {
+  min-width: 40vw;
+}
+
+.box-size-20 {
+  min-width: 40vw;
 }
 
 .HomeSVG {

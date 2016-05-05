@@ -155,7 +155,7 @@ var Project3 = React.createClass({
                     <img src ={Images[11]} />
               </div>
 
-              <div className="project-page-img" >
+              <div className="project-page-img box-size-80" >
                   {Titles[7]}
                    <img src ={Images[17]} />
               </div>
