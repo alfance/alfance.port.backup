@@ -15,6 +15,23 @@
     }
 }
 
+@media only screen and (min-width: 640px)  and (orientation: vertical) {
+    /* project page */
+    .project-page-single {
+        min-height:90vh;
+        min-width:65vh;
+    }
+
+    .project-page-img {
+        min-height:90vh;
+        min-width:65vh;
+    }
+
+    .pageIntro {
+        width:100vw;
+    }
+}
+
 /* for mobile display, use bootstrap*/
 @media only screen and (max-width: 640px) and (orientation: vertical) {
     /* project page */
@@ -32,5 +49,11 @@
         height:100vh;
         width:auto;
         display: inline-block;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    .project-page-single, .project-page-img {
+        min-width:600px;
     }
 }

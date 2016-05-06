@@ -31803,9 +31803,13 @@
 	                        React.createElement(
 	                            "div",
 	                            { className: "menu-toggle" },
-	                            React.createElement("img", { className: "nav-title-image", src: "media/UI/nav-title.svg" }),
-	                            " ",
-	                            React.createElement("img", { className: "nav-title-image-S", src: "media/UI/nav-title-S.svg" })
+	                            React.createElement(
+	                                _reactRouter.Link,
+	                                { to: "Home" },
+	                                React.createElement("img", { className: "nav-title-image", src: "media/UI/nav-title.svg" }),
+	                                " ",
+	                                React.createElement("img", { className: "nav-title-image-S", src: "media/UI/nav-title-S.svg" })
+	                            )
 	                        )
 	                    ),
 	                    React.createElement(_NavIcon2.default, null),
@@ -36048,7 +36052,7 @@
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg", "./media/img/garden/howworks.gif", "./media/img/garden/individual_plant.png", "./media/img/garden/one_unit_breakdown.png", "./media/img/garden/One_unit_connection_topbottom.png", "./media/img/garden/IMG_3100.jpg", "./media/img/garden/Copy of IMG_3099.jpg", "./media/img/garden/IMG_3098.jpg", "./media/img/garden/IMG_3111.jpg", "./media/img/garden/A360 Viewer.png", "./media/img/garden/IMG_2929.png"];
+	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg", "./media/img/garden/howworks.gif", "./media/img/garden/individual_plant.png", "./media/img/garden/one_unit_breakdown.png", "./media/img/garden/One_unit_connection_topbottom.png", "./media/img/garden/IMG_3100.jpg", "./media/img/garden/3099.jpg", "./media/img/garden/3098.jpg", "./media/img/garden/3111.jpg", "./media/img/garden/viewer.png", "./media/img/garden/2929.png"];
 	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
 	        //problem
 	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
@@ -36168,14 +36172,16 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img addborder" },
+	                React.createElement("p", null),
 	                React.createElement(
 	                    "b",
 	                    null,
 	                    "The digital Interface "
 	                ),
 	                Contents[5],
-	                React.createElement("img", { src: Images[1] })
+	                React.createElement("img", { src: Images[1] }),
+	                React.createElement("p", null)
 	            ),
 	            React.createElement(
 	                "div",
@@ -36191,7 +36197,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img addborder" },
 	                Titles[4],
 	                React.createElement(
 	                    "table",
@@ -36242,7 +36248,8 @@
 	                            )
 	                        )
 	                    )
-	                )
+	                ),
+	                React.createElement("p", null)
 	            ),
 	            React.createElement(
 	                "div",
@@ -48991,7 +48998,7 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single center-align" },
-	                ProjectName,
+	                React.createElement(_Project2.default, { ProjectName: ProjectName }),
 	                Tagline,
 	                Contents[0],
 	                React.createElement("img", { src: Images[0] }),
@@ -49318,7 +49325,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img addborder" },
 	                Titles[7],
 	                React.createElement(
 	                    "table",
@@ -49369,7 +49376,8 @@
 	                            )
 	                        )
 	                    )
-	                )
+	                ),
+	                React.createElement("p", null)
 	            ),
 	            React.createElement(
 	                "div",
@@ -49894,17 +49902,17 @@
 	var Project8 = React.createClass({
 	    displayName: "Project8",
 	    render: function render() {
-	        var ProjectName = "Shopsys Menu Design";
+	        var ProjectName = "Shopsys's Deli Menu Design";
 	        var Tagline = "";
 
 	        var Titles = ["Logo", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/shopsys/2.png", "./media/img/shopsys/001.png", "./media/img/shopsys/02.png", "./media/img/shopsys/01.png", "./media/img/shopsys/03.png", "./media/img/shopsys/04.png"];
-	        var Contents = ["Shopsys is a restaurant chain that serves deli sandwiches across Toronto. Started as a ice cream parlour in the 1920s, Shopsys' main dishes including hot dogs, pastrami, Corned beef, salami etc. ", "Considering its homie style, I approach this project with such a ",
+	        var Images = ["./media/img/shopsys/2.png", "./media/img/shopsys/001.png", "./media/img/shopsys/02.png", "./media/img/shopsys/01.png", "./media/img/shopsys/03.png", "./media/img/shopsys/04.png", "./media/img/shopsys/logo1.svg", "./media/img/shopsys/logo2.svg", "./media/img/shopsys/logo3.svg", "./media/img/shopsys/logo4.svg"];
+	        var Contents = ["Shopsys is a restaurant chain that serves deli sandwiches across Toronto. Started as a ice cream parlour in the 1920s, Shopsys' main dishes including hot dogs, pastrami, Corned beef, salami etc. ", "The Shopsys Deli BBQ menu focuses on the restaurant's new Summer hits. Considering the restaurant's homie style, I approach this project with such a relax, warm theme that suits their brand image.",
 	        //problem
-	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
+	        "In addition to the Shopsys's original logo, I need to create a secondary logo that will only be used for Deli BBQ menus. Specifily asking to have fork, knife and crown as the elements I had came up with several variations.",
 	        //solution
 	        "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ", "Hi-Fidelity Mockup", "Future Development"].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
@@ -49925,7 +49933,16 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-img" },
-	                React.createElement("img", { src: Images[1] })
+	                Titles[0],
+	                Contents[2],
+	                React.createElement("img", { src: Images[6] }),
+	                React.createElement(
+	                    "div",
+	                    { className: "image-row" },
+	                    React.createElement("img", { src: Images[7] }),
+	                    React.createElement("img", { src: Images[8] }),
+	                    React.createElement("img", { src: Images[9] })
+	                )
 	            ),
 	            React.createElement(
 	                "div",

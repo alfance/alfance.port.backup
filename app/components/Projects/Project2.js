@@ -29,11 +29,11 @@ var Project2 = React.createClass({
             "./media/img/garden/One_unit_connection_topbottom.png",
             "./media/img/garden/IMG_3100.jpg",
 
-            "./media/img/garden/Copy of IMG_3099.jpg",
-            "./media/img/garden/IMG_3098.jpg",
-            "./media/img/garden/IMG_3111.jpg",
-            "./media/img/garden/A360 Viewer.png",
-            "./media/img/garden/IMG_2929.png",
+            "./media/img/garden/3099.jpg",
+            "./media/img/garden/3098.jpg",
+            "./media/img/garden/3111.jpg",
+            "./media/img/garden/viewer.png",
+            "./media/img/garden/2929.png",
         ]
         const Contents = [
 
@@ -93,10 +93,12 @@ var Project2 = React.createClass({
                  </div>
                  </div>
 
-                <div className = "project-page-img">
+                <div className = "project-page-img addborder">
+                    <p></p>
                     <b>The digital Interface </b>
                     {Contents [5]}
                     <img src = {Images[1]} />
+                    <p></p>
                 </div>
 
                 <div className = "project-page-img">
@@ -105,7 +107,7 @@ var Project2 = React.createClass({
                     {Contents [4]}
                 </div>
 
-                <div className = "project-page-img">
+                <div className = "project-page-img addborder">
                     {Titles[4]}
                     <table><tbody>
                         <tr>
@@ -121,6 +123,7 @@ var Project2 = React.createClass({
                             <td>Bottom design for each unit.</td>
                         </tr>
                     </tbody></table>
+                <p></p>
                 </div>
 
                 <div className = "project-page-img">

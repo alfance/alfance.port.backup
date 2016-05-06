@@ -15,7 +15,7 @@ var Layout = React.createClass({
             <div className="sidebar-wrapper">
                 <ul className="sidebar-nav">
                     <div className="sidebar-brand">
-                          <div className="menu-toggle"><img className="nav-title-image" src="media/UI/nav-title.svg"></img> <img className="nav-title-image-S" src="media/UI/nav-title-S.svg"></img></div>
+                          <div className="menu-toggle"><Link to ="Home"><img className="nav-title-image" src="media/UI/nav-title.svg"></img> <img className="nav-title-image-S" src="media/UI/nav-title-S.svg"></img></Link></div>
                     </div>
 
                     <LogoSVG />

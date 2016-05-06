@@ -62,7 +62,7 @@ var Project4 = React.createClass({
         return (
             <div className ="flex-box">
                 <div className="project-page-single center-align">
-                     {ProjectName}
+                    <Project ProjectName={ProjectName} />
                     {Tagline}
                     {Contents[0]}
                      <img src ={Images[0]}/>
@@ -145,7 +145,7 @@ var Project4 = React.createClass({
                         <img src ={Images[15]} />
                     </div>
 
-                    <div className="project-page-img">
+                    <div className="project-page-img addborder">
                        {Titles[7]}
                         <table><tbody>
                             <tr>
@@ -161,6 +161,7 @@ var Project4 = React.createClass({
                                 <td>Statistics display current and old user activity inforgraphics and analysis.</td>
                             </tr>
                         </tbody></table>
+                    <p></p>
                     </div>
 
                     <div className="project-page-img">
