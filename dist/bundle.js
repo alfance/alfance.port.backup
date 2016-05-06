@@ -36201,7 +36201,7 @@
 	                Titles[4],
 	                React.createElement(
 	                    "table",
-	                    null,
+	                    { className: "table64" },
 	                    React.createElement(
 	                        "tbody",
 	                        null,
@@ -49303,7 +49303,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img box-size-60" },
 	                Titles[4],
 	                Contents[5],
 	                React.createElement("br", null),
@@ -49329,7 +49329,7 @@
 	                Titles[7],
 	                React.createElement(
 	                    "table",
-	                    null,
+	                    { className: "table64" },
 	                    React.createElement(
 	                        "tbody",
 	                        null,

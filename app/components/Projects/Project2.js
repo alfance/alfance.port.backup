@@ -109,7 +109,7 @@ var Project2 = React.createClass({
 
                 <div className = "project-page-img addborder">
                     {Titles[4]}
-                    <table><tbody>
+                    <table className="table64"><tbody>
                         <tr>
                             <td><img src = {Images[7]} /></td>
                             <td>One Unit and Multi-units connection desing.</td>

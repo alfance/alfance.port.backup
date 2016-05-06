@@ -84,21 +84,32 @@
 .custom-table{
     padding:20px;
     table-layout: auto;
+    max-width: 500px;
+}
+.table64 {
+    tr {
+        td:first-child {
+            width:60%;
+        }
+        td:nth-child(2) {
+            width:40%;
+        }
+    }
 }
 
 // different box size customized to the content
 .box-size-80 {
-    min-width: 80vw;
+    min-width: 80vw !important;
 }
 
 .box-size-60 {
-    min-width: 60vw;
+    min-width: 60vw !important;
 }
 
 .box-size-40 {
-    min-width: 40vw;
+    min-width: 40vw !important;
 }
 
 .box-size-20 {
-    min-width: 40vw;
+    min-width: 20vw !important;
 }

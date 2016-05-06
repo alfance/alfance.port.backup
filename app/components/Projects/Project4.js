@@ -127,7 +127,7 @@ var Project4 = React.createClass({
                          </tbody></table>
                     </div>
 
-                    <div className="project-page-img">
+                    <div className="project-page-img box-size-60">
                         {Titles[4]}
                         {Contents[5]}
                         <br></br>
@@ -147,7 +147,7 @@ var Project4 = React.createClass({
 
                     <div className="project-page-img addborder">
                        {Titles[7]}
-                        <table><tbody>
+                        <table className="table64"><tbody>
                             <tr>
                                 <td><img src = {Images[16]} /></td>
                                 <td>Home Dashboard has basic user info, connection activities and recent publications</td>
