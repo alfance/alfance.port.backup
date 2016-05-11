@@ -18,6 +18,7 @@ var Project6 = require('../components/Projects/Project6');
 var Project7 = require('../components/Projects/Project7');
 var Project8 = require('../components/Projects/Project8');
 
+var LogoAll = require('../components/ImageLayout/LogoAll');
 // design works
 var DesignHome = require('../components/Design/DesignHome');
 
@@ -36,7 +37,6 @@ module.exports = (
       // Home page. default page
           <IndexRoute component={Home} />
           <Route path="Home" component={Home} />
-
         // Design page.
           <Route path="DesignHome" component={DesignHome} />
 
@@ -57,5 +57,7 @@ module.exports = (
       <Route path="Project6" component={Project6} />
       <Route path="Project7" component={Project7} />
       <Route path="Project8" component={Project8} />
+
+      <Route path="LogoAll" component={LogoAll} />
   </Route>
 );

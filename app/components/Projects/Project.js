@@ -26,6 +26,7 @@ export default class Project extends React.Component {
 
         $($box).each(function() {
             var $boxHeight = $(this).height();
+
             if($box.innerHeight > $box.scrollHeight){
              console.log(($box).height());
                 $(this).css({

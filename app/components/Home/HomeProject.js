@@ -62,10 +62,10 @@ export default class HomeProject extends React.Component {
               </div></Link>
           </span>
           <span>
-          <Link to="Project7"> <div className="image-grid-each">
+          <Link to="LogoAll"> <div className="image-grid-each">
                <img className="image-grid-image" src={images[6]}/>
              </div></Link>
-         <Link to="Project8"> <div className="image-grid-each">
+         <Link to="LoProject8goAll"> <div className="image-grid-each">
               <img className="image-grid-image" src={images[7]}/>
         </div></Link>
         <Link to="Project8"> <div className="image-grid-each">
