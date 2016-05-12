@@ -49709,15 +49709,15 @@
 	var Project6 = React.createClass({
 	    displayName: "Project6",
 	    render: function render() {
-	        var ProjectName = "Vgarden";
-	        var Tagline = "Home IOT Vertical Garden";
+	        var ProjectName = "DME Branding";
+	        var Tagline = "";
 
 	        var Titles = ["Problem", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
 	        var Images = ["./media/img/2/1.png", "", "./media/img/2/DSC_0385-2.jpg", "./media/img/2/DSC_0355-2.jpg", "./media/img/2/DSC_0353-2.jpg", "./media/img/2/DSC_0365-2.jpg"];
-	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+	        var Contents = ["The DME is a Makerspace, a Fabrication Lab, a Digital Media Prod. facility, a Technology lender and part of Ryerson University’s Library and Archives.", "The DME is open to everyone. It offers weekly tutorial and workshops on various topics of the emerncy technologies. People are able to use PC/MAC, Oculus Rift, Aruidnos, Little bits for their project or just for fun.",
 	        //problem
 	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
 	        //solution
@@ -50106,11 +50106,15 @@
 /* 718 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var _Logo = __webpack_require__(719);
 
 	var _Logo2 = _interopRequireDefault(_Logo);
+
+	var _pageIntro = __webpack_require__(520);
+
+	var _pageIntro2 = _interopRequireDefault(_pageIntro);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -50118,20 +50122,33 @@
 
 
 	var LogoAll = React.createClass({
-	    displayName: "LogoAll",
+	    displayName: 'LogoAll',
 	    render: function render() {
-	        var Titles = ["Problem", "Solution", "High Level Concept", "Choosing Route", "Contributing", "Development Process", "Hi-Fidelity Mockup", "Future Development"].map(function (title, i) {
-	            return React.createElement(_Logo2.default, { key: i, title: title });
+	        var Titles = ["Problem", "Solution", "High Level Concept", "Choosing Route", "Contributing", "Development Process", "Hi-Fidelity Mockup", "Future Development"].map(function (logotitle, i) {
+	            return React.createElement(_Logo2.default, { key: i, logotitle: logotitle });
 	        });
 
 	        var Images = ["./media/img/logo/1-quinns2.png", "./media/img/logo/ppp3.png", "./media/img/logo/style2.png", "./media/img/logo/tibb1.png", "./media/img/logo/lunch1.png", "./media/img/logo/bee.png", "./media/img/logo/qteeth.png", "./media/img/logo/star.png", "./media/img/logo/rabbit.png", "./media/img/logo/cross.png"].map(function (image, i) {
 	            return React.createElement(_Logo2.default, { key: i, image: image });
 	        });
+
+	        var title = "Logos";
+	        var pageintro = "Logos";
+
 	        return React.createElement(
-	            "div",
-	            { className: "flex-box" },
-	            Images,
-	            Titles
+	            'div',
+	            null,
+	            React.createElement(
+	                _pageIntro2.default,
+	                { title: title, pageintro: pageintro },
+	                ' '
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'flex-box' },
+	                Images,
+	                Titles
+	            )
 	        );
 	    }
 	});
@@ -50218,7 +50235,8 @@
 	            var _this2 = this;
 
 	            var image = this.props.image;
-	            var title = this.props.title;
+	            var logotitle = this.props.logotitle;
+
 
 	            return React.createElement(
 	                'div',
@@ -50229,7 +50247,7 @@
 	                    React.createElement(
 	                        'h3',
 	                        null,
-	                        title
+	                        logotitle
 	                    ),
 	                    React.createElement(
 	                        'h4',
@@ -50247,7 +50265,7 @@
 	                    React.createElement(
 	                        'h4',
 	                        null,
-	                        title
+	                        logotitle
 	                    )
 	                )
 	            );

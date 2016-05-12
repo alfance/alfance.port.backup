@@ -42,18 +42,19 @@ export default class Logo extends React.Component {
     }
     render() {
         const {image} =this.props;
-        const {title} =this.props;
+        const {logotitle} =this.props;
+
     return(
         <div>
         <SkyLight hideOnOverlayClicked ref="simpleDialog">
-            <h3>{title}</h3>
+            <h3>{logotitle}</h3>
             <h4>sdfsdgsg</h4>
             <img className="modalPhoto" src={image} />
         </SkyLight>
 
         <div className="image-grid-each" onClick={() => this.refs.simpleDialog.show()}>
             <img className="image-grid-image" src ={image} />
-            <h4>{title}</h4>
+            <h4>{logotitle}</h4>
        </div>
        </div>
     );

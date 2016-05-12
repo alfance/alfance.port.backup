@@ -1,5 +1,6 @@
 var React = require('react');
 import Logo from "./Logo";
+import PageIntro from '../partial/pageIntro';
 
 var LogoAll = React.createClass({
     render() {
@@ -12,7 +13,7 @@ var LogoAll = React.createClass({
             "Development Process",
             "Hi-Fidelity Mockup",
             "Future Development",
-        ].map((title, i)=> <Logo key={i} title={title}/> );
+        ].map((logotitle, i)=> <Logo key={i} logotitle={logotitle}/> );
 
         const Images =[
             "./media/img/logo/1-quinns2.png",
@@ -26,10 +27,17 @@ var LogoAll = React.createClass({
             "./media/img/logo/rabbit.png",
             "./media/img/logo/cross.png",
         ].map((image, i)=> <Logo key={i} image={image}/> );
+
+        const title = "Logos";
+        const pageintro = "Logos";
+
         return (
+            <div>
+            <PageIntro title={title} pageintro={pageintro}> </PageIntro>
             <div className ="flex-box">
             {Images}
             {Titles}
+            </div>
             </div>
         )
     }

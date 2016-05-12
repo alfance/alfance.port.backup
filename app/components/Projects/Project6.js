@@ -3,8 +3,8 @@ import Project from "./Project";
 
 var Project6 = React.createClass({
     render() {
-        const ProjectName = "Vgarden";
-        const Tagline ="Home IOT Vertical Garden";
+        const ProjectName = "DME Branding";
+        const Tagline ="";
 
         const Titles = [
             "Problem",
@@ -26,9 +26,9 @@ var Project6 = React.createClass({
         ]
         const Contents = [
 
-            "As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ",
+            "The DME is a Makerspace, a Fabrication Lab, a Digital Media Prod. facility, a Technology lender and part of Ryerson University’s Library and Archives.",
 
-            "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+            "The DME is open to everyone. It offers weekly tutorial and workshops on various topics of the emerncy technologies. People are able to use PC/MAC, Oculus Rift, Aruidnos, Little bits for their project or just for fun.",
             //problem
             "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
             //solution
