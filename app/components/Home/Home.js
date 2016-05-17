@@ -7,6 +7,7 @@ var Home = React.createClass({
         return (
             <div>
                 <HomeSVG></HomeSVG>
+                <div className="home-space"></div>
                 <HomeProject />
             </div>
         )

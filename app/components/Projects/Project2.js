@@ -54,7 +54,7 @@ var Project2 = React.createClass({
 
         return (
             <div className ="flex-box">
-                <div className="project-page-single center-align">
+                <div className="project-page-single center-align border-right">
                     <Project ProjectName={ProjectName} />
                     {Tagline}
                     <i>{Contents[0]}</i>
@@ -109,7 +109,7 @@ var Project2 = React.createClass({
 
                 <div className = "project-page-img addborder">
                     {Titles[4]}
-                    <table className="table64"><tbody>
+                    <table className="table64 wow animated fadeInRight"><tbody>
                         <tr>
                             <td><img src = {Images[7]} /></td>
                             <td>One Unit and Multi-units connection desing.</td>
@@ -133,7 +133,7 @@ var Project2 = React.createClass({
                     <img src = {Images[15]} />
                 </div>
 
-                <div className = "project-page-img">
+                <div className = "project-page-img border-right">
                     {Titles[6]}
                     <div className="image-row">
                         <img src = {Images[10]} />

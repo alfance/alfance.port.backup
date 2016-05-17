@@ -59,7 +59,10 @@ img {
 .addborder {
     border:1px solid #ddd;
 }
-
+.tableborder {
+    border:1px solid #ddd;
+    padding:20px;
+}
 table {
     width:100%;
     height:auto;
@@ -79,4 +82,88 @@ table {
     width:100%;
     height:auto;
     min-height: 200px;
+}
+// always center image
+.center-image {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.home-space {
+    width: 10vw;
+    height:100vh;
+    float:left;
+}
+
+// icons DME
+i {
+min-width: 35px;
+  min-height: 35px;
+  text-align: center;
+  display: block;
+}
+.icon-round {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.icon-size-50 {
+    width:50px;
+    height:50px;
+}
+.icon-pc {
+    background-image: url("../media/UI/icon-01.svg");
+    background-position: center center;
+    fill:#F37626;
+}
+.icon-video {
+    background-image: url("../media/UI/icon-02.svg");
+    background-position: center center;
+    fill:#F37626;
+}
+.icon-code {
+    background-image: url("../media/UI/icon-03.svg");
+    background-position: center center;
+    fill:#F37626;
+}
+.icon-gd {
+    background-image: url("../media/UI/icon-04.svg");
+    background-position: center center;
+    fill:#F37626;
+}
+.icon-3d {
+    background-image: url("../media/UI/icon-05.svg");
+    background-position: center center;
+    fill:#F37626;
+}
+
+//customize images with
+.imageW90 {
+    @extend .center-image;
+    width:90% !important;
+}
+.imageW80 {
+    @extend .center-image;
+    width:80% !important;
+}
+.imageW70 {
+    @extend .center-image;
+    width:70% !important;
+}
+.imageW60 {
+    @extend .center-image;
+    width:60% !important;
+}
+.imageW50 {
+    @extend .center-image;
+    width:50% !important;
+}
+.imageW40 {
+    @extend .center-image;
+    width:40% !important;
+}
+.imageW30 {
+    @extend .center-image;
+    width:30% !important;
 }

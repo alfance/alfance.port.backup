@@ -38,7 +38,7 @@ export default class HomeProject extends React.Component {
             ]
 
         return (
-            <div className="flex-box">
+            <div className="flex-box animated fadeInRight">
             <span>
             <Link to="Project1"><div className="image-grid-each">
                  <img className="image-grid-image" src={images[0]}/>

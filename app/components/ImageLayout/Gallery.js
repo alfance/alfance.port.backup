@@ -60,7 +60,7 @@ export class Gallery extends Component {
             <img className="modalPhoto" src={selectedImage} />
         </SkyLight>
 
-        <div className="flex-box">
+        <div className="flex-box animated fadeInRight">
           {images.map((image, index) => (
              <div key={index} onClick={() => {selectImage(image); this.refs.simpleDialog.show()}} className="image-grid-each">
                      <img className="image-grid-image" src={image}/>

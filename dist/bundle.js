@@ -31824,21 +31824,7 @@
 	                            React.createElement(
 	                                "div",
 	                                { className: "chap-title home" },
-	                                "Home"
-	                            )
-	                        )
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        React.createElement(
-	                            _reactRouter.Link,
-	                            { to: "Home", activeClassName: "tabActive" },
-	                            React.createElement(
-	                                "div",
-	                                { className: "chap-title" },
-	                                React.createElement("img", { src: "media/UI/icon-project.svg", className: "NavIcon" }),
-	                                "Projects"
+	                                "Work"
 	                            )
 	                        )
 	                    ),
@@ -32581,6 +32567,7 @@
 	            "div",
 	            null,
 	            React.createElement(_HomeSVG2.default, null),
+	            React.createElement("div", { className: "home-space" }),
 	            React.createElement(_HomeProject2.default, null)
 	        );
 	    }
@@ -35466,7 +35453,7 @@
 
 	            return _react2.default.createElement(
 	                "div",
-	                { className: "flex-box" },
+	                { className: "flex-box animated fadeInRight" },
 	                _react2.default.createElement(
 	                    "span",
 	                    null,
@@ -35833,7 +35820,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img border-left" },
 	                Titles[2],
 	                React.createElement(
 	                    "b",
@@ -35936,7 +35923,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img border-left" },
 	                Titles[4],
 	                React.createElement(
 	                    "b",
@@ -36129,7 +36116,7 @@
 
 	            return React.createElement(
 	                'div',
-	                null,
+	                { className: 'animated fadeInUp' },
 	                React.createElement(
 	                    'h1',
 	                    null,
@@ -36193,7 +36180,7 @@
 	            { className: "flex-box" },
 	            React.createElement(
 	                "div",
-	                { className: "project-page-single center-align" },
+	                { className: "project-page-single center-align border-right" },
 	                React.createElement(_Project2.default, { ProjectName: ProjectName }),
 	                Tagline,
 	                React.createElement(
@@ -36328,7 +36315,7 @@
 	                Titles[4],
 	                React.createElement(
 	                    "table",
-	                    { className: "table64" },
+	                    { className: "table64 wow animated fadeInRight" },
 	                    React.createElement(
 	                        "tbody",
 	                        null,
@@ -36388,7 +36375,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img border-right" },
 	                Titles[6],
 	                React.createElement(
 	                    "div",
@@ -36459,7 +36446,7 @@
 	            { className: "flex-box" },
 	            React.createElement(
 	                "div",
-	                { className: "project-page-single center-align" },
+	                { className: "project-page-single center-align border-right" },
 	                React.createElement(_Project2.default, { ProjectName: ProjectName }),
 	                Tagline,
 	                Contents[0],
@@ -36493,7 +36480,7 @@
 	                Contents[2],
 	                Titles[1],
 	                Contents[3],
-	                React.createElement(_YouTube2.default, {
+	                React.createElement(_YouTube2.default, { className: "imageW90",
 	                    videoId: "5ugPo8z-5hM",
 	                    opts: opts,
 	                    onReady: this._onReady
@@ -36513,12 +36500,8 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-single" },
-	                React.createElement(
-	                    "div",
-	                    { className: "image-up" },
-	                    React.createElement("img", { src: Images[7] })
-	                ),
+	                { className: "project-page-single border-right" },
+	                React.createElement("img", { className: "imageW70", src: Images[7] }),
 	                React.createElement(
 	                    "p",
 	                    null,
@@ -36664,7 +36647,7 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img border-left" },
 	                Titles[5],
 	                React.createElement(
 	                    "div",
@@ -49712,16 +49695,16 @@
 	        var ProjectName = "DME Branding";
 	        var Tagline = "";
 
-	        var Titles = ["Problem", "Solution", "Digital Interface", "Physical Interface", "WireFrame", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "5 Characters", "Website", "Print Marketing", "Process", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/2/1.png", "", "./media/img/2/DSC_0385-2.jpg", "./media/img/2/DSC_0355-2.jpg", "./media/img/2/DSC_0353-2.jpg", "./media/img/2/DSC_0365-2.jpg"];
-	        var Contents = ["The DME is a Makerspace, a Fabrication Lab, a Digital Media Prod. facility, a Technology lender and part of Ryerson University’s Library and Archives.", "The DME is open to everyone. It offers weekly tutorial and workshops on various topics of the emerncy technologies. People are able to use PC/MAC, Oculus Rift, Aruidnos, Little bits for their project or just for fun.",
+	        var Images = ["./media/img/DME/all1.png", "./media/img/DME/2.jpg", "./media/img/DME/PC_bw.png", "./media/img/DME/PCposter.png", "./media/img/DME/physical_computing.svg", "./media/img/DME/3d_print.svg", "./media/img/DME/graphic_design.svg", "./media/img/DME/Videography.svg", "./media/img/DME/programming.svg", "./media/img/DME/DMEweb1.png", "./media/img/DME/DMEworkshop.png", "./media/img/DME/others.png", "./media/img/DME/3D_poster.png", "./media/img/DME/pins.svg", "./media/img/DME/IMG_2862.jpg", "./media/img/DME/IMG_2952.jpg"];
+	        var Contents = ["The Digital Media Experience Lab (DME) located in the Student Life Center of Ryerson University is a Library resource that supports curricula and extracurricular student learning. It focuses on helping students learning basic and advanced digital skill-set while exposing them to new and emerging techologies.", "This space provides high-end multimedia workstations, peer-mentoring and support, workshops and specialized equipments. People are able to use PC/MAC desktop & laptops, Oculus Rift, Aruidno, Little bits, 3D printer DSL cameras for their project or just for fun.",
 	        //problem
-	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
+	        "Eventhough the DME is open to every students and faculty of Ryerson, people without technological or digital background often find it daunting to come. The DME is misunderstood as engineering exclusive. A research we have conducted on the campus showed that, many non-tech students (Nursing, Arts, Community services etc) are not willing to use the DME because the technolgoies seem too professional.", "In addition, within the people who come to DME, there is a big ratio difference in genders. The gender ratio at Ryerson is 1:1 with slightly 300 more female students; However, the ratio of people who use DME resources are M 7 : F 3. This is mainly due to the stereotypical perception for technolgoies been dominanted by males.",
 	        //solution
-	        "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ", "Hi-Fidelity Mockup", "Future Development"].map(function (info, i) {
+	        "First project I have been working to engage different user types for DME is the characters design. DME has 5 sub-divisions each acquires unique knowledges, equipments and technologies. My goal is to create approachable visual representations of the divisions, so people can find the new techs less distant and intimidating.", "The next objective for the DME branding is to integrate the characters in all DME marketing materials.", "The 5 divisions are Physical Computing, 3D Print, Visual Design, Videography and Programming. ", "The Workshop page is a convinient portal for students and faculty to search, filter and register for the upcoming events and workshops of DME. Connected to the Ryerson's google calender. People can directly add the event to their own calender.", "People can learn about DME, see the featured projects, get in contact with the team and request for 3D print or equipments. The DME website creates maximum convinience for people to do exactly the same thing as they come in person.", "In addition to the webiste, I have also managed to create multiple printed marketing materials for DME. For instances, posters, stand and stickers. The printed materials will be the major marketing tool spread out thoughout campus to promote the DME's new iamge.", "Following are some of the ideations and draft designs we have for the characters. this project had gone though series of iteration and it is still under development as of now."].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -49730,120 +49713,399 @@
 	            { className: "flex-box" },
 	            React.createElement(
 	                "div",
-	                { className: "project-page-single center-align" },
+	                { className: "project-page-single center-align border-right" },
 	                React.createElement(
 	                    "h1",
 	                    null,
 	                    " ",
 	                    ProjectName
 	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Tagline
-	                ),
+	                Contents[0],
+	                Contents[1],
+	                React.createElement("img", { src: Images[0] }),
 	                React.createElement(
 	                    "p",
 	                    null,
-	                    Contents[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[1]
-	                ),
-	                React.createElement("img", { src: Images[0] })
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Technologies: "
+	                    ),
+	                    "Adobe PS, AI, html5, CSS3, Jquery"
+	                )
 	            ),
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single" },
+	                Titles[0],
+	                Contents[2],
+	                Contents[3],
+	                React.createElement("img", { className: "imageW80", src: Images[1] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[1],
 	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[0]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[2]
-	                ),
-	                React.createElement(
-	                    "h4",
-	                    null,
-	                    Titles[1]
-	                ),
-	                React.createElement(
-	                    "p",
-	                    null,
-	                    Contents[3]
-	                ),
-	                React.createElement(
-	                    "b",
-	                    null,
-	                    " The components of the project include: "
-	                ),
-	                React.createElement("p", null),
-	                React.createElement(
-	                    "p",
+	                    "table",
 	                    null,
 	                    React.createElement(
-	                        "b",
+	                        "tbody",
 	                        null,
-	                        "Software"
-	                    ),
-	                    " - digital interface that display the status of the plants "
-	                ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                " ",
+	                                Contents[4]
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                Contents[5],
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Click ",
+	                                    React.createElement(
+	                                        "a",
+	                                        { href: "http://sozostudio.github.io/DMETheme/index.html", target: "_blank" },
+	                                        "HERE"
+	                                    ),
+	                                    " to see the website mockup"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[2] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[3] })
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-60" },
+	                Titles[2],
+	                Contents[6],
 	                React.createElement(
-	                    "p",
-	                    null,
+	                    "table",
+	                    { className: "center-align tableborder" },
 	                    React.createElement(
-	                        "b",
+	                        "tbody",
 	                        null,
-	                        "Hardware"
-	                    ),
-	                    " - individual units each contain one plant & corresponding water system. "
-	                ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("i", { className: "icon-pc icon-size-50 center-image" }),
+	                                React.createElement("br", null),
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    " Physical Computing "
+	                                )
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[4] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Color - Turquoise"
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Internet of Things, Wearables, Robots, Drones, Sensors, Machine Automation"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("i", { className: "icon-3d icon-size-50 center-image" }),
+	                                React.createElement("br", null),
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    " 3D Print "
+	                                )
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[5] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Color - White"
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Modeling, MVP, Rapid Manufacturing, Massiv Customization"
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-50 border-right" },
 	                React.createElement(
-	                    "ul",
-	                    null,
+	                    "table",
+	                    { className: "center-align" },
 	                    React.createElement(
-	                        "li",
+	                        "tbody",
 	                        null,
-	                        "Arduino Uno & Leonardo & Ethernet Shield"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "Moisture, Temperature, Humidity and Air Quality sensors"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "110V Aquarium Pump & Relays"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "Plastic and Permisive pipes"
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        "other Electronic Accessories"
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("i", { className: "icon-gd icon-size-50 center-image" }),
+	                                React.createElement("br", null),
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    " Graphic Design "
+	                                )
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[6] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Color - ALl Colors!"
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Raster, Victor, Robots, Colour Code, Illustration"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("i", { className: "icon-video icon-size-50 center-image" }),
+	                                React.createElement("br", null),
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    " Videography "
+	                                )
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[7] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Color - Pink"
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Pixels, Wearables, Frames, Soundwaves, Filming, Keys"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("i", { className: "icon-code icon-size-50 center-image" }),
+	                                React.createElement("br", null),
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    " Programming "
+	                                )
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[8] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Color - Black"
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Syntax, Debug, Development, Environment, Hacks, Open Source"
+	                                )
+	                            )
+	                        )
 	                    )
 	                )
 	            ),
 	            React.createElement(
 	                "div",
 	                { className: "project-page-img" },
-	                React.createElement("img", { src: Images[2] }),
+	                Titles[3],
+	                React.createElement(
+	                    "a",
+	                    { href: "http://sozostudio.github.io/DMETheme/index.html", target: "_blank" },
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Main Page"
+	                    )
+	                ),
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[9] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                { className: "td-sizing" },
+	                                Contents[7]
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img border-left" },
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "Workshops"
+	                ),
+	                React.createElement("br", null),
+	                Contents[7],
+	                React.createElement("img", { src: Images[10] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-60" },
+	                React.createElement(
+	                    "table",
+	                    null,
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                { className: "td-sizing" },
+	                                React.createElement(
+	                                    "b",
+	                                    null,
+	                                    "Other Pages"
+	                                ),
+	                                React.createElement("br", null),
+	                                Contents[8]
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[11] })
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img addborder" },
+	                Titles[4],
+	                Contents[9],
 	                React.createElement(
 	                    "div",
 	                    { className: "image-row" },
-	                    React.createElement("img", { src: Images[3] }),
-	                    React.createElement("img", { src: Images[4] }),
-	                    React.createElement("img", { src: Images[5] })
+	                    React.createElement("img", { src: Images[12] }),
+	                    React.createElement("img", { src: Images[13] })
 	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[5],
+	                Contents[10],
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    "Click ",
+	                    React.createElement(
+	                        "a",
+	                        { href: "./media/img/dme/ThoughtDoc.pdf", target: "_blank" },
+	                        "HERE"
+	                    ),
+	                    " to see the research I had done for the project "
+	                ),
+	                React.createElement("img", { src: Images[14] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img" },
+	                Titles[6],
+	                React.createElement("img", { src: Images[15] })
 	            )
 	        );
 	    }
@@ -50897,7 +51159,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'flex-box' },
+	                    { className: 'flex-box animated fadeInRight' },
 	                    images.map(function (image, index) {
 	                        return _react2.default.createElement(
 	                            'div',

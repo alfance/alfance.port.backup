@@ -100,7 +100,7 @@ var Project1 = React.createClass({
                     <a  href="https://www.youtube.com/watch?v=zar9Efp7DGM" target="_blank">Concept Video</a>
 
                  </div>
-                  <div className="project-page-img">
+                  <div className="project-page-img border-left">
                       {Titles[2]}
                       <b>Mobile Interface - Cycnav App</b>
                       {Contents[6]}
@@ -146,7 +146,7 @@ var Project1 = React.createClass({
                     </tbody></table>
                 </div>
 
-                <div className="project-page-img">
+                <div className="project-page-img border-left">
                     {Titles[4]}
                     <b>User Engagement to the Cycnav Community</b>
                     {Contents[8]}

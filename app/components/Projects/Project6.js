@@ -9,69 +9,205 @@ var Project6 = React.createClass({
         const Titles = [
             "Problem",
             "Solution",
-            "Digital Interface",
-            "Physical Interface",
-            "WireFrame",
-            "Hi-Fidelity Mockup",
+            "5 Characters",
+            "Website",
+            "Print Marketing",
+            "Process",
             "Future Development",
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/2/1.png",
-            "",
-            "./media/img/2/DSC_0385-2.jpg",
-            "./media/img/2/DSC_0355-2.jpg",
-            "./media/img/2/DSC_0353-2.jpg",
-            "./media/img/2/DSC_0365-2.jpg",
+            "./media/img/DME/all1.png",
+            "./media/img/DME/2.jpg",
+            "./media/img/DME/PC_bw.png",
+            "./media/img/DME/PCposter.png",
+            "./media/img/DME/physical_computing.svg",
+            "./media/img/DME/3d_print.svg",
+            "./media/img/DME/graphic_design.svg",
+            "./media/img/DME/Videography.svg",
+            "./media/img/DME/programming.svg",
+            "./media/img/DME/DMEweb1.png",
+            "./media/img/DME/DMEworkshop.png",
+            "./media/img/DME/others.png",
+
+            "./media/img/DME/3D_poster.png",
+            "./media/img/DME/pins.svg",
+            "./media/img/DME/IMG_2862.jpg",
+            "./media/img/DME/IMG_2952.jpg",
         ]
         const Contents = [
 
-            "The DME is a Makerspace, a Fabrication Lab, a Digital Media Prod. facility, a Technology lender and part of Ryerson University’s Library and Archives.",
+            "The Digital Media Experience Lab (DME) located in the Student Life Center of Ryerson University is a Library resource that supports curricula and extracurricular student learning. It focuses on helping students learning basic and advanced digital skill-set while exposing them to new and emerging techologies.",
 
-            "The DME is open to everyone. It offers weekly tutorial and workshops on various topics of the emerncy technologies. People are able to use PC/MAC, Oculus Rift, Aruidnos, Little bits for their project or just for fun.",
+            "This space provides high-end multimedia workstations, peer-mentoring and support, workshops and specialized equipments. People are able to use PC/MAC desktop & laptops, Oculus Rift, Aruidno, Little bits, 3D printer DSL cameras for their project or just for fun.",
             //problem
-            "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
+            "Eventhough the DME is open to every students and faculty of Ryerson, people without technological or digital background often find it daunting to come. The DME is misunderstood as engineering exclusive. A research we have conducted on the campus showed that, many non-tech students (Nursing, Arts, Community services etc) are not willing to use the DME because the technolgoies seem too professional.",
+            "In addition, within the people who come to DME, there is a big ratio difference in genders. The gender ratio at Ryerson is 1:1 with slightly 300 more female students; However, the ratio of people who use DME resources are M 7 : F 3. This is mainly due to the stereotypical perception for technolgoies been dominanted by males.",
             //solution
-            "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ",
+            "First project I have been working to engage different user types for DME is the characters design. DME has 5 sub-divisions each acquires unique knowledges, equipments and technologies. My goal is to create approachable visual representations of the divisions, so people can find the new techs less distant and intimidating.",
 
-            "Hi-Fidelity Mockup",
+            "The next objective for the DME branding is to integrate the characters in all DME marketing materials.",
 
-            "Future Development",
+            "The 5 divisions are Physical Computing, 3D Print, Visual Design, Videography and Programming. ",
+
+            "The Workshop page is a convinient portal for students and faculty to search, filter and register for the upcoming events and workshops of DME. Connected to the Ryerson's google calender. People can directly add the event to their own calender.",
+
+            "People can learn about DME, see the featured projects, get in contact with the team and request for 3D print or equipments. The DME website creates maximum convinience for people to do exactly the same thing as they come in person.",
+
+            "In addition to the webiste, I have also managed to create multiple printed marketing materials for DME. For instances, posters, stand and stickers. The printed materials will be the major marketing tool spread out thoughout campus to promote the DME's new iamge.",
+
+            "Following are some of the ideations and draft designs we have for the characters. this project had gone though series of iteration and it is still under development as of now.",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (
             <div className ="flex-box">
-                <div className="project-page-single center-align">
+                <div className="project-page-single center-align border-right">
                     <h1> {ProjectName}</h1>
-                    <h4>{Tagline}</h4>
-                     <p>{Contents[0]}</p>
-                     <p>{Contents[1]}</p>
+                    {Contents[0]}
+                     {Contents[1]}
                      <img src ={Images[0]}/>
+                     <p><b>Technologies: </b>Adobe PS, AI, html5, CSS3, Jquery</p>
+             </div>
 
-             </div>
              <div className="project-page-single">
-                     <h4>{Titles[0]}</h4>
-                     <p>{Contents[2]}</p>
-                     <h4>{Titles[1]}</h4>
-                     <p>{Contents[3]}</p>
-                     <b> The components of the project include: </b>
-                     <p></p>
-                     <p><b>Software</b> - digital interface that display the status of the plants </p>
-                      <p><b>Hardware</b> - individual units each contain one plant & corresponding water system. </p>
-                     <ul>
-                         <li>Arduino Uno & Leonardo & Ethernet Shield</li>
-                         <li>Moisture, Temperature, Humidity and Air Quality sensors</li>
-                         <li>110V Aquarium Pump & Relays</li>
-                         <li>Plastic and Permisive pipes</li>
-                         <li>other Electronic Accessories</li>
-                     </ul>
+                     {Titles[0]}
+                     {Contents[2]}
+                     {Contents[3]}
+                     <img className="imageW80" src ={Images[1]}/>
              </div>
-              <div className="project-page-img">
-                  <img src ={Images[2]}/>
-                    <div className ="image-row">
-                      <img src ={Images[3]}/><img src ={Images[4]}/><img src ={Images[5]}/>
-                     </div>
+
+             <div className="project-page-img">
+                 {Titles[1]}
+                 <table><tbody>
+                     <tr>
+                         <td> {Contents[4]}</td>
+                          <td>{Contents[5]}
+                              <p>Click <a href="http://sozostudio.github.io/DMETheme/index.html" target="_blank">HERE</a> to see the website mockup</p>
+                          </td>
+                     </tr>
+                     <tr>
+                         <td><img src ={Images[2]}/></td>
+                          <td><img src ={Images[3]}/></td>
+                     </tr>
+                 </tbody></table>
+                </div>
+
+              <div className="project-page-img box-size-60">
+                  {Titles[2]}
+                   {Contents[6]}
+                        <table className="center-align tableborder"><tbody>
+                            <tr>
+                                <td>
+                                    <i className="icon-pc icon-size-50 center-image"></i><br />
+                                    <b> Physical Computing </b>
+                                </td>
+                                 <td><img src ={Images[4]}/></td>
+                                 <td><p>Color - Turquoise</p>
+                                <p>Internet of Things, Wearables, Robots, Drones, Sensors, Machine Automation</p>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i className="icon-3d icon-size-50 center-image"></i><br />
+                                    <b> 3D Print </b>
+                                </td>
+                                 <td><img src ={Images[5]}/></td>
+                                 <td><p>Color - White</p>
+                                <p>Modeling, MVP, Rapid Manufacturing, Massiv Customization</p>
+                                 </td>
+                            </tr>
+                        </tbody></table>
                  </div>
+
+                 <div className="project-page-img box-size-50 border-right">
+                         <table className="center-align"><tbody>
+                             <tr>
+                                 <td>
+                                     <i className="icon-gd icon-size-50 center-image"></i><br />
+                                     <b> Graphic Design </b>
+                                 </td>
+                                  <td><img src ={Images[6]}/></td>
+                                  <td><p>Color - ALl Colors!</p>
+                                 <p>Raster, Victor, Robots, Colour Code, Illustration</p>
+                                  </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <i className="icon-video icon-size-50 center-image"></i><br />
+                                     <b> Videography </b>
+                                 </td>
+                                  <td><img src ={Images[7]}/></td>
+                                  <td><p>Color - Pink</p>
+                                 <p>Pixels, Wearables, Frames, Soundwaves, Filming, Keys</p>
+                                  </td>
+                             </tr>
+
+                             <tr>
+                                 <td>
+                                     <i className="icon-code icon-size-50 center-image"></i><br />
+                                     <b> Programming </b>
+                                 </td>
+                                  <td><img src ={Images[8]}/></td>
+                                  <td><p>Color - Black</p>
+                                 <p>Syntax, Debug, Development, Environment, Hacks, Open Source</p>
+                                  </td>
+                             </tr>
+                         </tbody></table>
+                 </div>
+                 <div className="project-page-img">
+                     {Titles[3]}
+                     <a href="http://sozostudio.github.io/DMETheme/index.html" target="_blank"><b>Main Page</b></a>
+                         <table><tbody>
+                             <tr>
+                             <td>
+                             <img src = {Images[9]} />
+                             </td>
+                             <td className="td-sizing">
+                           {Contents[7]}
+                           </td>
+                       </tr>
+                         </tbody></table>
+                    </div>
+
+                <div className="project-page-img border-left">
+                    <b>Workshops</b><br />
+                     {Contents[7]}
+                      <img src = {Images[10]} />
+                </div>
+
+                <div className="project-page-img box-size-60">
+                        <table><tbody>
+                            <tr>
+                            <td className="td-sizing">
+                                <b>Other Pages</b><br />
+                                {Contents[8]}
+                          </td>
+                            <td>
+                            <img src = {Images[11]} />
+                            </td>
+                      </tr>
+                        </tbody></table>
+                   </div>
+
+                   <div className="project-page-img addborder">
+                      {Titles[4]}
+                        {Contents[9]}
+                        <div className="image-row">
+                         <img src = {Images[12]} />
+                         <img src = {Images[13]} />
+                         </div>
+                   </div>
+                   <div className="project-page-img">
+                      {Titles[5]}
+                        {Contents[10]}
+                        <p>Click <a href="./media/img/dme/ThoughtDoc.pdf" target="_blank">HERE</a> to see the research I had done for the project </p>
+                         <img src = {Images[14]} />
+                   </div>
+
+                   <div className="project-page-img">
+                      {Titles[6]}
+                         <img src = {Images[15]} />
+                   </div>
             </div>
         )
     }

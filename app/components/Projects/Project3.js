@@ -64,7 +64,7 @@ var Project3 = React.createClass({
 
         return (
             <div className ="flex-box">
-                <div className="project-page-single center-align">
+                <div className="project-page-single center-align border-right">
                     <Project ProjectName={ProjectName} />
                     {Tagline}
                      {Contents[0]}
@@ -78,7 +78,7 @@ var Project3 = React.createClass({
                     {Contents[2]}
                      {Titles[1]}
                     {Contents[3]}
-                    <YouTube
+                    <YouTube className="imageW90"
                        videoId="5ugPo8z-5hM"
                        opts={opts}
                        onReady={this._onReady}
@@ -91,10 +91,8 @@ var Project3 = React.createClass({
                  <img src ={Images[1]} /><p><br></br></p>
              </div>
 
-             <div className="project-page-single">
-              <div className="image-up">
-                 <img src = {Images[7]} />
-                 </div>
+             <div className="project-page-single border-right">
+                 <img className="imageW70" src = {Images[7]} />
                  <p>GameOn offers 4 main features. </p>
                  <ul>
                      <li>replays you can choose from all the camera angles</li>
@@ -144,7 +142,7 @@ var Project3 = React.createClass({
                  {Contents[6]}
              </div>
 
-              <div className="project-page-img">
+              <div className="project-page-img border-left">
               {Titles[5]}
               <div className="image-row">
                   <img src ={Images[8]} />
