@@ -15,7 +15,9 @@ var Project4 = React.createClass({
             "Colour code",
             "Events by Geolocation",
             "User Dashboard",
+            "Process",
             "WireFrame",
+            "Iteration",
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
@@ -41,6 +43,7 @@ var Project4 = React.createClass({
             "./media/img/demhub/user-dashboard-03.png",
             "./media/img/demhub/IMG_3213.png",
             "./media/img/demhub/IMG_3215.png",
+            "./media/img/demhub/DSC_0487.jpg",
         ]
         const Contents = [
 
@@ -57,6 +60,8 @@ var Project4 = React.createClass({
             "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.",
 
             "The field of Disaster and Emergency management has various sectors. Each of the sectors is not enclusive. One challenge we face is to create an intuitive platform for people to navigate between the sectors. The colour code system is used throughout the site, creating a visual sensory cue for people to quickly grasp the type of the contents.",
+
+            "My primary duty for the DUMHUB project is User experience, interaction and flow design. I also assited in front-end development of the website. The following diagram illustrates first time user flow thoughout DEMHUB main pages. Many iterations were made afterwards and are showing on the right."
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (
@@ -165,15 +170,27 @@ var Project4 = React.createClass({
                     </div>
 
                     <div className="project-page-img">
-                        {Titles[7]}
-                        <table>
-                        <tr>
+                        {Titles[8]}
+                        {Contents[7]}
                         <img src ={Images[19]} />
-                        </tr>
-                    <tr>
-                        <img src ={Images[20]} />
-                        </tr>
-                        </table>
+
+                    </div>
+
+                    <div className="project-page-img box-size-50">
+                        {Titles[9]}
+                        User Dashbord Design Iteration
+                        <table><tbody>
+                            <tr>
+                            <td>Initial design</td>
+                            <td>Iteration to box layout</td>
+                            </tr>
+                            <tr>
+                           <td><img src = {Images[20]} /> </td>
+                            <td>
+                               <img src = {Images[21]} />
+                            </td>
+                            </tr>
+                        </tbody></table>
                     </div>
             </div>
         )

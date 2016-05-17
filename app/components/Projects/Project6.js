@@ -13,7 +13,7 @@ var Project6 = React.createClass({
             "Website",
             "Print Marketing",
             "Process",
-            "Future Development",
+            "Drafts",
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
@@ -34,6 +34,8 @@ var Project6 = React.createClass({
             "./media/img/DME/pins.svg",
             "./media/img/DME/IMG_2862.jpg",
             "./media/img/DME/IMG_2952.jpg",
+            "./media/img/DME/DSC_0480.jpg",
+            "./media/img/DME/DSC_0481.jpg",
         ]
         const Contents = [
 
@@ -206,7 +208,11 @@ var Project6 = React.createClass({
 
                    <div className="project-page-img">
                       {Titles[6]}
-                         <img src = {Images[15]} />
+                         <img src = {Images[16]} />
+                         <div className="image-row">
+                             <img src = {Images[15]} />
+                             <img src = {Images[17]} />
+                         </div>
                    </div>
             </div>
         )

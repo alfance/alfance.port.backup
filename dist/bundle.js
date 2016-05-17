@@ -35534,7 +35534,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
-	                        { to: "LoProject8goAll" },
+	                        { to: "Project8" },
 	                        " ",
 	                        _react2.default.createElement(
 	                            "div",
@@ -35749,7 +35749,7 @@
 	        var ProjectName = "Cycnav";
 	        var Tagline = "Home IOT Vertical Garden";
 
-	        var Titles = ["Problem", "Solution", "High Level Concept", "Choosing Route", "Contributing", "Development Process", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "High Level Concept", "Choosing Route", "Contributing", "Process", "Hi-Fidelity Mockup", "Future Development"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
@@ -35767,7 +35767,7 @@
 	        "Whenever you login to Cycnav, it is automatically synced with the Physical Interface. After you entered your destination, the app calculates the best route for you and grabs realtime data of the road conditions. You can then choose between the shortest route and the recommended route", "Cycnav bike light can easily be attached and detached from any bike, giving greater accessibility to consumers. Cyclists do not have to purchase a new bike or replace sections of their bike. They can easily place the Cycnav physical interface into their bag or bring it inside when it is not in use.",
 
 	        //engaging user contribution
-	        "Users can contribute to the Cycnav community by adding road blocks discovered by them. "].map(function (info, i) {
+	        "Users can contribute to the Cycnav community by adding road blocks discovered by them. ", "For this project, I am in charge of the UX/UI design as well as User flow architect for both the digital and physical interfaces. I have also 3D designed and printed the physical bike light. "].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -35983,12 +35983,11 @@
 	                "div",
 	                { className: "project-page-single" },
 	                Titles[5],
-	                React.createElement(
-	                    "b",
-	                    null,
-	                    "Paper WireFrame"
-	                ),
-	                React.createElement("p", null),
+	                Contents[9]
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-single" },
 	                React.createElement("img", { src: Images[18] }),
 	                React.createElement(
 	                    "b",
@@ -49089,16 +49088,16 @@
 	        var ProjectName = "DEMHUB";
 	        var Tagline = "The Disaster and Emergency Management Network";
 
-	        var Titles = ["Problem", "Solution", "Main Page", "Newsfeeds", "Connection", "Colour code", "Events by Geolocation", "User Dashboard", "WireFrame"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "Main Page", "Newsfeeds", "Connection", "Colour code", "Events by Geolocation", "User Dashboard", "Process", "WireFrame", "Iteration"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/demhub/1.png", "./media/img/demhub/DEMHUB-main.png", "./media/img/demhub/newsfeed-01.png", "./media/img/demhub/newsfeedcs6-05.png", "./media/img/demhub/DSC_0353-2.jpg", "./media/img/demhub/DSC_0365-2.jpg", "./media/img/demhub/connections-02.png", "./media/img/demhub/connections-03.png", "./media/img/demhub/connections-01.png", "./media/img/demhub/icon-dem1.svg", "./media/img/demhub/icon-dem2.svg", "./media/img/demhub/icon-dem3.svg", "./media/img/demhub/icon-dem4.svg", "./media/img/demhub/icon-dem5.svg", "./media/img/demhub/icon-dem6.svg", "./media/img/demhub/mainpagecs6-02.png", "./media/img/demhub/user-dashboard-01.png", "./media/img/demhub/user-dashboard-02.png", "./media/img/demhub/user-dashboard-03.png", "./media/img/demhub/IMG_3213.png", "./media/img/demhub/IMG_3215.png"];
+	        var Images = ["./media/img/demhub/1.png", "./media/img/demhub/DEMHUB-main.png", "./media/img/demhub/newsfeed-01.png", "./media/img/demhub/newsfeedcs6-05.png", "./media/img/demhub/DSC_0353-2.jpg", "./media/img/demhub/DSC_0365-2.jpg", "./media/img/demhub/connections-02.png", "./media/img/demhub/connections-03.png", "./media/img/demhub/connections-01.png", "./media/img/demhub/icon-dem1.svg", "./media/img/demhub/icon-dem2.svg", "./media/img/demhub/icon-dem3.svg", "./media/img/demhub/icon-dem4.svg", "./media/img/demhub/icon-dem5.svg", "./media/img/demhub/icon-dem6.svg", "./media/img/demhub/mainpagecs6-02.png", "./media/img/demhub/user-dashboard-01.png", "./media/img/demhub/user-dashboard-02.png", "./media/img/demhub/user-dashboard-03.png", "./media/img/demhub/IMG_3213.png", "./media/img/demhub/IMG_3215.png", "./media/img/demhub/DSC_0487.jpg"];
 	        var Contents = ["DEMHUB is the vertical professional network for the disaster and emergency management industry that provides tools for daily use such as newsfeeds, discussion boards, and search features along with premium tools that allow global collaboration directed at mitigating and planning for disaster response. ",
 	        //problem
 	        "Presently, there are too few resources that effectively address the issues around networking, collaboration, and information sharing in the disaster and emergency management industry.",
 	        //solution
-	        "DEMHUB is creating a expansive professional network that acts as a centralized access point for all digital resources in the DEM industry while providing tools for users that enhance performance and exposure for emergency management specialists and researchers.", "DEMHUB makes it easy for disaster and emergency management professionals to find information that keeps them informed while offering them the opportunity to share their knowledge and experience.", "The newsfeed page is the major component of DEMHUB. It keeps the users updated worldwide. The box layout maximize the amount of information that can be feed into one page while not overwhelming the eyes.", "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.", "The field of Disaster and Emergency management has various sectors. Each of the sectors is not enclusive. One challenge we face is to create an intuitive platform for people to navigate between the sectors. The colour code system is used throughout the site, creating a visual sensory cue for people to quickly grasp the type of the contents."].map(function (info, i) {
+	        "DEMHUB is creating a expansive professional network that acts as a centralized access point for all digital resources in the DEM industry while providing tools for users that enhance performance and exposure for emergency management specialists and researchers.", "DEMHUB makes it easy for disaster and emergency management professionals to find information that keeps them informed while offering them the opportunity to share their knowledge and experience.", "The newsfeed page is the major component of DEMHUB. It keeps the users updated worldwide. The box layout maximize the amount of information that can be feed into one page while not overwhelming the eyes.", "Connection is another main service offered by DEMHUB. It adapts a similar design as other networking platform. In addition, the connection and newsfeeds are highly interactive with each other. Users will find social media features on their newsfeeds while sharing their discovery to their network group.", "The field of Disaster and Emergency management has various sectors. Each of the sectors is not enclusive. One challenge we face is to create an intuitive platform for people to navigate between the sectors. The colour code system is used throughout the site, creating a visual sensory cue for people to quickly grasp the type of the contents.", "My primary duty for the DUMHUB project is User experience, interaction and flow design. I also assited in front-end development of the website. The following diagram illustrates first time user flow thoughout DEMHUB main pages. Many iterations were made afterwards and are showing on the right."].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -49492,19 +49491,50 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-img" },
-	                Titles[7],
+	                Titles[8],
+	                Contents[7],
+	                React.createElement("img", { src: Images[19] })
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img box-size-50" },
+	                Titles[9],
+	                "User Dashbord Design Iteration",
 	                React.createElement(
 	                    "table",
 	                    null,
 	                    React.createElement(
-	                        "tr",
+	                        "tbody",
 	                        null,
-	                        React.createElement("img", { src: Images[19] })
-	                    ),
-	                    React.createElement(
-	                        "tr",
-	                        null,
-	                        React.createElement("img", { src: Images[20] })
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Initial design"
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                "Iteration to box layout"
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[20] }),
+	                                " "
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[21] })
+	                            )
+	                        )
 	                    )
 	                )
 	            )
@@ -49695,11 +49725,11 @@
 	        var ProjectName = "DME Branding";
 	        var Tagline = "";
 
-	        var Titles = ["Problem", "Solution", "5 Characters", "Website", "Print Marketing", "Process", "Future Development"].map(function (name, i) {
+	        var Titles = ["Problem", "Solution", "5 Characters", "Website", "Print Marketing", "Process", "Drafts"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/DME/all1.png", "./media/img/DME/2.jpg", "./media/img/DME/PC_bw.png", "./media/img/DME/PCposter.png", "./media/img/DME/physical_computing.svg", "./media/img/DME/3d_print.svg", "./media/img/DME/graphic_design.svg", "./media/img/DME/Videography.svg", "./media/img/DME/programming.svg", "./media/img/DME/DMEweb1.png", "./media/img/DME/DMEworkshop.png", "./media/img/DME/others.png", "./media/img/DME/3D_poster.png", "./media/img/DME/pins.svg", "./media/img/DME/IMG_2862.jpg", "./media/img/DME/IMG_2952.jpg"];
+	        var Images = ["./media/img/DME/all1.png", "./media/img/DME/2.jpg", "./media/img/DME/PC_bw.png", "./media/img/DME/PCposter.png", "./media/img/DME/physical_computing.svg", "./media/img/DME/3d_print.svg", "./media/img/DME/graphic_design.svg", "./media/img/DME/Videography.svg", "./media/img/DME/programming.svg", "./media/img/DME/DMEweb1.png", "./media/img/DME/DMEworkshop.png", "./media/img/DME/others.png", "./media/img/DME/3D_poster.png", "./media/img/DME/pins.svg", "./media/img/DME/IMG_2862.jpg", "./media/img/DME/IMG_2952.jpg", "./media/img/DME/DSC_0480.jpg", "./media/img/DME/DSC_0481.jpg"];
 	        var Contents = ["The Digital Media Experience Lab (DME) located in the Student Life Center of Ryerson University is a Library resource that supports curricula and extracurricular student learning. It focuses on helping students learning basic and advanced digital skill-set while exposing them to new and emerging techologies.", "This space provides high-end multimedia workstations, peer-mentoring and support, workshops and specialized equipments. People are able to use PC/MAC desktop & laptops, Oculus Rift, Aruidno, Little bits, 3D printer DSL cameras for their project or just for fun.",
 	        //problem
 	        "Eventhough the DME is open to every students and faculty of Ryerson, people without technological or digital background often find it daunting to come. The DME is misunderstood as engineering exclusive. A research we have conducted on the campus showed that, many non-tech students (Nursing, Arts, Community services etc) are not willing to use the DME because the technolgoies seem too professional.", "In addition, within the people who come to DME, there is a big ratio difference in genders. The gender ratio at Ryerson is 1:1 with slightly 300 more female students; However, the ratio of people who use DME resources are M 7 : F 3. This is mainly due to the stereotypical perception for technolgoies been dominanted by males.",
@@ -50105,7 +50135,13 @@
 	                "div",
 	                { className: "project-page-img" },
 	                Titles[6],
-	                React.createElement("img", { src: Images[15] })
+	                React.createElement("img", { src: Images[16] }),
+	                React.createElement(
+	                    "div",
+	                    { className: "image-row" },
+	                    React.createElement("img", { src: Images[15] }),
+	                    React.createElement("img", { src: Images[17] })
+	                )
 	            )
 	        );
 	    }
