@@ -17,10 +17,10 @@ var Project6 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/DME/all1.png",
-            "./media/img/DME/2.jpg",
-            "./media/img/DME/PC_bw.png",
-            "./media/img/DME/PCposter.png",
+            "media/img/DME/all1.png",
+            "media/img/DME/2.jpg",
+            "media/img/DME/PC_bw.png",
+            "media/img/DME/PCposter.png",
             "./media/img/DME/physical_computing.svg",
             "./media/img/DME/3d_print.svg",
             "./media/img/DME/graphic_design.svg",
