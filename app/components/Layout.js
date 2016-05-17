@@ -31,9 +31,14 @@ var Layout = React.createClass({
                     <li>
                         <Link to="ArtHome" activeClassName ="tabActive"><div className="chap-title"><img src="media/UI/icon-art.svg" className="NavIcon"></img>Arts</div></Link>
                     </li>
-                     <li>
-                    {/* <button onClick = {this.navigate}>test </button> */}
-                     </li>
+                    <li><Link to="ArtHome" activeClassName ="tabActive"><div className="chap-title">
+                        Mail</div></Link>
+                    </li>
+                    <li><div className="chap-title">
+                        <a href="https://www.linkedin.com/in/kyloxue" target="_blank"> <i className="icon-linkedin inline-icon" tooltip="bla bla"></i></a>
+                         <a href="https://github.com/alfance" target="_blank"><i className="icon-git inline-icon"></i></a>
+                         <a href="https://www.flickr.com/photos/85570696@N02/" target="_blank"> <i className="icon-flickr inline-icon"></i></a></div>
+                    </li>
                 </ul>
             </div>
 

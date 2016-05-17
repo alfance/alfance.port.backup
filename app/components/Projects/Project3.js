@@ -34,7 +34,7 @@ var Project3 = React.createClass({
             "./media/img/gameon/ar-4-p05.png",
             "./media/img/gameon/ar-5-p06.png",
             "./media/img/gameon/gameon-home.png",
-            "./media/img/gameon/IMG_2305.jpg",
+            "./media/img/gameon/2305.jpg",
             "./media/img/gameon/logo.png",
             "./media/img/gameon/logofinal.png",
 

@@ -191,6 +191,13 @@ i {
   height: 50px;
 }
 
+.inline-icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+  float: right;
+}
+
 .icon-pc {
   background-image: url("../media/UI/icon-01.svg");
   background-position: center center;
@@ -221,6 +228,26 @@ i {
   fill: #F37626;
 }
 
+.icon-linkedin {
+  background-image: url("../media/UI/icon-linkedin.svg");
+  background-position: center center;
+}
+
+.icon-git {
+  background-image: url("../media/UI/icon-git.svg");
+  background-position: center center;
+}
+
+.icon-flickr {
+  background-image: url("../media/UI/icon-flickr.svg");
+  background-position: center center;
+}
+
+.icon-mail {
+  background-image: url("../media/UI/icon-mail.svg");
+  background-position: center center;
+}
+
 .imageW90 {
   width: 90% !important;
 }
@@ -247,6 +274,20 @@ i {
 
 .imageW30 {
   width: 30% !important;
+}
+
+.slick-dots {
+  top: -25px !important;
+}
+
+[tooltip]:before {
+  position: absolute;
+  content: attr(tooltip);
+  opacity: 0;
+}
+
+[tooltip]:hover:before {
+  opacity: 1;
 }
 
 p, li, table {

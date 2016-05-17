@@ -1,15 +1,23 @@
 var React = require('react');
+var Slider = require('react-slick');
 import Project from "./Project";
 
 var Project5 = React.createClass({
     render() {
-        const ProjectName = "Vgarden";
-        const Tagline ="Home IOT Vertical Garden";
+        var settings = {
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        };
+        const ProjectName = "Physical Computing";
+        const Tagline ="A collection of my electronic works";
 
         const Titles = [
-            "Problem",
-            "Solution",
-            "Digital Interface",
+            "City Beat",
+            "City Beat - Development",
+            "PlantBot",
             "Physical Interface",
             "WireFrame",
             "Hi-Fidelity Mockup",
@@ -17,22 +25,38 @@ var Project5 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/2/1.png",
-            "",
-            "./media/img/2/DSC_0385-2.jpg",
-            "./media/img/2/DSC_0355-2.jpg",
-            "./media/img/2/DSC_0353-2.jpg",
-            "./media/img/2/DSC_0365-2.jpg",
+            "./media/img/hacktalk/1.png",
+            "./media/img/hacktalk/DSC_0016.jpg",
+            "./media/img/hacktalk/DSC_0009.jpg",
+            "./media/img/hacktalk/DSC_0010.jpg",
+            "./media/img/hacktalk/DSC_0334.png",
+            "./media/img/hacktalk/DSC_0005.jpg",
+            "./media/img/hacktalk/DSC_0323.jpg",
+            "./media/img/hacktalk/DSC_0327.jpg",
+            "./media/img/hacktalk/DSC_0279.jpg",
+            "./media/img/hacktalk/DSC_0281.jpg",
+            "./media/img/hacktalk/DSC_0271.jpg",
+
+            "./media/img/hacktalk/DSC_0294.jpg",
+            "./media/img/hacktalk/DSC_0314.jpg",
+            "./media/img/hacktalk/plant6.png",
+            "./media/img/hacktalk/plant2.jpg",
+            "./media/img/hacktalk/plant1.jpg",
+            "./media/img/hacktalk/plant4.jpg",
+            "./media/img/hacktalk/plant3.jpg",
         ]
         const Contents = [
 
-            "As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ",
+            "This section showcases some of my physical computing projects. ",
 
-            "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+            "I was first introduced to physical computing early 2015, and soon became fascinated by the electronic world. I realized that it adopts the same development process just like the design methodoloty I used to do for years, but with a tangible outcome. I am still a rookie in physical computing, this section will be updated regularly hopefuly with more and hopfully better projects.",
             //problem
-            "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
+            "CityBeat is a interactive dress with colour changing LEDs. It is responsive to the Open source data of Toronto, the colours changes according to the municipality's current traffic. The purpose of the project is to bring interactivity to your clothing, as well as conneting your city's cuture via the fashion.",
+
+            "I worked mainly on the physical wiring between the arduinos and the LEDs. In addition, sewing the dress together.",
             //solution
-            "The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts. ",
+            "PlantBot is a IOT (Internet of Things) project developed for the Intel IOT Roadshow 2015. Plantbot features a automatic watering system using the Intel Edison SDK, IBM Bluemix and various phy components such as Temp, Moisture & light sensors, LCD and pump.",
+            "My role is to construct the physical interface of the project.",
 
             "Hi-Fidelity Mockup",
 
@@ -43,35 +67,84 @@ var Project5 = React.createClass({
             <div className ="flex-box">
                 <div className="project-page-single center-align">
                     <h1> {ProjectName}</h1>
-                    <h4>{Tagline}</h4>
-                     <p>{Contents[0]}</p>
-                     <p>{Contents[1]}</p>
-                     <img src ={Images[0]}/>
+                    {Tagline}
+                    {Contents[0]}
+                    {Contents[1]}
+                     <img src ={Images[12]}/>
 
              </div>
-             <div className="project-page-single">
-                     <h4>{Titles[0]}</h4>
-                     <p>{Contents[2]}</p>
-                     <h4>{Titles[1]}</h4>
-                     <p>{Contents[3]}</p>
-                     <b> The components of the project include: </b>
-                     <p></p>
-                     <p><b>Software</b> - digital interface that display the status of the plants </p>
-                      <p><b>Hardware</b> - individual units each contain one plant & corresponding water system. </p>
-                     <ul>
-                         <li>Arduino Uno & Leonardo & Ethernet Shield</li>
-                         <li>Moisture, Temperature, Humidity and Air Quality sensors</li>
-                         <li>110V Aquarium Pump & Relays</li>
-                         <li>Plastic and Permisive pipes</li>
-                         <li>other Electronic Accessories</li>
-                     </ul>
+             <div className="project-page-img box-size-50 addborder">
+                 {Titles[0]}
+                 <p><b>hack n Talk hackthon 2015</b></p>
+                 {Contents[2]}
+                 <table><tbody>
+                     <tr>
+                     <td>
+                         <Slider {...settings}>
+                                 <div><h3><img src={Images[1]} /></h3></div>
+                                 <div><h3><img src={Images[2]} /></h3></div>
+                                 <div><h3><img src={Images[3]} /></h3></div>
+                                 <div><h3><img src={Images[4]} /></h3></div>
+                                 <div><h3><img src={Images[5]} /></h3></div>
+                               </Slider>
+                     </td>
+                     <td className="td-sizing">
+                   {Contents[2]}
+                   {Contents[3]}
+                   <p><b>Collaborators: </b>Danning Luu, Shamraiz Gul, Fernando Toro, Kylo Xue</p>
+                   <p><b>Technologies: </b>Arduino, Processing, LEDs, XML, fiber-optic threads</p>
+                   </td>
+               </tr>
+                 </tbody></table>
              </div>
-              <div className="project-page-img">
-                  <img src ={Images[2]}/>
-                    <div className ="image-row">
-                      <img src ={Images[3]}/><img src ={Images[4]}/><img src ={Images[5]}/>
-                     </div>
-                 </div>
+
+             <div className="project-page-img">
+                 {Titles[1]}
+                  <table><tbody className="center-align">
+                      <tr>
+                          <td><img src = {Images[6]} /></td>
+                           <td><img src = {Images[7]} /></td>
+                          <td><p>Dress Design
+                            <b> & </b>
+                              Toronto City map</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><img src = {Images[8]} /></td>
+                           <td><img src = {Images[9]} /></td>
+                          <td><p>parse the XML file to processing
+                             <b> & </b>
+                             Soldering fiber-optic thread onto LED</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><img src = {Images[10]} /></td>
+                           <td><img src = {Images[11]} /></td>
+                          <td><p>The initial cloth
+                             <b> & </b>
+                             Dress almost complete!</p>
+                          </td>
+                      </tr>
+                  </tbody></table>
+                </div>
+
+                <div className="project-page-img box-size-50 addborder">
+                    {Titles[2]}
+                    <p><b>Intel IOT Roadshow 2015</b></p>
+                      {Contents[4]}
+                      {Contents[5]}
+                            <Slider {...settings}>
+                                    <div><h3><img src={Images[13]} /></h3></div>
+                                    <div><h3><img src={Images[14]} /></h3></div>
+                                    <div><h3><img src={Images[15]} /></h3></div>
+                                    <div><h3><img src={Images[16]} /></h3></div>
+                                    <div><h3><img src={Images[17]} /></h3></div>
+                                  </Slider>
+
+                      <p><b>Collaborators: </b>Danning Luu, Yohan Guan, Kylo Xue</p>
+                      <p><b>Technologies: </b>Intel edison, IBM Bluemix, sensors & motors </p>
+                </div>
+
             </div>
         )
     }

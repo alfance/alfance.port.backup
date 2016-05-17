@@ -112,6 +112,14 @@ min-width: 35px;
     width:50px;
     height:50px;
 }
+
+.inline-icon {
+    width:15px;
+    height:15px;
+    display: block;
+    float:right;
+}
+
 .icon-pc {
     background-image: url("../media/UI/icon-01.svg");
     background-position: center center;
@@ -136,6 +144,22 @@ min-width: 35px;
     background-image: url("../media/UI/icon-05.svg");
     background-position: center center;
     fill:#F37626;
+}
+.icon-linkedin {
+    background-image: url("../media/UI/icon-linkedin.svg");
+    background-position: center center;
+}
+.icon-git {
+    background-image: url("../media/UI/icon-git.svg");
+    background-position: center center;
+}
+.icon-flickr {
+    background-image: url("../media/UI/icon-flickr.svg");
+    background-position: center center;
+}
+.icon-mail {
+    background-image: url("../media/UI/icon-mail.svg");
+    background-position: center center;
 }
 
 //customize images with
@@ -166,4 +190,22 @@ min-width: 35px;
 .imageW30 {
     @extend .center-image;
     width:30% !important;
+}
+
+// carousel slider
+.slick-dots {
+    top: -25px !important;
+}
+.slick-dots li button {
+
+}
+
+[tooltip]:before {
+    position : absolute;
+     content : attr(tooltip);
+     opacity : 0;
+}
+
+[tooltip]:hover:before {
+    opacity : 1;
 }

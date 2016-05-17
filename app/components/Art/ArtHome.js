@@ -18,23 +18,13 @@ export default class ArtHome extends React.Component{
 
   render(){
       const title = "Arts"
-      const pageintro = "Under Constrcution. Currently working on the Deviant Art API";
+      const pageintro = "Under Constrcution. Currently working on the Deviant Art API.";
 
     return (
       <div>
-          <PageIntro title={title} pageintro={pageintro}> </PageIntro>
-      <a onClick={this.show.bind(this)}>Open Modal</a>
-
-      <Modal
-      className="simple-modal-base fade-in-5sec" //this will completely overwrite the default css completely
-      closeOnOuterClick={true}
-      show={this.state.show}
-      onClose={this.close.bind(this)}>
-
-      <a style={closeStyle} onClick={this.close.bind(this)}>X</a>
-      <div>hey</div>
-
-      </Modal>
+          <PageIntro title={title} pageintro={pageintro}>
+              <p>Please goto my <a href ="http://alfance.deviantart.com/" target="_blank"> Deviant page</a> to see my illustrations.</p>
+          </PageIntro>
       </div>
     )
   }

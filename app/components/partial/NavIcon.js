@@ -7,11 +7,6 @@ export default class LogoSVG extends React.Component {
         return (
             <div className ="NavIcon">
             <ReactSVG
-              path={'media/UI/icon-home.svg'}
-              className={'example'}
-              callback={(svg) => (svg)}
-            /> <p></p>
-            <ReactSVG
               path={'media/UI/icon-project.svg'}
               className={'example'}
               callback={(svg) => (svg)}
@@ -28,6 +23,11 @@ export default class LogoSVG extends React.Component {
             /><p></p>
             <ReactSVG
               path={'media/UI/icon-art.svg'}
+              className={'example'}
+              callback={(svg) => (svg)}
+            /><p></p>
+            <ReactSVG
+              path={'media/UI/icon-mail.svg'}
               className={'example'}
               callback={(svg) => (svg)}
             />
