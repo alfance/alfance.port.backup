@@ -34,12 +34,15 @@ var Project2 = React.createClass({
             "./media/img/garden/3111.jpg",
             "./media/img/garden/viewer.png",
             "./media/img/garden/2929.png",
+            "./media/img/garden/model1.png",
+            "./media/img/garden/model2.png",
+            "./media/img/garden/model3.png",
         ]
         const Contents = [
 
             "As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ",
 
-            "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+            "The Modular Vertical Garden is a digital and ‘smart’ system that I designed to ease the pain points of maintaining a vertical garden. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
             //problem
             "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
             //solution
@@ -60,6 +63,7 @@ var Project2 = React.createClass({
                     <i>{Contents[0]}</i>
                     {Contents[1]}
                      <img src ={Images[0]}/>
+                     <p><b>Supervisors: </b>Steve Daniels, Micheal Carter</p>
              </div>
 
              <div className="project-page-single">
@@ -134,7 +138,31 @@ var Project2 = React.createClass({
                 </div>
 
                 <div className = "project-page-img border-right">
-                    {Titles[6]}
+                    <p><b>Modeling - Final Revision</b></p>
+                    <table className="table64 wow animated fadeInRight"><tbody>
+                        <tr>
+                            <td><img src = {Images[18]} /></td>
+                            <td><p><b>Electronics Container</b></p>
+                            <p>The Bottom part contains all the electronics as well as the pipe that trasfer water. Instead of 3D print, this part is been laser cut (see the 3rd image)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src = {Images[17]} /></td>
+                            <td><p><b>Water Connector</b></p>
+                            <p>The water connection units go inside the electronics container. Plastic Pipes are insertd from the central unit to the other three.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src = {Images[16]} /></td>
+                            <td><p><b>Laser cut diagram for container</b></p>
+                            <p>Due to the size of each planter, I choose to laser cut the container. There are 8 .125 inch layers in total. they are layed on top of each other.</p>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+
+                <div className = "project-page-img border-right">
+                    {Titles [6]}
                     <div className="image-row">
                         <img src = {Images[10]} />
                         <img src = {Images[11]} />

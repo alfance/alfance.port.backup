@@ -51,7 +51,7 @@ var Project8 = React.createClass({
                     {Contents[0]}
                      {Contents[1]}
                      <img src ={Images[0]}/>
-
+                    <p>Click <a href="http://d.irishembassygroup.com/ShopsysCateringBBQMenus-72DPI.pdf" target="_blank">HERE</a> to see the full menu</p>
              </div>
 
              <div className="project-page-img">

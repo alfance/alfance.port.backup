@@ -35544,7 +35544,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
-	                        { to: "Project8" },
+	                        { to: "" },
 	                        " ",
 	                        _react2.default.createElement(
 	                            "div",
@@ -35753,7 +35753,7 @@
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/cycnav/1.png", "./media/img/cycnav/01.png", "./media/img/cycnav/02.png", "./media/img/cycnav/03.png", "./media/img/cycnav/04.png", "./media/img/cycnav/05.png", "./media/img/cycnav/06.png", "./media/img/cycnav/07.png", "./media/img/cycnav/08.png", "./media/img/cycnav/09.png", "./media/img/cycnav/11.png", "./media/img/cycnav/12.png", "./media/img/cycnav/13.png", "./media/img/cycnav/14.png", "./media/img/cycnav/DSC_0033.png", "./media/img/cycnav/1.jpg", "./media/img/cycnav/DSC_0025.jpg", "./media/img/cycnav/mobilescreen.png", "./media/img/cycnav/group14-paper-wireframe.png", "./media/img/cycnav/1.jpg", "./media/img/cycnav/DSC_0025.jpg", "./media/img/cycnav/mobilescreen.png", "./media/img/cycnav/Prototypes3.png", "./media/img/cycnav/Prototypes4.png", "./media/img/cycnav/Prototypes5.png", "./media/img/cycnav/Prototypes6.png", "./media/img/cycnav/storyboard.png"];
+	        var Images = ["./media/img/cycnav/1.png", "./media/img/cycnav/01.png", "./media/img/cycnav/02.png", "./media/img/cycnav/03.png", "./media/img/cycnav/04.png", "./media/img/cycnav/05.png", "./media/img/cycnav/06.png", "./media/img/cycnav/07.png", "./media/img/cycnav/08.png", "./media/img/cycnav/09.png", "./media/img/cycnav/11.png", "./media/img/cycnav/12.png", "./media/img/cycnav/13.png", "./media/img/cycnav/14.png", "./media/img/cycnav/DSC_0033.png", "./media/img/cycnav/1.jpg", "./media/img/cycnav/DSC_0025.jpg", "./media/img/cycnav/mobilescreen.png", "./media/img/cycnav/group14-paper-wireframe.png", "./media/img/cycnav/1.jpg", "./media/img/cycnav/DSC_0025.jpg", "./media/img/cycnav/mobilescreen.png", "./media/img/cycnav/Prototypes3.png", "./media/img/cycnav/Prototypes4.png", "./media/img/cycnav/Prototypes5.png", "./media/img/cycnav/Prototypes6.png", "./media/img/cycnav/storyboard.png", "./media/img/cycnav/3d6.png", "./media/img/cycnav/3d7.png"];
 
 	        var adText = ["1 dd", "2 dd", "3 dd", "4 dd", "5 dd"];
 	        var Contents = ["“All About Biking” is for the urban cyclist, it’s an up to date and interactive bikers map of the city that allows cyclists to see where current construction, potholes and obstructions are taking place.", "Users contribute to the map by updating the status of bike specific road conditions and road blocks they see.", "The app will give all the necessary features you need as an urban cyclist: list detours,  nearby bike services, bike parking and more.",
@@ -35767,7 +35767,7 @@
 	        "Whenever you login to Cycnav, it is automatically synced with the Physical Interface. After you entered your destination, the app calculates the best route for you and grabs realtime data of the road conditions. You can then choose between the shortest route and the recommended route", "Cycnav bike light can easily be attached and detached from any bike, giving greater accessibility to consumers. Cyclists do not have to purchase a new bike or replace sections of their bike. They can easily place the Cycnav physical interface into their bag or bring it inside when it is not in use.",
 
 	        //engaging user contribution
-	        "Users can contribute to the Cycnav community by adding road blocks discovered by them. ", "For this project, I am in charge of the UX/UI design as well as User flow architect for both the digital and physical interfaces. I have also 3D designed and printed the physical bike light. "].map(function (info, i) {
+	        "Users can contribute to the Cycnav community by adding road blocks discovered by them. ", "For this project, I am in charge of the UX/UI design as well as User flow architect for both the digital and physical interfaces. I have also 3D designed and printed the physical bike light. ", "We have adapted various design techniques and technologies for Cycnav. Inclusing product validation, market research in the early phase, rapid prototyping, high fidelity 3D printed mockup and digital interface for the product development, lastly road test and qualitative user test."].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -35983,7 +35983,19 @@
 	                "div",
 	                { className: "project-page-single" },
 	                Titles[5],
-	                Contents[9]
+	                Contents[9],
+	                Contents[10],
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    "Click ",
+	                    React.createElement(
+	                        "a",
+	                        { href: "./media/img/cycnav/market_analysis.pdf", target: "_blank" },
+	                        "HERE "
+	                    ),
+	                    "to see the Market Analysis and Personas for Cycnav"
+	                )
 	            ),
 	            React.createElement(
 	                "div",
@@ -36023,6 +36035,18 @@
 	                        "See the full Storyboard"
 	                    )
 	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-single" },
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "3D Model for the physical Interface"
+	                ),
+	                React.createElement("p", null),
+	                React.createElement("img", { src: Images[27] }),
+	                React.createElement("img", { src: Images[28] })
 	            )
 	        );
 	    }
@@ -36165,8 +36189,8 @@
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg", "./media/img/garden/howworks.gif", "./media/img/garden/individual_plant.png", "./media/img/garden/one_unit_breakdown.png", "./media/img/garden/One_unit_connection_topbottom.png", "./media/img/garden/IMG_3100.jpg", "./media/img/garden/3099.jpg", "./media/img/garden/3098.jpg", "./media/img/garden/3111.jpg", "./media/img/garden/viewer.png", "./media/img/garden/2929.png"];
-	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that eases the pain points of maintaining a vertical garden in small urban spaces. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
+	        var Images = ["./media/img/garden/1.png", "./media/img/garden/interface-1.png", "./media/img/garden/DSC_0385-2.jpg", "./media/img/garden/DSC_0355-2.jpg", "./media/img/garden/DSC_0353-2.jpg", "./media/img/garden/DSC_0365-2.jpg", "./media/img/garden/howworks.gif", "./media/img/garden/individual_plant.png", "./media/img/garden/one_unit_breakdown.png", "./media/img/garden/One_unit_connection_topbottom.png", "./media/img/garden/IMG_3100.jpg", "./media/img/garden/3099.jpg", "./media/img/garden/3098.jpg", "./media/img/garden/3111.jpg", "./media/img/garden/viewer.png", "./media/img/garden/2929.png", "./media/img/garden/model1.png", "./media/img/garden/model2.png", "./media/img/garden/model3.png"];
+	        var Contents = ["As the digital invasion penetrates into people’s daily life, environmental health has become a critical concern for today’s shrinking living space and heavy urbanization (Dunnett, 2004). ", "The Modular Vertical Garden is a digital and ‘smart’ system that I designed to ease the pain points of maintaining a vertical garden. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. ",
 	        //problem
 	        "Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.",
 	        //solution
@@ -36188,7 +36212,17 @@
 	                    Contents[0]
 	                ),
 	                Contents[1],
-	                React.createElement("img", { src: Images[0] })
+	                React.createElement("img", { src: Images[0] }),
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Supervisors: "
+	                    ),
+	                    "Steve Daniels, Micheal Carter"
+	                )
 	            ),
 	            React.createElement(
 	                "div",
@@ -36375,6 +36409,108 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-img border-right" },
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    React.createElement(
+	                        "b",
+	                        null,
+	                        "Modeling - Final Revision"
+	                    )
+	                ),
+	                React.createElement(
+	                    "table",
+	                    { className: "table64 wow animated fadeInRight" },
+	                    React.createElement(
+	                        "tbody",
+	                        null,
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[18] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    React.createElement(
+	                                        "b",
+	                                        null,
+	                                        "Electronics Container"
+	                                    )
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "The Bottom part contains all the electronics as well as the pipe that trasfer water. Instead of 3D print, this part is been laser cut (see the 3rd image)"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[17] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    React.createElement(
+	                                        "b",
+	                                        null,
+	                                        "Water Connector"
+	                                    )
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "The water connection units go inside the electronics container. Plastic Pipes are insertd from the central unit to the other three."
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "tr",
+	                            null,
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement("img", { src: Images[16] })
+	                            ),
+	                            React.createElement(
+	                                "td",
+	                                null,
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    React.createElement(
+	                                        "b",
+	                                        null,
+	                                        "Laser cut diagram for container"
+	                                    )
+	                                ),
+	                                React.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Due to the size of each planter, I choose to laser cut the container. There are 8 .125 inch layers in total. they are layed on top of each other."
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-img border-right" },
 	                Titles[6],
 	                React.createElement(
 	                    "div",
@@ -36427,7 +36563,7 @@
 	        var ProjectName = "GameOn";
 	        var Tagline = "Re-Invent Sports";
 
-	        var Titles = ["Problem", "Market", "Inclusive Experience", "Replays", "Interactivity", "Logo", "Game", "Flow Chart"].map(function (name, i) {
+	        var Titles = ["Problem", "Market", "Inclusive Experience", "Replays", "Interactivity", "Logo", "Game", "Flow Chart", "Process"].map(function (name, i) {
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
@@ -36436,7 +36572,7 @@
 	        //problem
 	        "Stadium fans loose out on the experience that stay home fans have. Fans needs more than halftime shows to engage themselves at the venue and come back. In person experience does not match fans’ consumption habits",
 	        //solution
-	        "PWC research suggests that CAGR for the sports market to go from $56.9 billion to $70.7 billion just in North America. In this 8% of it is expected to be in sponsorship and gate revenues. The aim is to not only Lapsed Season Holders but also groups and Corporate tickets. Many sports fans we talked about are very interested in such a Technology and were our inspiration behind this. ", "GameOn allows the onsite sports fans to engage with their team and game, giving them an unique experence and sense of unity. It encourages more fans to come in person for the experience they cannot have by watching TV at home.", "The concept for the logo is to be playful and game-like. We all agree on taking inspiration from strategy board and play button to represent the nature of the app. Many of our ideas were seen in the early design.", "Fans can support their teams by competing in the 'Fan vs Fan' social game. By uploading a photo showing the team they are rooting, GameOn will count the number of supporters for each team and upload their photos to the social media site. The team with the most photos wins"].map(function (info, i) {
+	        "PWC research suggests that CAGR for the sports market to go from $56.9 billion to $70.7 billion just in North America. In this 8% of it is expected to be in sponsorship and gate revenues. The aim is to not only Lapsed Season Holders but also groups and Corporate tickets. Many sports fans we talked about are very interested in such a Technology and were our inspiration behind this. ", "GameOn allows the onsite sports fans to engage with their team and game, giving them an unique experence and sense of unity. It encourages more fans to come in person for the experience they cannot have by watching TV at home.", "The concept for the logo is to be playful and game-like. We all agree on taking inspiration from strategy board and play button to represent the nature of the app. Many of our ideas were seen in the early design.", "Fans can support their teams by competing in the 'Fan vs Fan' social game. By uploading a photo showing the team they are rooting, GameOn will count the number of supporters for each team and upload their photos to the social media site. The team with the most photos wins", "One of the engaging features GameOn offers is the ability to let fans doing realtime interactions on the replays. You can tap on the player to get a detailed status of him. You can also make your own strategies and share them using the VR strategy board.", "The GameOn is a Hackthon project we managed to finish within 2days. We started off as a simple statium replay app and expand its features to immersive fans engagement. ", "My job for this project is early user research, Logo design and UI design. "].map(function (info, i) {
 	            return React.createElement(_Project2.default, { keys: i, info: info });
 	        });
 
@@ -36586,6 +36722,7 @@
 	                "div",
 	                { className: "project-page-img" },
 	                Titles[4],
+	                Contents[7],
 	                React.createElement(
 	                    "table",
 	                    null,
@@ -36639,10 +36776,27 @@
 	            ),
 	            React.createElement(
 	                "div",
-	                { className: "project-page-img" },
+	                { className: "project-page-img border-right" },
 	                Titles[6],
 	                React.createElement("img", { src: Images[16] }),
 	                Contents[6]
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "project-page-single" },
+	                Titles[8],
+	                Contents[8],
+	                Contents[9],
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    "Checkout the App ",
+	                    React.createElement(
+	                        "a",
+	                        { href: "https://invis.io/AM6C7BW23", target: "_blank" },
+	                        "HERE"
+	                    )
+	                )
 	            ),
 	            React.createElement(
 	                "div",
@@ -49505,7 +49659,7 @@
 	                    null,
 	                    React.createElement(
 	                        "tbody",
-	                        null,
+	                        { className: "center-align" },
 	                        React.createElement(
 	                            "tr",
 	                            null,
@@ -49729,7 +49883,7 @@
 	            return React.createElement(_Project2.default, { key: i, name: name });
 	        });
 
-	        var Images = ["media/img/DME/all1.png", "media/img/DME/2.jpg", "media/img/DME/PC_bw.png", "media/img/DME/PCposter.png", "./media/img/DME/physical_computing.svg", "./media/img/DME/3d_print.svg", "./media/img/DME/graphic_design.svg", "./media/img/DME/Videography.svg", "./media/img/DME/programming.svg", "./media/img/DME/DMEweb1.png", "./media/img/DME/DMEworkshop.png", "./media/img/DME/others.png", "./media/img/DME/3D_poster.png", "./media/img/DME/pins.svg", "./media/img/DME/IMG_2862.jpg", "./media/img/DME/IMG_2952.jpg", "./media/img/DME/DSC_0480.jpg", "./media/img/DME/DSC_0481.jpg"];
+	        var Images = ["./media/img/DME/all1.png", "./media/img/DME/2.jpg", "./media/img/DME/PC_bw.png", "./media/img/DME/PCposter.png", "./media/img/DME/physical_computing.svg", "./media/img/DME/3d_print.svg", "./media/img/DME/graphic_design.svg", "./media/img/DME/Videography.svg", "./media/img/DME/programming.svg", "./media/img/DME/DMEweb1.png", "./media/img/DME/DMEworkshop.png", "./media/img/DME/others.png", "./media/img/DME/3D_poster.png", "./media/img/DME/pins.svg", "./media/img/DME/IMG_2862.jpg", "./media/img/DME/IMG_2952.jpg", "./media/img/DME/DSC_0480.jpg", "./media/img/DME/DSC_0481.jpg"];
 	        var Contents = ["The Digital Media Experience Lab (DME) located in the Student Life Center of Ryerson University is a Library resource that supports curricula and extracurricular student learning. It focuses on helping students learning basic and advanced digital skill-set while exposing them to new and emerging techologies.", "This space provides high-end multimedia workstations, peer-mentoring and support, workshops and specialized equipments. People are able to use PC/MAC desktop & laptops, Oculus Rift, Aruidno, Little bits, 3D printer DSL cameras for their project or just for fun.",
 	        //problem
 	        "Eventhough the DME is open to every students and faculty of Ryerson, people without technological or digital background often find it daunting to come. The DME is misunderstood as engineering exclusive. A research we have conducted on the campus showed that, many non-tech students (Nursing, Arts, Community services etc) are not willing to use the DME because the technolgoies seem too professional.", "In addition, within the people who come to DME, there is a big ratio difference in genders. The gender ratio at Ryerson is 1:1 with slightly 300 more female students; However, the ratio of people who use DME resources are M 7 : F 3. This is mainly due to the stereotypical perception for technolgoies been dominanted by males.",
@@ -50353,7 +50507,18 @@
 	                Tagline,
 	                Contents[0],
 	                Contents[1],
-	                React.createElement("img", { src: Images[0] })
+	                React.createElement("img", { src: Images[0] }),
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    "Click ",
+	                    React.createElement(
+	                        "a",
+	                        { href: "http://d.irishembassygroup.com/ShopsysCateringBBQMenus-72DPI.pdf", target: "_blank" },
+	                        "HERE"
+	                    ),
+	                    " to see the full menu"
+	                )
 	            ),
 	            React.createElement(
 	                "div",

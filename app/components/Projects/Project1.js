@@ -47,6 +47,8 @@ var Project1 = React.createClass({
             "./media/img/cycnav/Prototypes5.png",
             "./media/img/cycnav/Prototypes6.png",
             "./media/img/cycnav/storyboard.png",
+            "./media/img/cycnav/3d6.png",
+            "./media/img/cycnav/3d7.png",
         ]
 
         const adText =[
@@ -78,6 +80,8 @@ var Project1 = React.createClass({
             "Users can contribute to the Cycnav community by adding road blocks discovered by them. ",
 
             "For this project, I am in charge of the UX/UI design as well as User flow architect for both the digital and physical interfaces. I have also 3D designed and printed the physical bike light. ",
+
+            "We have adapted various design techniques and technologies for Cycnav. Inclusing product validation, market research in the early phase, rapid prototyping, high fidelity 3D printed mockup and digital interface for the product development, lastly road test and qualitative user test.",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         const randomAd = adText[Math.round(Math.random() * (adText.length -1) )];
@@ -169,6 +173,8 @@ var Project1 = React.createClass({
                 <div className="project-page-single">
                     {Titles[5]}
                     {Contents[9]}
+                    {Contents[10]}
+                    <p>Click <a href ="./media/img/cycnav/market_analysis.pdf" target="_blank">HERE </a>to see the Market Analysis and Personas for Cycnav</p>
                 </div>
                 <div className="project-page-single">
                     <img src ={Images[18]} />
@@ -185,6 +191,12 @@ var Project1 = React.createClass({
                     <b>StoryBoard</b><p></p>
                     <img src ={Images[26]} />
                     <a href="media/img/cycnav/storyboard-device.pdf" target="_blank"> <p>See the full Storyboard</p></a>
+                </div>
+
+                <div className="project-page-single">
+                    <b>3D Model for the physical Interface</b><p></p>
+                    <img src ={Images[27]} />
+                    <img src ={Images[28]} />
                 </div>
             </div>
         )

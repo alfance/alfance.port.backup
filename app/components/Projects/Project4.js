@@ -179,7 +179,7 @@ var Project4 = React.createClass({
                     <div className="project-page-img box-size-50">
                         {Titles[9]}
                         User Dashbord Design Iteration
-                        <table><tbody>
+                        <table><tbody className="center-align">
                             <tr>
                             <td>Initial design</td>
                             <td>Iteration to box layout</td>

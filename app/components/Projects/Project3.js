@@ -22,6 +22,7 @@ var Project3 = React.createClass({
             "Logo",
             "Game",
             "Flow Chart",
+            "Process",
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
@@ -60,6 +61,12 @@ var Project3 = React.createClass({
             "The concept for the logo is to be playful and game-like. We all agree on taking inspiration from strategy board and play button to represent the nature of the app. Many of our ideas were seen in the early design.",
 
             "Fans can support their teams by competing in the 'Fan vs Fan' social game. By uploading a photo showing the team they are rooting, GameOn will count the number of supporters for each team and upload their photos to the social media site. The team with the most photos wins",
+
+            "One of the engaging features GameOn offers is the ability to let fans doing realtime interactions on the replays. You can tap on the player to get a detailed status of him. You can also make your own strategies and share them using the VR strategy board.",
+
+            "The GameOn is a Hackthon project we managed to finish within 2days. We started off as a simple statium replay app and expand its features to immersive fans engagement. ",
+
+            "My job for this project is early user research, Logo design and UI design. ",
         ].map((info, i)=> <Project keys={i} info={info}/> );
 
         return (
@@ -120,6 +127,7 @@ var Project3 = React.createClass({
 
              <div className="project-page-img">
                 {Titles[4]}
+                {Contents[7]}
                  <table><tbody>
                      <tr>
                          <td><img src = {Images[3]} /></td>
@@ -136,10 +144,17 @@ var Project3 = React.createClass({
                  </tbody></table>
              </div>
 
-             <div className="project-page-img" >
+             <div className="project-page-img border-right" >
                  {Titles[6]}
                   <img src ={Images[16]} />
                  {Contents[6]}
+             </div>
+
+             <div className="project-page-single" >
+                 {Titles[8]}
+                 {Contents[8]}
+                 {Contents[9]}
+                  <p>Checkout the App <a href ="https://invis.io/AM6C7BW23" target="_blank">HERE</a></p>
              </div>
 
               <div className="project-page-img border-left">
