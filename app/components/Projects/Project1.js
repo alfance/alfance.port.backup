@@ -38,7 +38,7 @@ var Project1 = React.createClass({
             "./media/img/cycnav/DSC_0025.jpg",
             "./media/img/cycnav/mobilescreen.png",
             "./media/img/cycnav/group14-paper-wireframe.png",
-            "./media/img/cycnav/1.jpg",
+            "./media/img/cycnav/night.jpg",
 
             "./media/img/cycnav/DSC_0025.jpg",
             "./media/img/cycnav/mobilescreen.png",
