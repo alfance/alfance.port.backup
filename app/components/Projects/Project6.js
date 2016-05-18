@@ -3,7 +3,7 @@ import Project from "./Project";
 
 var Project6 = React.createClass({
     render() {
-        const ProjectName = "DME Branding";
+        const ProjectName = "dme Branding";
         const Tagline ="";
 
         const Titles = [
@@ -17,46 +17,46 @@ var Project6 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/DME/all1.png",
-            "./media/img/DME/2.jpg",
-            "./media/img/DME/PC_bw.png",
-            "./media/img/DME/PCposter.png",
-            "./media/img/DME/physical_computing.svg",
-            "./media/img/DME/3d_print.svg",
-            "./media/img/DME/graphic_design.svg",
-            "./media/img/DME/videography.svg",
-            "./media/img/DME/programming.svg",
-            "./media/img/DME/dmeweb1.png",
-            "./media/img/DME/dmeworkshop.png",
-            "./media/img/DME/others.png",
+            "./media/img/dme/all1.png",
+            "./media/img/dme/2.jpg",
+            "./media/img/dme/PC_bw.png",
+            "./media/img/dme/PCposter.png",
+            "./media/img/dme/physical_computing.svg",
+            "./media/img/dme/3d_print.svg",
+            "./media/img/dme/graphic_design.svg",
+            "./media/img/dme/videography.svg",
+            "./media/img/dme/programming.svg",
+            "./media/img/dme/dmeweb1.png",
+            "./media/img/dme/dmeworkshop.png",
+            "./media/img/dme/others.png",
 
-            "./media/img/DME/3D_poster.png",
-            "./media/img/DME/pins.svg",
-            "./media/img/DME/img_2862.jpg",
-            "./media/img/DME/img_2952.jpg",
-            "./media/img/DME/dsc_0480.jpg",
-            "./media/img/DME/dsc_0481.jpg",
+            "./media/img/dme/3D_poster.png",
+            "./media/img/dme/pins.svg",
+            "./media/img/dme/img_2862.jpg",
+            "./media/img/dme/img_2952.jpg",
+            "./media/img/dme/dsc_0480.jpg",
+            "./media/img/dme/dsc_0481.jpg",
         ]
         const Contents = [
 
-            "The Digital Media Experience Lab (DME) located in the Student Life Center of Ryerson University is a Library resource that supports curricula and extracurricular student learning. It focuses on helping students learning basic and advanced digital skill-set while exposing them to new and emerging techologies.",
+            "The Digital Media Experience Lab (dme) located in the Student Life Center of Ryerson University is a Library resource that supports curricula and extracurricular student learning. It focuses on helping students learning basic and advanced digital skill-set while exposing them to new and emerging techologies.",
 
             "This space provides high-end multimedia workstations, peer-mentoring and support, workshops and specialized equipments. People are able to use PC/MAC desktop & laptops, Oculus Rift, Aruidno, Little bits, 3D printer DSL cameras for their project or just for fun.",
             //problem
-            "Eventhough the DME is open to every students and faculty of Ryerson, people without technological or digital background often find it daunting to come. The DME is misunderstood as engineering exclusive. A research we have conducted on the campus showed that, many non-tech students (Nursing, Arts, Community services etc) are not willing to use the DME because the technolgoies seem too professional.",
-            "In addition, within the people who come to DME, there is a big ratio difference in genders. The gender ratio at Ryerson is 1:1 with slightly 300 more female students; However, the ratio of people who use DME resources are M 7 : F 3. This is mainly due to the stereotypical perception for technolgoies been dominanted by males.",
+            "Eventhough the dme is open to every students and faculty of Ryerson, people without technological or digital background often find it daunting to come. The dme is misunderstood as engineering exclusive. A research we have conducted on the campus showed that, many non-tech students (Nursing, Arts, Community services etc) are not willing to use the dme because the technolgoies seem too professional.",
+            "In addition, within the people who come to dme, there is a big ratio difference in genders. The gender ratio at Ryerson is 1:1 with slightly 300 more female students; However, the ratio of people who use dme resources are M 7 : F 3. This is mainly due to the stereotypical perception for technolgoies been dominanted by males.",
             //solution
-            "First project I have been working to engage different user types for DME is the characters design. DME has 5 sub-divisions each acquires unique knowledges, equipments and technologies. My goal is to create approachable visual representations of the divisions, so people can find the new techs less distant and intimidating.",
+            "First project I have been working to engage different user types for dme is the characters design. dme has 5 sub-divisions each acquires unique knowledges, equipments and technologies. My goal is to create approachable visual representations of the divisions, so people can find the new techs less distant and intimidating.",
 
-            "The next objective for the DME branding is to integrate the characters in all DME marketing materials.",
+            "The next objective for the dme branding is to integrate the characters in all dme marketing materials.",
 
             "The 5 divisions are Physical Computing, 3D Print, Visual Design, Videography and Programming. ",
 
-            "The Workshop page is a convinient portal for students and faculty to search, filter and register for the upcoming events and workshops of DME. Connected to the Ryerson's google calender. People can directly add the event to their own calender.",
+            "The Workshop page is a convinient portal for students and faculty to search, filter and register for the upcoming events and workshops of dme. Connected to the Ryerson's google calender. People can directly add the event to their own calender.",
 
-            "People can learn about DME, see the featured projects, get in contact with the team and request for 3D print or equipments. The DME website creates maximum convinience for people to do exactly the same thing as they come in person.",
+            "People can learn about dme, see the featured projects, get in contact with the team and request for 3D print or equipments. The dme website creates maximum convinience for people to do exactly the same thing as they come in person.",
 
-            "In addition to the webiste, I have also managed to create multiple printed marketing materials for DME. For instances, posters, stand and stickers. The printed materials will be the major marketing tool spread out thoughout campus to promote the DME's new iamge.",
+            "In addition to the webiste, I have also managed to create multiple printed marketing materials for dme. For instances, posters, stand and stickers. The printed materials will be the major marketing tool spread out thoughout campus to promote the dme's new iamge.",
 
             "Following are some of the ideations and draft designs we have for the characters. this project had gone though series of iteration and it is still under development as of now.",
         ].map((info, i)=> <Project keys={i} info={info}/> );
@@ -84,7 +84,7 @@ var Project6 = React.createClass({
                      <tr>
                          <td> {Contents[4]}</td>
                           <td>{Contents[5]}
-                              <p>Click <a href="http://sozostudio.github.io/DMETheme/index.html" target="_blank">HERE</a> to see the website mockup</p>
+                              <p>Click <a href="http://sozostudio.github.io/dmeTheme/index.html" target="_blank">HERE</a> to see the website mockup</p>
                           </td>
                      </tr>
                      <tr>
@@ -158,7 +158,7 @@ var Project6 = React.createClass({
                  </div>
                  <div className="project-page-img">
                      {Titles[3]}
-                     <a href="http://sozostudio.github.io/DMETheme/index.html" target="_blank"><b>Main Page</b></a>
+                     <a href="http://sozostudio.github.io/dmeTheme/index.html" target="_blank"><b>Main Page</b></a>
                          <table><tbody>
                              <tr>
                              <td>
