@@ -44,7 +44,7 @@ var Project3 = React.createClass({
             "./media/img/gameon/replay3.png",
             "./media/img/gameon/strategy_board-05.png",
             "./media/img/gameon/game.png",
-            "./media/img/gameon/flowchart.png",
+            "./media/img/gameon/flowchart1.png",
         ]
         const Contents = [
 

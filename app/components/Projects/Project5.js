@@ -26,11 +26,11 @@ var Project5 = React.createClass({
 
         const Images =[
             "./media/img/hacktalk/1.png",
-            "./media/img/hacktalk/DSC_0016.jpg",
-            "./media/img/hacktalk/DSC_0009.jpg",
-            "./media/img/hacktalk/DSC_0010.jpg",
+            "./media/img/hacktalk/0016.jpg",
+            "./media/img/hacktalk/0009.jpg",
+            "./media/img/hacktalk/0010.jpg",
             "./media/img/hacktalk/DSC_0334.png",
-            "./media/img/hacktalk/DSC_0005.jpg",
+            "./media/img/hacktalk/0005.jpg",
             "./media/img/hacktalk/DSC_0323.jpg",
             "./media/img/hacktalk/DSC_0327.jpg",
             "./media/img/hacktalk/DSC_0279.jpg",

@@ -43,7 +43,7 @@ var Project4 = React.createClass({
             "./media/img/demhub/user-dashboard-03.png",
             "./media/img/demhub/IMG_3213.png",
             "./media/img/demhub/IMG_3215.png",
-            "./media/img/demhub/DSC_0487.jpg",
+            "./media/img/demhub/0487.jpg",
         ]
         const Contents = [
 
