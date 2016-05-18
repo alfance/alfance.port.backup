@@ -26,16 +26,16 @@ var Project6 = React.createClass({
             "./media/img/dme/graphic_design.svg",
             "./media/img/dme/videography.svg",
             "./media/img/dme/programming.svg",
-            "./media/img/dme/dmeweb1.png",
-            "./media/img/dme/dmeworkshop.png",
+            "./media/img/dme/web.png",
+            "./media/img/dme/workshop.png",
             "./media/img/dme/others.png",
 
             "./media/img/dme/3D_poster.png",
             "./media/img/dme/pins.svg",
-            "./media/img/dme/img_2862.jpg",
-            "./media/img/dme/img_2952.jpg",
-            "./media/img/dme/dsc_0480.jpg",
-            "./media/img/dme/dsc_0481.jpg",
+            "./media/img/dme/2862.jpg",
+            "./media/img/dme/2952.jpg",
+            "./media/img/dme/0480.jpg",
+            "./media/img/dme/0481.jpg",
         ]
         const Contents = [
 
