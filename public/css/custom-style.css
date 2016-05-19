@@ -330,7 +330,7 @@ h4, h5 {
   max-width: 300px;
   min-height: 150px;
   max-height: 300px;
-  margin: 20px 10px;
+  margin: 10px 5px;
   overflow: hidden;
   position: relative;
 }
@@ -421,7 +421,7 @@ h4, h5 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   box-shadow: 2px 0px 2px #e8e8ea;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .sidebar-wrapper img {
   width: 30px;
@@ -841,6 +841,13 @@ h4, h5 {
     width: 100vw;
   }
 }
+@media only screen and (max-height: 800px) {
+  .image-grid-each {
+    width: 30vh;
+    height: 30vh;
+    margin: 10px 5px;
+  }
+}
 @media only screen and (max-height: 400px) and (orientation: landscape) {
   .image-grid-each {
     height: 100vh;
@@ -851,5 +858,11 @@ h4, h5 {
 @media only screen and (min-height: 800px) {
   .project-page-single, .project-page-img {
     min-width: 600px;
+  }
+
+  .image-grid-each {
+    width: 30vh;
+    height: 30vh;
+    margin: 10px 5px;
   }
 }

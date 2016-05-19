@@ -7875,7 +7875,10 @@
 	var React = __webpack_require__(302);
 	var ReactDOM = __webpack_require__(502);
 	var ga = __webpack_require__(899);
-	ga.initialize('UA-77366252-1');
+	ga.initialize('UA-77366252-1', {
+	  debug: true,
+	  titleCase: false
+	});
 
 	// var Router = require('react-router').Router;
 	var routes = __webpack_require__(503);
@@ -55398,6 +55401,11 @@
 	              ' Deviant page'
 	            ),
 	            ' to see my illustrations.'
+	          ),
+	          React.createElement(
+	            'p',
+	            null,
+	            'That been said, I am still in the process of learning ReactJS. If you\'d like to communicate and interact, please do no hesitant to contact me.'
 	          )
 	        )
 	      );

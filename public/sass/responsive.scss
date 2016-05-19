@@ -4,6 +4,7 @@
     }
 }
 
+
 /* if min width is greater than 1020 horizontal (ipad min) */
 @media (min-width: 1020px) and (orientation: landscape){
     /* project page */
@@ -42,6 +43,15 @@
     .pageIntro {
         width:100vw;
     }
+
+}
+
+@media only screen and (max-height: 800px) {
+    .image-grid-each {
+        width: 30vh;
+        height:30vh;
+        margin:10px 5px;
+    }
 }
 
 @media only screen and (max-height: 400px) and (orientation: landscape) {
@@ -55,5 +65,11 @@
 @media only screen and (min-height: 800px) {
     .project-page-single, .project-page-img {
         min-width:600px;
+    }
+
+    .image-grid-each {
+        width: 30vh;
+        height:30vh;
+        margin:10px 5px;
     }
 }

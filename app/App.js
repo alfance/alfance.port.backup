@@ -1,7 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var ga = require('react-ga');
-ga.initialize('UA-77366252-1');
+ga.initialize('UA-77366252-1', {
+  debug: true,
+  titleCase: false,
+});
 
 // var Router = require('react-router').Router;
 var routes = require('./config/routes');

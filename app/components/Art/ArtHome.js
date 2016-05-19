@@ -26,6 +26,7 @@ export default class ArtHome extends React.Component{
             <h2>Arts</h2>
             <p>Under Constrcution. Currently working on the Deviant Art API. <br />
                 Please goto my <a href ="http://alfance.deviantart.com/" target="_blank"> Deviant page</a> to see my illustrations.</p>
+            <p>That been said, I am still in the process of learning ReactJS. If you'd like to communicate and interact, please do no hesitant to contact me.</p>
         </div>
       </div>
     )
