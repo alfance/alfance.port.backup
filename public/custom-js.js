@@ -110,8 +110,7 @@ switch (pick) {
     $(".st2").css('fill',siteColor[2]);
     $(".st1").css('fill',siteColor[3]);
     $(".st3").css('fill',siteColor[4]);
-    $(".NavIcon").css({'background-color': siteColor[0],
-                    'fill':siteColor[2],});
+    $(".NavIcon").css({'fill':siteColor[2],});
     $('.tabActive').css('background-color',siteColor[0]);
 }
 

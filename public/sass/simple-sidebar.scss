@@ -35,11 +35,11 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-color:$white;
+    box-shadow: 2px 0px 2px #e8e8ea;
+    background-color: rgba(255,255,255, 0.7);
     img {
         width:30px;
         height:auto;
-        fill:#ddd;
     }
 
 }
@@ -73,7 +73,7 @@ top: 10vh;
 .sidebar-wrapper.toggled{
     width: 150px !important; /*the width of the side bar */
     .chap-title {
-    padding-right:40px;
+    padding-right:25px;
     text-align: right;
 
 }
@@ -106,7 +106,6 @@ top: 10vh;
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
-    border-right: 1px double #999;
 }
 
 .sidebar-nav li a {
@@ -117,7 +116,7 @@ top: 10vh;
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color:blue;
+    background-color: $black-opacity;
 }
 
 .sidebar-nav li a:active,

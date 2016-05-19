@@ -21,10 +21,12 @@ export default class ArtHome extends React.Component{
       const pageintro = "Under Constrcution. Currently working on the Deviant Art API.";
 
     return (
-      <div>
-          <PageIntro title={title} pageintro={pageintro}>
-              <p>Please goto my <a href ="http://alfance.deviantart.com/" target="_blank"> Deviant page</a> to see my illustrations.</p>
-          </PageIntro>
+        <div className="page-Intro">
+        <div className="pageIntro-text">
+            <h2>Arts</h2>
+            <p>Under Constrcution. Currently working on the Deviant Art API. <br />
+                Please goto my <a href ="http://alfance.deviantart.com/" target="_blank"> Deviant page</a> to see my illustrations.</p>
+        </div>
       </div>
     )
   }

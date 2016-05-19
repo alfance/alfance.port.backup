@@ -4,6 +4,8 @@
 body,html {
     font-family: 'Lato', Arial, sans-serif;
     font-weight:400;
+    margin:0px;
+    padding-right:30px;
 }
 html {
     height:100vh;
@@ -114,12 +116,11 @@ min-width: 35px;
 }
 
 .inline-icon {
-    width:15px;
-    height:15px;
-    display: block;
+    width:10px;
+    height:10px;
+    display: inline-block;;
     float:right;
 }
-
 .icon-pc {
     background-image: url("../media/UI/icon-01.svg");
     background-position: center center;

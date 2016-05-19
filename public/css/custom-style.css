@@ -74,6 +74,8 @@
 body, html {
   font-family: 'Lato', Arial, sans-serif;
   font-weight: 400;
+  margin: 0px;
+  padding-right: 30px;
 }
 
 html {
@@ -192,9 +194,9 @@ i {
 }
 
 .inline-icon {
-  width: 15px;
-  height: 15px;
-  display: block;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
   float: right;
 }
 
@@ -418,12 +420,12 @@ h4, h5 {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-color: #FFF;
+  box-shadow: 2px 0px 2px #e8e8ea;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .sidebar-wrapper img {
   width: 30px;
   height: auto;
-  fill: #ddd;
 }
 
 .NavIcon {
@@ -462,7 +464,7 @@ h4, h5 {
   /*the width of the side bar */
 }
 .sidebar-wrapper.toggled .chap-title {
-  padding-right: 40px;
+  padding-right: 25px;
   text-align: right;
 }
 
@@ -491,7 +493,6 @@ h4, h5 {
 .sidebar-nav li {
   text-indent: 20px;
   line-height: 40px;
-  border-right: 1px double #999;
 }
 
 .sidebar-nav li a {
@@ -502,7 +503,7 @@ h4, h5 {
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: blue;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .sidebar-nav li a:active,
