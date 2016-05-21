@@ -328,6 +328,7 @@ h4, h5 {
 }
 
 .image-grid-each {
+  top: 50px;
   width: 25vh;
   height: 25vh;
   min-width: 100px;
@@ -589,9 +590,12 @@ h4, h5 {
 }
 
 .top-bar {
-  height: 7vh;
-  min-height: 50px;
+  height: 45px;
   width: 100vw;
+  background-color: #F2F2F2;
+  position: fixed;
+  display: block;
+  left: 0px;
 }
 
 /*pages */
@@ -824,22 +828,6 @@ h4, h5 {
     width: 950px;
   }
 }
-@media only screen and (min-width: 640px) and (orientation: vertical) {
-  /* project page */
-  .project-page-single {
-    min-height: 90vh;
-    min-width: 65vh;
-  }
-
-  .project-page-img {
-    min-height: 90vh;
-    min-width: 65vh;
-  }
-
-  .pageIntro {
-    width: 100vw;
-  }
-}
 /* for mobile display, use bootstrap*/
 @media only screen and (max-width: 640px) and (orientation: vertical) {
   /* project page */
@@ -853,8 +841,8 @@ h4, h5 {
 }
 @media only screen and (max-height: 800px) {
   .image-grid-each {
-    width: 30vh;
-    height: 30vh;
+    width: 27vh;
+    height: 27vh;
     margin: 10px 5px;
   }
 }
@@ -871,8 +859,8 @@ h4, h5 {
   }
 
   .image-grid-each {
-    width: 30vh;
-    height: 30vh;
+    width: 27vh;
+    height: 27vh;
     margin: 10px 5px;
   }
 }
