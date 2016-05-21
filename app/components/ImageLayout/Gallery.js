@@ -52,14 +52,15 @@ export class Gallery extends Component {
   }
 
   render(){
-
     const {images, selectedImage, selectImage} = this.props;
     return (
       <div >
+          
         <SkyLight hideOnOverlayClicked ref="simpleDialog">
             <img className="modalPhoto" src={selectedImage} />
         </SkyLight>
 
+        <div className="top-bar"></div>
         <div className="flex-box animated fadeInRight">
           {images.map((image, index) => (
              <div key={index} onClick={() => {selectImage(image); this.refs.simpleDialog.show()}} className="image-grid-each">

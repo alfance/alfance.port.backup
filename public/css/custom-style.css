@@ -122,6 +122,10 @@ html {
   text-align: center;
 }
 
+.center-align-vertical {
+  margin-top: 5%;
+}
+
 .ILove {
   float: left;
   padding-right: 10px;
@@ -582,6 +586,12 @@ h4, h5 {
   text-align: center;
   margin-top: 50vh;
   transform: translate(0%, -50%);
+}
+
+.top-bar {
+  height: 7vh;
+  min-height: 50px;
+  width: 100vw;
 }
 
 /*pages */

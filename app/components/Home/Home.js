@@ -6,6 +6,7 @@ var Home = React.createClass({
     render: function() {
         return (
             <div>
+                <div className="top-bar"></div>
                 <HomeSVG></HomeSVG>
                 <div className="home-space"></div>
                 <HomeProject />
