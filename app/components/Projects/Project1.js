@@ -92,7 +92,7 @@ var Project1 = React.createClass({
                     {Contents[0]}
                     {Contents[1]}
                     {Contents[2]}
-                    <img src ={Images[0]} />
+                    <img className="col-sm-8" src ={Images[0]} />
                     <p><b>Collaborators: </b>Marisa Hoicka, Aditi Bhatia, Kylo Xue</p>
                     <p><b>Technologies: </b>Adobe PS, AI, AE, Rhinoceros, Balsamiq, MakerBot</p>
 
@@ -177,6 +177,7 @@ var Project1 = React.createClass({
                     <p>Click <a href ="./media/img/cycnav/market_analysis.pdf" target="_blank">HERE </a>to see the Market Analysis and Personas for Cycnav</p>
                 </div>
                 <div className="project-page-single">
+                    <b>Paper WireFrame</b>
                     <img src ={Images[18]} />
                     <b>Digital WireFrame</b>
                     <div className="image-row">

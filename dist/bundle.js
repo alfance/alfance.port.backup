@@ -36467,7 +36467,7 @@
 	                Contents[0],
 	                Contents[1],
 	                Contents[2],
-	                React.createElement("img", { src: Images[0] }),
+	                React.createElement("img", { className: "col-sm-8", src: Images[0] }),
 	                React.createElement(
 	                    "p",
 	                    null,
@@ -36685,6 +36685,11 @@
 	            React.createElement(
 	                "div",
 	                { className: "project-page-single" },
+	                React.createElement(
+	                    "b",
+	                    null,
+	                    "Paper WireFrame"
+	                ),
 	                React.createElement("img", { src: Images[18] }),
 	                React.createElement(
 	                    "b",

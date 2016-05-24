@@ -5,6 +5,8 @@
     align-items: center;
 }
 .project-page-mainlayout {
+    top:50px;
+    position: relative;
     min-width:460px;
     height: auto;
     width:auto;
@@ -15,6 +17,7 @@
         text-transform: uppercase;
     }
 }
+
 .project-page-single {
     @extend .project-page-mainlayout;
     width:auto;
