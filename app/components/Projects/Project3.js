@@ -26,7 +26,7 @@ var Project3 = React.createClass({
         ].map((name, i)=> <Project key={i} name={name}/> );
 
         const Images =[
-            "./media/img/gameon/1.png",
+            "./media/img/gameon/gameon1.png",
             "./media/img/gameon/mockup.png",
             "./media/img/gameon/ar-1-p02.png",
             "./media/img/gameon/ar-2-p03.png",
