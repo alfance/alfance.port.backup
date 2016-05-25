@@ -41,35 +41,35 @@ export default class HomeProject extends React.Component {
             <div className="flex-box animated fadeInRight">
             <span>
             <Link to="Project1"><div className="image-grid-each">
-                 <img className="image-grid-image" src={images[0]}/>
+                 <img className="image-grid-image colorMono" src={images[0]}/>
                </div></Link>
            <Link to="Project2"> <div className="image-grid-each">
-                <img className="image-grid-image" src={images[1]}/>
+                <img className="image-grid-image colorMono" src={images[1]}/>
               </div></Link>
           <Link to="Project3"><div className="image-grid-each">
-               <img className="image-grid-image" src={images[2]}/>
+               <img className="image-grid-image colorMono" src={images[2]}/>
              </div></Link>
          </span>
          <span>
          <Link to="Project4"> <div className="image-grid-each">
-              <img className="image-grid-image" src={images[3]}/>
+              <img className="image-grid-image colorMono" src={images[3]}/>
                 </div></Link>
             <Link to="Project5"><div className="image-grid-each">
-                 <img className="image-grid-image" src={images[4]}/>
+                 <img className="image-grid-image colorMono" src={images[4]}/>
                </div></Link>
            <Link to="Project6"> <div className="image-grid-each">
-                <img className="image-grid-image" src={images[5]}/>
+                <img className="image-grid-image colorMono" src={images[5]}/>
               </div></Link>
           </span>
           <span>
           <Link to="LogoAll"> <div className="image-grid-each">
-               <img className="image-grid-image" src={images[6]}/>
+               <img className="image-grid-image colorMono" src={images[6]}/>
              </div></Link>
          <Link to="Project8"> <div className="image-grid-each">
-              <img className="image-grid-image" src={images[7]}/>
+              <img className="image-grid-image colorMono" src={images[7]}/>
         </div></Link>
         <Link to=""> <div className="image-grid-each">
-             <img className="image-grid-image" src={images[9]}/>
+             <img className="image-grid-image colorMono" src={images[9]}/>
        </div></Link>
         </span>
             </div>

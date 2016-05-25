@@ -375,7 +375,7 @@ h4, h5 {
   width: 100%;
   padding-top: 56.25%;
 }
-.image-grid-image > .content {
+.image-grid-image .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -692,6 +692,11 @@ h4, h5 {
 }
 .table64 tr td:nth-child(2) {
   width: 40%;
+}
+
+.colorMono {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .box-size-80 {

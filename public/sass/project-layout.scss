@@ -99,6 +99,11 @@
         }
     }
 }
+//colours
+.colorMono {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 
 // different box size customized to the content
 .box-size-80 {
