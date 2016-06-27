@@ -36148,7 +36148,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[0] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[0] })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -36158,7 +36158,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[1] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[1] })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -36167,7 +36167,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[2] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[2] })
 	                        )
 	                    )
 	                ),
@@ -36181,7 +36181,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[3] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[3] })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -36190,7 +36190,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[4] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[4] })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -36200,7 +36200,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[5] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[5] })
 	                        )
 	                    )
 	                ),
@@ -36214,7 +36214,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[6] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[6] })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -36224,7 +36224,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[7] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[7] })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -36234,7 +36234,7 @@
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "image-grid-each" },
-	                            _react2.default.createElement("img", { className: "image-grid-image colorMono", src: images[9] })
+	                            _react2.default.createElement("img", { className: "image-grid-image", src: images[9] })
 	                        )
 	                    )
 	                )
