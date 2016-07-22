@@ -32437,14 +32437,9 @@
 
 	var _reactRouter = __webpack_require__(299);
 
-	var _NavIcon = __webpack_require__(515);
-
-	var _NavIcon2 = _interopRequireDefault(_NavIcon);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 	var React = __webpack_require__(302);
 
+	// import LogoSVG from "./partial/NavIcon";
 
 	var Layout = React.createClass({
 	    displayName: "Layout",
@@ -32460,10 +32455,10 @@
 	            { className: "main-container" },
 	            React.createElement(
 	                "div",
-	                { className: "sidebar-wrapper" },
+	                { className: "navigation-wrapper" },
 	                React.createElement(
-	                    "ul",
-	                    { className: "sidebar-nav" },
+	                    "div",
+	                    { className: "navigation-nav" },
 	                    React.createElement(
 	                        "div",
 	                        { className: "sidebar-brand" },
@@ -32473,90 +32468,95 @@
 	                            React.createElement(
 	                                _reactRouter.Link,
 	                                { to: "Home" },
-	                                React.createElement("img", { className: "nav-title-image", src: "media/UI/nav-title.svg" }),
-	                                " ",
-	                                React.createElement("img", { className: "nav-title-image-S", src: "media/UI/nav-title-S.svg" })
+	                                React.createElement("img", { className: "nav-title-image", src: "media/UI/nav-title-WB.svg" }),
+	                                " "
 	                            )
 	                        )
 	                    ),
-	                    React.createElement(_NavIcon2.default, null),
 	                    React.createElement(
-	                        "li",
-	                        null,
+	                        "ul",
+	                        { className: "menu-list vertical-position" },
 	                        React.createElement(
-	                            _reactRouter.Link,
-	                            { to: "Home", activeClassName: "tabActive" },
+	                            "li",
+	                            null,
 	                            React.createElement(
-	                                "div",
-	                                { className: "chap-title home" },
-	                                "Work"
+	                                _reactRouter.Link,
+	                                { to: "Home", activeClassName: "tabActive" },
+	                                React.createElement(
+	                                    "div",
+	                                    { className: "chap-title home" },
+	                                    "Work"
+	                                )
 	                            )
-	                        )
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
+	                        ),
 	                        React.createElement(
-	                            _reactRouter.Link,
-	                            { to: "DesignHome", activeClassName: "tabActive" },
+	                            "li",
+	                            null,
+	                            React.createElement(
+	                                _reactRouter.Link,
+	                                { to: "DesignHome", activeClassName: "tabActive" },
+	                                React.createElement(
+	                                    "div",
+	                                    { className: "chap-title" },
+	                                    "Graphic"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "li",
+	                            null,
+	                            React.createElement(
+	                                _reactRouter.Link,
+	                                { to: "PhotoHome", activeClassName: "tabActive" },
+	                                React.createElement(
+	                                    "div",
+	                                    { className: "chap-title" },
+	                                    "Photo"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "li",
+	                            null,
+	                            React.createElement(
+	                                _reactRouter.Link,
+	                                { to: "ArtHome", activeClassName: "tabActive" },
+	                                React.createElement(
+	                                    "div",
+	                                    { className: "chap-title" },
+	                                    "Arts"
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            "li",
+	                            null,
 	                            React.createElement(
 	                                "div",
 	                                { className: "chap-title" },
-	                                React.createElement("img", { src: "media/UI/icon-design.svg", className: "NavIcon" }),
-	                                "Design"
-	                            )
-	                        )
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        React.createElement(
-	                            _reactRouter.Link,
-	                            { to: "PhotoHome", activeClassName: "tabActive" },
-	                            React.createElement(
-	                                "div",
-	                                { className: "chap-title" },
-	                                React.createElement("img", { src: "media/UI/icon-photo.svg", className: "NavIcon" }),
-	                                "Photo"
-	                            )
-	                        )
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        React.createElement(
-	                            _reactRouter.Link,
-	                            { to: "ArtHome", activeClassName: "tabActive" },
-	                            React.createElement(
-	                                "div",
-	                                { className: "chap-title" },
-	                                React.createElement("img", { src: "media/UI/icon-art.svg", className: "NavIcon" }),
-	                                "Arts"
-	                            )
-	                        )
-	                    ),
-	                    React.createElement(
-	                        "li",
-	                        null,
-	                        React.createElement(
-	                            "div",
-	                            { className: "chap-title" },
-	                            React.createElement(
-	                                "a",
-	                                { href: "https://www.linkedin.com/in/kyloxue", target: "_blank" },
-	                                " ",
-	                                React.createElement("i", { className: "icon-linkedin inline-icon", tooltip: "bla bla" })
-	                            ),
-	                            React.createElement(
-	                                "a",
-	                                { href: "https://github.com/alfance", target: "_blank" },
-	                                React.createElement("i", { className: "icon-git inline-icon" })
-	                            ),
-	                            React.createElement(
-	                                "a",
-	                                { href: "https://www.flickr.com/photos/85570696@N02/", target: "_blank" },
-	                                " ",
-	                                React.createElement("i", { className: "icon-flickr inline-icon" })
+	                                React.createElement(
+	                                    "a",
+	                                    { title: "Linkedin", className: "tooltip", href: "https://www.linkedin.com/in/kyloxue", target: "_blank" },
+	                                    " ",
+	                                    React.createElement("i", { className: "icon-linkedin inline-icon", tooltip: "bla bla" })
+	                                ),
+	                                React.createElement(
+	                                    "a",
+	                                    { title: "Github", className: "tooltip", href: "https://github.com/alfance", target: "_blank" },
+	                                    React.createElement("i", { className: "icon-git inline-icon" })
+	                                ),
+	                                React.createElement(
+	                                    "a",
+	                                    { title: "Flickr", className: "tooltip", href: "https://www.flickr.com/photos/85570696@N02/", target: "_blank" },
+	                                    " ",
+	                                    React.createElement("i", { className: "icon-flickr inline-icon" })
+	                                ),
+	                                React.createElement(
+	                                    "a",
+	                                    { title: "Deviant", className: "tooltip", href: "http://alfance.deviantart.com/", target: "_blank" },
+	                                    " ",
+	                                    React.createElement("i", { className: "icon-deviant inline-icon" })
+	                                )
 	                            )
 	                        )
 	                    )
@@ -32578,98 +32578,7 @@
 	module.exports = Layout;
 
 /***/ },
-/* 515 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(302);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _SVGInjector = __webpack_require__(516);
-
-	var _SVGInjector2 = _interopRequireDefault(_SVGInjector);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LogoSVG = function (_React$Component) {
-	  _inherits(LogoSVG, _React$Component);
-
-	  function LogoSVG() {
-	    _classCallCheck(this, LogoSVG);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(LogoSVG).apply(this, arguments));
-	  }
-
-	  _createClass(LogoSVG, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "NavIcon" },
-	        _react2.default.createElement(_SVGInjector2.default, {
-	          path: 'media/UI/icon-project.svg',
-	          className: 'example',
-	          callback: function callback(svg) {
-	            return svg;
-	          }
-	        }),
-	        _react2.default.createElement("p", null),
-	        _react2.default.createElement(_SVGInjector2.default, {
-	          path: 'media/UI/icon-design.svg',
-	          className: 'example',
-	          callback: function callback(svg) {
-	            return svg;
-	          }
-	        }),
-	        _react2.default.createElement("p", null),
-	        _react2.default.createElement(_SVGInjector2.default, {
-	          path: 'media/UI/icon-photo.svg',
-	          className: 'example',
-	          callback: function callback(svg) {
-	            return svg;
-	          }
-	        }),
-	        _react2.default.createElement("p", null),
-	        _react2.default.createElement(_SVGInjector2.default, {
-	          path: 'media/UI/icon-art.svg',
-	          className: 'example',
-	          callback: function callback(svg) {
-	            return svg;
-	          }
-	        }),
-	        _react2.default.createElement("p", null),
-	        _react2.default.createElement(_SVGInjector2.default, {
-	          path: 'media/UI/icon-mail.svg',
-	          className: 'example',
-	          callback: function callback(svg) {
-	            return svg;
-	          }
-	        })
-	      );
-	    }
-	  }]);
-
-	  return LogoSVG;
-	}(_react2.default.Component);
-
-	exports.default = LogoSVG;
-
-/***/ },
+/* 515 */,
 /* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -33254,7 +33163,6 @@
 	        return React.createElement(
 	            "div",
 	            null,
-	            React.createElement("div", { className: "top-bar" }),
 	            React.createElement(_HomeSVG2.default, null),
 	            React.createElement("div", { className: "home-space" }),
 	            React.createElement(_HomeProject2.default, null)

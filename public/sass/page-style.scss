@@ -46,6 +46,11 @@ html {
     margin:5vh 20px auto 0px;
 }
 
+.vertical-position {
+    top:50%;
+    transform: translateY(-50%);
+}
+
 .center-align {
     text-align: center;
 }
@@ -98,72 +103,6 @@ table {
     float:left;
 }
 
-// icons DME
-i {
-min-width: 35px;
-  min-height: 35px;
-  text-align: center;
-  display: block;
-}
-.icon-round {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
-.icon-size-50 {
-    width:50px;
-    height:50px;
-}
-
-.inline-icon {
-    width:10px;
-    height:10px;
-    display: inline-block;;
-    float:right;
-}
-.icon-pc {
-    background-image: url("../media/UI/icon-01.svg");
-    background-position: center center;
-    fill:#F37626;
-}
-.icon-video {
-    background-image: url("../media/UI/icon-02.svg");
-    background-position: center center;
-    fill:#F37626;
-}
-.icon-code {
-    background-image: url("../media/UI/icon-03.svg");
-    background-position: center center;
-    fill:#F37626;
-}
-.icon-gd {
-    background-image: url("../media/UI/icon-04.svg");
-    background-position: center center;
-    fill:#F37626;
-}
-.icon-3d {
-    background-image: url("../media/UI/icon-05.svg");
-    background-position: center center;
-    fill:#F37626;
-}
-.icon-linkedin {
-    background-image: url("../media/UI/icon-linkedin.svg");
-    background-position: center center;
-}
-.icon-git {
-    background-image: url("../media/UI/icon-git.svg");
-    background-position: center center;
-}
-.icon-flickr {
-    background-image: url("../media/UI/icon-flickr.svg");
-    background-position: center center;
-}
-.icon-mail {
-    background-image: url("../media/UI/icon-mail.svg");
-    background-position: center center;
-}
-
 //customize images with
 .imageW90 {
     @extend .center-image;
@@ -202,12 +141,33 @@ min-width: 35px;
 
 }
 
-[tooltip]:before {
-    position : absolute;
-     content : attr(tooltip);
-     opacity : 0;
+.tooltip{
+    display: inline;
+    position: relative;
 }
 
-[tooltip]:hover:before {
-    opacity : 1;
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #fff;
+    content: attr(title);
+    left: -20px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 99999;
+    width: 50px;
+    color:white;
+    bottom:0px;
+}
+
+.tooltip:hover:before{
+    // border: solid;
+    // border-color: #333 transparent;
+    // border-width: 6px 6px 0 6px;
+    // bottom: 10px;
+    // content: "";
+    // left: -20px;
+    // position: absolute;
+    // z-index: 99;
 }
