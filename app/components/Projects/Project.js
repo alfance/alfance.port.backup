@@ -55,7 +55,7 @@ export default class Project extends React.Component {
         const {name} =this.props;
         const {info} =this.props;
     return(
-        <div className="animated fadeInUp">
+        <div className="animated fadeInRight">
             <h1>{this.props.ProjectName}</h1>
            <h4>{name}</h4>
            <p>{info}</p>

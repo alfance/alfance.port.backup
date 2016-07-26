@@ -231,6 +231,10 @@ table img {
   bottom: 0px;
 }
 
+.intro-space {
+  margin-left: 150px;
+}
+
 p, li, table {
   font-family: 'Lato', Arial, sans-serif;
   font-size: 0.9em;
@@ -586,7 +590,7 @@ i {
   width: auto;
   display: inline-block;
   float: left;
-  padding: 0px 50px 0px 50px;
+  padding: 0px 70px 0px 70px;
 }
 .project-page-mainlayout h4, .project-page-single h4, .project-page-img h4 {
   text-transform: uppercase;

@@ -146,3 +146,6 @@ switch (pick) {
 // $(".nav-title-image").hide();
 // $(".NavIcon").show();
 // });
+
+var titleIntro = $(".project-page-single");
+$(titleIntro[0]).css("margin-left","100px");

@@ -36737,7 +36737,7 @@
 
 	            return React.createElement(
 	                'div',
-	                { className: 'animated fadeInUp' },
+	                { className: 'animated fadeInRight' },
 	                React.createElement(
 	                    'h1',
 	                    null,
@@ -54111,9 +54111,14 @@
 	            var $imageH = $(".image-grid-image").height();
 	            var all = document.querySelectorAll('.image-grid-image');for (var i = 0; i < all.length; ++i) {
 	                all.item(i).addEventListener('click', function (e) {
-	                    setTimeout(function () {
-	                        window.scrollTo(e.target.parentNode.offsetLeft - (window.innerWidth - e.target.offsetWidth) / 2, 0);
-	                    }, 400);
+	                    var windowSize = $(window).width();
+	                    var windowLeft = windowSize / 2;
+	                    var objLeft = $(e.target).offset().left;
+	                    var halfObj = $(e.target).width() / 2;
+	                    var scrollLeft = objLeft - windowLeft + halfObj;
+	                    console.log(halfObj);
+	                    // window.scrollTo(scrollLeft, 0, 1000);
+	                    $('body, html').animate({ scrollLeft: scrollLeft }, 600);
 	                });
 	            }
 

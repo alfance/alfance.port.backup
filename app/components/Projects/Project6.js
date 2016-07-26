@@ -84,7 +84,7 @@ var Project6 = React.createClass({
                      <tr>
                          <td> {Contents[4]}</td>
                           <td>{Contents[5]}
-                              <p>Click <a href="http://sozostudio.github.io/dmeTheme/index.html" target="_blank">HERE</a> to see the website mockup</p>
+                              <p>Click <a href="http://kyloxue.design/dmeTheme/index.html" target="_blank">HERE</a> to see the website mockup</p>
                           </td>
                      </tr>
                      <tr>
