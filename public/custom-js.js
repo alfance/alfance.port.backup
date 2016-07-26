@@ -38,20 +38,20 @@
     //     console.log($object_right);
     // });
 
-// $(function() {
-//
-//     $("html, body").mousewheel(function(event, delta) {
-//         var mult = 1;
-//         var $this = $(this);
-//         if (event.timeStamp - $this.data('oldtimeStamp') < 1000) {
-//             //calculate easing here
-//             mult = 1000 / (event.timeStamp - $this.data('oldtimeStamp'));
-//         }
-//         $this.data('oldtimeStamp', event.timeStamp);
-//         this.scrollLeft -= (delta) * mult;
-//         event.preventDefault();
-//     });
-// });
+$(function() {
+
+    $("html, body").mousewheel(function(event, delta) {
+        var mult = 1;
+        var $this = $(this);
+        if (event.timeStamp - $this.data('oldtimeStamp') < 1000) {
+            //calculate easing here
+            mult = 1000 / (event.timeStamp - $this.data('oldtimeStamp'));
+        }
+        $this.data('oldtimeStamp', event.timeStamp);
+        this.scrollLeft -= (delta) * mult;
+        event.preventDefault();
+    });
+});
 
 var green = ["#fff", "#98D1D1", "#16A0A1", "#154B4C", "#020101"];
 var red = ["#fff", "#EE3C2F", "#B50D02", "#621A15", "#020101"];
