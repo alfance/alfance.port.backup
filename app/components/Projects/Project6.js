@@ -84,7 +84,7 @@ var Project6 = React.createClass({
                      <tr>
                          <td> {Contents[4]}</td>
                           <td>{Contents[5]}
-                              <p>Click <a href="http://kyloxue.design/dmeTheme/index.html" target="_blank">HERE</a> to see the website mockup</p>
+                              <p>Click <a href="http://kyloxue.design/DMETheme/index.html" target="_blank">HERE</a> to see the website mockup</p>
                           </td>
                      </tr>
                      <tr>
@@ -158,7 +158,7 @@ var Project6 = React.createClass({
                  </div>
                  <div className="project-page-img">
                      {Titles[3]}
-                     <a href="http://sozostudio.github.io/dmeTheme/index.html" target="_blank"><b>Main Page</b></a>
+                     <a href="http://kyloxue.design/DMETheme/index.html" target="_blank"><b>Main Page</b></a>
                          <table><tbody>
                              <tr>
                              <td>
